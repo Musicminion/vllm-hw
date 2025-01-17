@@ -220,10 +220,12 @@ class ChatCompletionRequest(OpenAIBaseModel):
     stream: Optional[bool] = False
     stream_options: Optional[StreamOptions] = None
     temperature: Optional[float] = None
+    rel_deadline: Optional[float] = None
     top_p: Optional[float] = None
     tools: Optional[List[ChatCompletionToolsParam]] = None
     tool_choice: Optional[Union[Literal["none"], Literal["auto"],
                                 ChatCompletionNamedToolChoiceParam]] = "none"
+    
 
     # NOTE this will be ignored by VLLM -- the model determines the behavior
     parallel_tool_calls: Optional[bool] = False
@@ -633,6 +635,7 @@ class CompletionRequest(OpenAIBaseModel):
     stream_options: Optional[StreamOptions] = None
     suffix: Optional[str] = None
     temperature: Optional[float] = None
+    rel_deadline: Optional[float] = None
     top_p: Optional[float] = None
     user: Optional[str] = None
 

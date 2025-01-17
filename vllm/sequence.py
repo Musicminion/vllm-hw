@@ -638,6 +638,7 @@ class SequenceGroup:
         trace_headers: OpenTelemetry trace headers.
         prompt_adapter_request: Prompt Adapter request.
         priority: User-defined priority of the request.
+        abs_deadline: The absolute deadline of the request.
     """
 
     def __init__(
@@ -645,6 +646,7 @@ class SequenceGroup:
         request_id: str,
         seqs: List[Sequence],
         arrival_time: float,
+        abs_deadline: Optional[float] = None,
         sampling_params: Optional[SamplingParams] = None,
         lora_request: Optional[LoRARequest] = None,
         pooling_params: Optional[PoolingParams] = None,
@@ -658,6 +660,7 @@ class SequenceGroup:
         self.seqs = seqs
         self.first_seq = seqs[0]
         self.arrival_time = arrival_time
+        self.abs_deadline = abs_deadline
         self.is_single_seq = len(seqs) == 1
         self.seqs_dict = {seq.seq_id: seq for seq in seqs}
 

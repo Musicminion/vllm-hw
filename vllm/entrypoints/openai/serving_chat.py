@@ -231,6 +231,7 @@ class OpenAIServingChat(OpenAIServing):
                         trace_headers=trace_headers,
                         prompt_adapter_request=prompt_adapter_request,
                         priority=request.priority,
+                        rel_deadline=request.rel_deadline
                     )
 
                 generators.append(generator)

@@ -188,7 +188,7 @@ class EngineArgs:
     otlp_traces_endpoint: Optional[str] = None
     collect_detailed_traces: Optional[str] = None
     disable_async_output_proc: bool = False
-    scheduling_policy: Literal["fcfs", "priority"] = "fcfs"
+    scheduling_policy: Literal["fcfs", "priority", "edf"] = "fcfs"
 
     override_neuron_config: Optional[Dict[str, Any]] = None
     override_pooler_config: Optional[PoolerConfig] = None
@@ -896,13 +896,13 @@ class EngineArgs:
 
         parser.add_argument(
             '--scheduling-policy',
-            choices=['fcfs', 'priority'],
+            choices=['fcfs', 'priority', 'edf'],
             default="fcfs",
             help='The scheduling policy to use. "fcfs" (first come first served'
             ', i.e. requests are handled in order of arrival; default) '
             'or "priority" (requests are handled based on given '
             'priority (lower value means earlier handling) and time of '
-            'arrival deciding any ties).')
+            'arrival deciding any ties); edf means handled in order of ddl.')
 
         parser.add_argument(
             '--override-neuron-config',
@@ -1191,6 +1191,11 @@ class EngineArgs:
             send_delta_data=(envs.VLLM_USE_RAY_SPMD_WORKER
                              and parallel_config.use_ray),
             policy=self.scheduling_policy)
+        
+        # 打印输出当前的调度策略
+        logger.info(f"[VLLM-HW] Current scheduling policy is {self.scheduling_policy}")
+        
+        
         lora_config = LoRAConfig(
             bias_enabled=self.enable_lora_bias,
             max_lora_rank=self.max_lora_rank,

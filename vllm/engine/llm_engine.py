@@ -581,6 +581,7 @@ class LLMEngine:
         processed_inputs: ProcessorInputs,
         params: Union[SamplingParams, PoolingParams],
         arrival_time: float,
+        abs_deadline: Optional[float],
         lora_request: Optional[LoRARequest],
         prompt_adapter_request: Optional[PromptAdapterRequest],
         trace_headers: Optional[Mapping[str, str]] = None,
@@ -596,10 +597,12 @@ class LLMEngine:
                 params,
                 processed_inputs=processed_inputs,
                 arrival_time=arrival_time,
+                abs_deadline=abs_deadline,
                 lora_request=lora_request,
                 trace_headers=trace_headers,
                 prompt_adapter_request=prompt_adapter_request,
                 priority=priority,
+                
             )
             return None
 
@@ -630,6 +633,7 @@ class LLMEngine:
                 seq,
                 params,
                 arrival_time=arrival_time,
+                abs_deadline=abs_deadline,
                 lora_request=lora_request,
                 trace_headers=trace_headers,
                 prompt_adapter_request=prompt_adapter_request,
@@ -641,6 +645,7 @@ class LLMEngine:
                 seq,
                 params,
                 arrival_time=arrival_time,
+                abs_deadline=abs_deadline,
                 lora_request=lora_request,
                 prompt_adapter_request=prompt_adapter_request,
                 encoder_seq=encoder_seq,
@@ -656,7 +661,7 @@ class LLMEngine:
         ]
         min_cost_scheduler = self.scheduler[costs.index(min(costs))]
         min_cost_scheduler.add_seq_group(seq_group)
-
+        
         return seq_group
 
     def stop_remote_worker_execution_loop(self) -> None:
@@ -669,6 +674,7 @@ class LLMEngine:
         prompt: PromptType,
         params: Union[SamplingParams, PoolingParams],
         arrival_time: Optional[float] = None,
+        rel_deadline: Optional[float] = None,
         lora_request: Optional[LoRARequest] = None,
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
@@ -685,6 +691,7 @@ class LLMEngine:
         inputs: PromptType,
         params: Union[SamplingParams, PoolingParams],
         arrival_time: Optional[float] = None,
+        rel_deadline: Optional[float] = None,
         lora_request: Optional[LoRARequest] = None,
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
@@ -702,6 +709,7 @@ class LLMEngine:
             prompt: Optional[PromptType] = None,
             params: Optional[Union[SamplingParams, PoolingParams]] = None,
             arrival_time: Optional[float] = None,
+            rel_deadline: Optional[float] = None,
             lora_request: Optional[LoRARequest] = None,
             trace_headers: Optional[Mapping[str, str]] = None,
             prompt_adapter_request: Optional[PromptAdapterRequest] = None,
@@ -773,6 +781,13 @@ class LLMEngine:
 
         if arrival_time is None:
             arrival_time = time.time()
+        
+        abs_deadline = 0
+        # 如果有相对的deadline，计算绝对的deadline
+        if rel_deadline is not None:
+            abs_deadline = arrival_time + rel_deadline
+        
+        logger.info("【LLMEngine.add_request】abs deadline: %s", abs_deadline)
 
         if self.tokenizer is not None:
             self._validate_token_prompt(
@@ -792,6 +807,7 @@ class LLMEngine:
             processed_inputs=processed_inputs,
             params=params,
             arrival_time=arrival_time,
+            abs_deadline=abs_deadline,
             lora_request=lora_request,
             prompt_adapter_request=prompt_adapter_request,
             trace_headers=trace_headers,
@@ -825,6 +841,7 @@ class LLMEngine:
         seq: Sequence,
         sampling_params: SamplingParams,
         arrival_time: float,
+        abs_deadline: Optional[float],
         lora_request: Optional[LoRARequest],
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
@@ -855,6 +872,7 @@ class LLMEngine:
             request_id=request_id,
             seqs=[seq],
             arrival_time=arrival_time,
+            abs_deadline=abs_deadline,
             sampling_params=sampling_params,
             lora_request=lora_request,
             trace_headers=trace_headers,

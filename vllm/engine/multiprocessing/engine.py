@@ -244,6 +244,7 @@ class MQLLMEngine:
             raise e
 
     def _handle_process_request(self, request: RPCProcessRequest):
+        logger.info("好了这里是收到RPC的请求")
         """Handle RPCProcessRequest by adding it to the LLMEngine."""
         request_id = request.request_id
 
@@ -253,6 +254,8 @@ class MQLLMEngine:
                                exception=ENGINE_DEAD_ERROR(self._errored_with))
             self._send_outputs(rpc_err)
 
+        
+        logger.info("RPC收到的请求里面 rel_deadline: %s", request.rel_deadline)
         try:
             self.engine.add_request(
                 request_id=request_id,
@@ -261,7 +264,9 @@ class MQLLMEngine:
                 lora_request=request.lora_request,
                 trace_headers=request.trace_headers,
                 prompt_adapter_request=request.prompt_adapter_request,
-                priority=request.priority)
+                priority=request.priority,
+                rel_deadline=request.rel_deadline
+                )
 
             if self.log_requests:
                 logger.info("Added request %s.", request.request_id)

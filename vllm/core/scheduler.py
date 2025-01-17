@@ -563,6 +563,15 @@ class Scheduler:
 
         running_queue = self.running
         assert len(self._async_stopped) == 0
+        
+        # 如果调度策略是edf的话，我们把running_queue 里面的按照ddl排个序
+        if self.scheduler_config.policy == "edf":
+            running_queue = deque(sorted(self.running, key=lambda x: x.abs_deadline))
+            # 然后用logger打印一下所有的任务和他们的ddl
+            logger.info("running_queue, after sorted by ddl:")
+            for seq_group in running_queue:
+                logger.info(f"request_id: {seq_group.request_id}, ddl: {seq_group.abs_deadline}")
+        
         while running_queue:
             seq_group = running_queue[0]
             # We discard the cached tokens info here because we don't need it

@@ -424,6 +424,7 @@ class MQLLMEngineClient(EngineClient):
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
         priority: int = 0,
+        rel_deadline: Optional[float] = None,
     ) -> AsyncGenerator[RequestOutput, None]:
         ...
 
@@ -439,6 +440,7 @@ class MQLLMEngineClient(EngineClient):
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
         priority: int = 0,
+        rel_deadline: Optional[float] = None,
     ) -> AsyncGenerator[RequestOutput, None]:
         ...
 
@@ -455,6 +457,7 @@ class MQLLMEngineClient(EngineClient):
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
         priority: int = 0,
+        rel_deadline: Optional[float] = None,
         *,
         inputs: Optional[PromptType] = None  # DEPRECATED
     ) -> AsyncGenerator[RequestOutput, None]:
@@ -477,6 +480,9 @@ class MQLLMEngineClient(EngineClient):
                 Any priority other than 0 will lead to an error if the
                 scheduling policy is not "priority".
         """
+        logger.info("我嘞个骚刚我现在在client.py/generate里面")
+        # 输出一下rel_deadline
+        logger.info("client.py/generate里面的 rel_deadline: %s", rel_deadline)
         if inputs is not None:
             prompt = inputs
         assert (prompt is not None and sampling_params is not None
@@ -484,7 +490,9 @@ class MQLLMEngineClient(EngineClient):
 
         return self._process_request(prompt, sampling_params, request_id,
                                      lora_request, trace_headers,
-                                     prompt_adapter_request, priority)
+                                     prompt_adapter_request, priority,
+                                     rel_deadline
+                                     )
 
     @overload
     def encode(
@@ -557,7 +565,7 @@ class MQLLMEngineClient(EngineClient):
                                   request_id,
                                   lora_request,
                                   trace_headers,
-                                  priority=priority))
+                                  priority=priority,))
 
     async def _process_request(
         self,
@@ -568,6 +576,7 @@ class MQLLMEngineClient(EngineClient):
         trace_headers: Optional[Mapping[str, str]] = None,
         prompt_adapter_request: Optional[PromptAdapterRequest] = None,
         priority: int = 0,
+        rel_deadline: Optional[float] = None,
     ) -> Union[AsyncGenerator[RequestOutput, None], AsyncGenerator[
             PoolingRequestOutput, None]]:
         """Send an RPCGenerateRequest to the RPCServer and stream responses."""
@@ -621,8 +630,12 @@ class MQLLMEngineClient(EngineClient):
                     trace_headers=trace_headers,
                     prompt_adapter_request=prompt_adapter_request,
                     priority=priority,
+                    rel_deadline=rel_deadline,
                 ))
 
+            logger.info("好了现在RPC的请求已经准备好了，马上要发RPC请求")
+            # 
+            logger.info("发RPC请求之前，client.py/_process_request里面的 rel_deadline: %s", rel_deadline)
             # 3) Send the RPCGenerateRequest to the MQLLMEngine.
             parts = (request_bytes,
                      lp_bytes) if lp_bytes else (request_bytes, )
