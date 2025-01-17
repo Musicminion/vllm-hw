@@ -11,10 +11,10 @@ max_tokens=512
 temperature=0.5
 
 # 发送 30 个请求
-for i in {1..30}
+for i in {1..5}
 do
   # 生成一个 50 到 150 之间的随机数作为 rel_deadline
-  rel_deadline=$((RANDOM % 101 + 50))
+  rel_deadline=$((RANDOM % 1001 + 50))
 
   # 构建请求数据
   data=$(cat <<EOF
@@ -29,6 +29,8 @@ EOF
   )
 
   # 发送请求
+{
   response=$(curl -s -X POST "$url" -H "$headers" --data "$data")
   echo "Response $i: $response"
+} &
 done
