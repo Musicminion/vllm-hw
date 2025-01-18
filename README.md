@@ -10,7 +10,6 @@ benchmark视频：
 https://github.com/user-attachments/assets/d9409e8d-62e8-4011-a0eb-7fe27260b76f
 
 
-
 ### 环境配置
 创建一个conda环境：
 ```python
@@ -60,12 +59,19 @@ export HTTPS_PROXY=http://用户名:密码@ip:port
 - Priority调度策略：优先级调度的策略
 - FIFO调度策略：按照先进先出的顺序进行
 
+
 例如要使用EDF调度策略，启动的时候需要加上：
 ```bash
 # debug打开
 export VLLM_LOGGING_LEVEL=DEBUG
-# edf 调度策略
+# 四种调度策略的启动脚本
 /home/zzq/.conda/envs/vllm_zzq/bin/vllm serve "facebook/opt-125m" --port 15432 --gpu_memory_utilization 0.95 --scheduling_policy edf
+
+/home/zzq/.conda/envs/vllm_zzq/bin/vllm serve "facebook/opt-125m" --port 15432 --gpu_memory_utilization 0.95 --scheduling_policy sjf
+
+/home/zzq/.conda/envs/vllm_zzq/bin/vllm serve "facebook/opt-125m" --port 15432 --gpu_memory_utilization 0.95 --scheduling_policy priority
+
+/home/zzq/.conda/envs/vllm_zzq/bin/vllm serve "facebook/opt-125m" --port 15432 --gpu_memory_utilization 0.95 --scheduling_policy fcfs
 ```
 
 ### 发送推理请求
@@ -88,7 +94,29 @@ curl -X POST "http://localhost:15432/v1/completions" -H "Content-Type: applicati
 
 ### Benchmark
 
-要进行性能评测，请运行`benchmarks/schedule_benchmarks`目录下的`run.sh`脚本。
+要进行性能评测，请运行`benchmarks/schedule_benchmarks`目录下的`benchmark.py`脚本。
+
+benchmark视频：
+
+https://github.com/user-attachments/assets/d9409e8d-62e8-4011-a0eb-7fe27260b76f
+
+
+Benchmark中可以配置的参数：
+```python
+# 参数区域
+##########################################################
+vllm_server_url = "http://localhost:15432/v1/completions"  # 本地 vLLM 推理服务地址
+lambda_sentence_length = 50     # 输入promp句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
+lambda_requests = 20            # 每次并发请求的数量，服从泊松分布，数量平均值
+max_sentence_length = 100       # 句子长度的最大值，默认100
+lambda_request_interval = 3     # 请求间隔时间，单位：秒，同样服从泊松分布
+accuracy_num = 4                # 小数点保留的位数
+add_para_priority = False       # 是否给参数加上优先级
+add_para_relddl = True          # 是否给参数加上相对ddl的参数
+##########################################################
+```
+
+benchmark的数据结果在`benchmarks/schedule_benchmarks/result`的下面，具体分为日志文件和excel的表格输出。
 
 
 
