@@ -22,13 +22,13 @@ import random
 # 参数区域
 ##########################################################
 vllm_server_url = "http://localhost:15432/v1/completions"  # 本地 vLLM 推理服务地址
-lambda_sentence_length = 50     # 句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
-lambda_requests = 10            # 每次并发请求的数量，服从泊松分布，数量平均值
+lambda_sentence_length = 50     # 输入promp句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
+lambda_requests = 30            # 每次并发请求的数量，服从泊松分布，数量平均值
 max_sentence_length = 100       # 句子长度的最大值，默认100
-lambda_request_interval = 1     # 请求间隔时间，单位：秒，同样服从泊松分布
+lambda_request_interval = 3     # 请求间隔时间，单位：秒，同样服从泊松分布
 accuracy_num = 4                # 小数点保留的位数
 add_para_priority = False       # 是否给参数加上优先级
-add_para_relddl = True         # 是否给参数加上相对ddl的参数
+add_para_relddl = False          # 是否给参数加上相对ddl的参数
 ##########################################################
 
 
@@ -69,6 +69,7 @@ def generate_sentence_from_poisson():
 # 数据结构不完全一样 还是做了一定的修改的
 @dataclass
 class RequestFuncInput:
+    batch_id: int
     prompt: str
     api_url: str
     prompt_len: int
@@ -85,6 +86,7 @@ class RequestFuncInput:
 
 @dataclass
 class RequestFuncOutput:
+    batch_id: int = 0
     generated_text: str = ""
     prompt_text: str = ""
     success: bool = False
@@ -118,7 +120,7 @@ async def async_request_openai_completions(
         payload = {
             "model": request_func_input.model,
             "prompt": request_func_input.prompt,
-            "temperature": 0.2,
+            "temperature": 0.1,
             "best_of": request_func_input.best_of,
             "max_tokens": request_func_input.output_len,
             "logprobs": request_func_input.logprobs,
@@ -141,7 +143,8 @@ async def async_request_openai_completions(
         output.prompt_text =   request_func_input.prompt
         output.rel_deadline = request_func_input.rel_deadline
         output.priority = request_func_input.priority
-
+        output.batch_id = request_func_input.batch_id
+        
         generated_text = ""
         ttft = 0.0
         st = time.perf_counter()
@@ -213,7 +216,7 @@ def cal_token(str):
 # 全局变量，用于存储所有结果
 results = []
 
-async def run_single_request(if_relddl = False, if_priority = True):
+async def run_single_request(if_relddl = False, if_priority = True, batch_id = 0):
     prompt_str = generate_sentence_from_poisson()
     # 创建一个 RequestFuncInput 实例
     request_input = RequestFuncInput(
@@ -226,7 +229,8 @@ async def run_single_request(if_relddl = False, if_priority = True):
         logprobs=None,
         extra_body=None,
         multi_modal_content=None,
-        ignore_eos=False
+        ignore_eos=False,
+        batch_id=batch_id,
     )
     
     # 根据是否需要相对ddl和优先级设置这个参数
@@ -236,7 +240,7 @@ async def run_single_request(if_relddl = False, if_priority = True):
         request_input.priority = random.randint(1, 10000)
     
     # 创建一个 tqdm 进度条
-    pbar = tqdm(total=1)
+    pbar = tqdm(total=1, disable= True)
     # 调用 async_request_openai_completions 函数
     result = await async_request_openai_completions(request_input, pbar)
     # 将结果存储到全局变量
@@ -247,13 +251,20 @@ async def run_single_request(if_relddl = False, if_priority = True):
 
 def print_result():
     # 处理生成的文本，只展示前面几个单词
-    def get_first_n_words(text, n=5):
-        return ' '.join(text.split()[:n])
+    def get_first_n_chars(text, n=30):
+        # 找到换行符的位置
+        newline_pos = text.find('\n')
+        # 如果找到换行符且位置小于 n，则在换行符处截断
+        if newline_pos != -1 and newline_pos < n:
+            return text[:newline_pos] + '...'
+        # 否则，按原逻辑截断
+        return text[:n] + '...' if len(text) > n else text
 
     
     data = {
-        "Promt Text": [get_first_n_words(result.prompt_text) for result in results],
-        "Generated Text": [get_first_n_words(result.generated_text) for result in results],
+        "batch_id": [result.batch_id for result in results],
+        "Promt Text": [get_first_n_chars(result.prompt_text) for result in results],
+        "Generated Text": [get_first_n_chars(result.generated_text) for result in results],
         "Success": [result.success for result in results],
         "Latency": [round(result.latency, accuracy_num) for result in results],
         "TTFT": [round(result.ttft, accuracy_num) for result in results],
@@ -262,7 +273,8 @@ def print_result():
         "Input Len": [result.prompt_len for result in results],
         "Output Len": [cal_token(result.generated_text) for result in results],
         "Error": [result.error for result in results],
-        "Rel Deadline": [round(result.rel_deadline, accuracy_num) for result in results],  # 添加 rel_deadline
+        # "Rel Deadline": [round(result.rel_deadline, accuracy_num) for result in results],  # 添加 rel_deadline
+        "Rel Deadline": [round(result.rel_deadline, accuracy_num) if result.rel_deadline is not None else None for result in results],  # 添加判断
         "Priority": [result.priority for result in results]
     }
     
@@ -277,15 +289,80 @@ def print_result():
 
     table = tabulate(df, headers='keys', tablefmt='pretty')
     tqdm.write(table)
-
+    
+    # 计算一下总请求数量，所有的Latency的平均数、TTFT的平均数、Input Len的平均数、Output Len的平均数
+    # 然后作为表格输出
+    total_requests = len(df)
+    avg_latency = df["Latency"].mean()
+    avg_ttft = df["TTFT"].mean()
+    avg_input_len = df["Input Len"].mean()
+    avg_output_len = df["Output Len"].mean()
+    
+    # 创建汇总数据框
+    summary_data = {
+        "Total Requests": [total_requests],
+        "Avg Latency(s)": [round(avg_latency, accuracy_num)],
+        "Avg TTFT(s)": [round(avg_ttft, accuracy_num)],
+        "Avg Input Len": [round(avg_input_len, accuracy_num)],
+        "Avg Output Len": [round(avg_output_len, accuracy_num)]
+    }
+    summary_df = pd.DataFrame(summary_data)
+    summary_table = tabulate(summary_df, headers='keys', tablefmt='pretty')
+    tqdm.write(summary_table)
+    
 # 一次发起多个请求
-async def run_multi_requests(num_concurrent_requests = 10):
-    tasks = [run_single_request(add_para_relddl, add_para_priority) for _ in range(num_concurrent_requests)]
+async def run_multi_requests(num_concurrent_requests = 10, batch_id = 0):
+    tasks = [run_single_request(add_para_relddl, add_para_priority, batch_id) for _ in range(num_concurrent_requests)]
     await tqdm_asyncio.gather(*tasks, desc="Processing requests")
+
+
+# 模拟真实世界的请求
+# 参数是模拟的时长 10s
+async def simulate_real_requests(duration = 120):
+    start_time = time.time()
+    total_requests = 0
+    cur_batchid = 0
+    batchid_launchtime = []
+    while time.time() - start_time < duration:
+        # 模拟一个泊松分布，此次并发的次数
+        parallel_nums = np.random.poisson(lambda_requests)
+        total_requests += parallel_nums
+        
+        
+        # 获取当前开始时间戳
+        timestamp = time.time()
+        # 将时间戳转换为可读的时间字符串
+        readable_starttime = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+
+        await run_multi_requests(parallel_nums, cur_batchid)
+        
+        # 获取当前时间戳
+        timestamp = time.time()
+        # 将时间戳转换为可读的时间字符串
+        readable_endtime = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+        
+        # 记录batchid和发起时间
+        batchid_launchtime.append((cur_batchid, readable_starttime, readable_endtime, parallel_nums))
+        # batchid ++
+        cur_batchid = cur_batchid + 1
+        # sleeptime 也服从泊松分布
+        sleeptime = np.random.poisson(lambda_request_interval)
+        # 即将休眠时间
+        print(f"current batchid: {cur_batchid}, total requests: {total_requests}, Will sleep time: {sleeptime}")
+        time.sleep(sleeptime)
+    
+    print("现在打印所有的batchid和发起时间：")
+    # print(batchid_launchtime)
+    # 将 batchid_launchtime 列表转换为 pandas 数据框
+    df = pd.DataFrame(batchid_launchtime, columns=["Batch ID", "Launch Time", "End Time", "Parallel Req Nums"])
+
+    # 使用 tabulate 库生成漂亮的表格
+    table = tabulate(df, headers='keys', tablefmt='pretty')
+    print(table)
+    
+    print("模拟结束，打印所有的日志结果，相关文件已经保存到Excel目录下")
     print_result()
-
-
-
+    
 # 运行主函数
 if __name__ == "__main__":
-    asyncio.run(run_multi_requests(10))
+    asyncio.run(simulate_real_requests(120))

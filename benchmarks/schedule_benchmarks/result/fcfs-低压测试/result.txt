@@ -1,0 +1,986 @@
+current batchid: 1, total requests: 31, Will sleep time: 3
+current batchid: 2, total requests: 57, Will sleep time: 1
+current batchid: 3, total requests: 89, Will sleep time: 2
+current batchid: 4, total requests: 107, Will sleep time: 6
+current batchid: 5, total requests: 154, Will sleep time: 1
+current batchid: 6, total requests: 181, Will sleep time: 3
+current batchid: 7, total requests: 204, Will sleep time: 3
+current batchid: 8, total requests: 237, Will sleep time: 2
+current batchid: 9, total requests: 274, Will sleep time: 0
+current batchid: 10, total requests: 294, Will sleep time: 4
+current batchid: 11, total requests: 325, Will sleep time: 5
+current batchid: 12, total requests: 357, Will sleep time: 3
+current batchid: 13, total requests: 389, Will sleep time: 6
+current batchid: 14, total requests: 426, Will sleep time: 3
+current batchid: 15, total requests: 449, Will sleep time: 4
+current batchid: 16, total requests: 470, Will sleep time: 4
+current batchid: 17, total requests: 498, Will sleep time: 0
+current batchid: 18, total requests: 536, Will sleep time: 4
+current batchid: 19, total requests: 563, Will sleep time: 4
+current batchid: 20, total requests: 592, Will sleep time: 4
+current batchid: 21, total requests: 620, Will sleep time: 5
+current batchid: 22, total requests: 647, Will sleep time: 7
+current batchid: 23, total requests: 688, Will sleep time: 5
+current batchid: 24, total requests: 725, Will sleep time: 2
+current batchid: 25, total requests: 760, Will sleep time: 5
+current batchid: 26, total requests: 784, Will sleep time: 2
+current batchid: 27, total requests: 809, Will sleep time: 4
+current batchid: 28, total requests: 836, Will sleep time: 3
+current batchid: 29, total requests: 868, Will sleep time: 1
+current batchid: 30, total requests: 911, Will sleep time: 6
+现在打印所有的batchid和发起时间：
++----+----------+---------------------+---------------------+-------------------+
+|    | Batch ID |     Launch Time     |      End Time       | Parallel Req Nums |
++----+----------+---------------------+---------------------+-------------------+
+| 0  |    0     | 2025-01-18 19:41:04 | 2025-01-18 19:41:04 |        31         |
+| 1  |    1     | 2025-01-18 19:41:07 | 2025-01-18 19:41:08 |        26         |
+| 2  |    2     | 2025-01-18 19:41:09 | 2025-01-18 19:41:10 |        32         |
+| 3  |    3     | 2025-01-18 19:41:12 | 2025-01-18 19:41:12 |        18         |
+| 4  |    4     | 2025-01-18 19:41:18 | 2025-01-18 19:41:19 |        47         |
+| 5  |    5     | 2025-01-18 19:41:20 | 2025-01-18 19:41:21 |        27         |
+| 6  |    6     | 2025-01-18 19:41:24 | 2025-01-18 19:41:24 |        23         |
+| 7  |    7     | 2025-01-18 19:41:27 | 2025-01-18 19:41:28 |        33         |
+| 8  |    8     | 2025-01-18 19:41:30 | 2025-01-18 19:41:31 |        37         |
+| 9  |    9     | 2025-01-18 19:41:31 | 2025-01-18 19:41:31 |        20         |
+| 10 |    10    | 2025-01-18 19:41:35 | 2025-01-18 19:41:36 |        31         |
+| 11 |    11    | 2025-01-18 19:41:41 | 2025-01-18 19:41:42 |        32         |
+| 12 |    12    | 2025-01-18 19:41:45 | 2025-01-18 19:41:46 |        32         |
+| 13 |    13    | 2025-01-18 19:41:52 | 2025-01-18 19:41:52 |        37         |
+| 14 |    14    | 2025-01-18 19:41:55 | 2025-01-18 19:41:56 |        23         |
+| 15 |    15    | 2025-01-18 19:42:00 | 2025-01-18 19:42:00 |        21         |
+| 16 |    16    | 2025-01-18 19:42:04 | 2025-01-18 19:42:05 |        28         |
+| 17 |    17    | 2025-01-18 19:42:05 | 2025-01-18 19:42:06 |        38         |
+| 18 |    18    | 2025-01-18 19:42:10 | 2025-01-18 19:42:10 |        27         |
+| 19 |    19    | 2025-01-18 19:42:15 | 2025-01-18 19:42:15 |        29         |
+| 20 |    20    | 2025-01-18 19:42:19 | 2025-01-18 19:42:20 |        28         |
+| 21 |    21    | 2025-01-18 19:42:25 | 2025-01-18 19:42:26 |        27         |
+| 22 |    22    | 2025-01-18 19:42:33 | 2025-01-18 19:42:34 |        41         |
+| 23 |    23    | 2025-01-18 19:42:39 | 2025-01-18 19:42:40 |        37         |
+| 24 |    24    | 2025-01-18 19:42:42 | 2025-01-18 19:42:42 |        35         |
+| 25 |    25    | 2025-01-18 19:42:47 | 2025-01-18 19:42:48 |        24         |
+| 26 |    26    | 2025-01-18 19:42:50 | 2025-01-18 19:42:51 |        25         |
+| 27 |    27    | 2025-01-18 19:42:55 | 2025-01-18 19:42:55 |        27         |
+| 28 |    28    | 2025-01-18 19:42:58 | 2025-01-18 19:42:59 |        32         |
+| 29 |    29    | 2025-01-18 19:43:00 | 2025-01-18 19:43:01 |        43         |
++----+----------+---------------------+---------------------+-------------------+
+模拟结束，打印所有的日志结果，相关文件已经保存到Excel目录下
++-----+----------+-----------------------------------+-----------------------------------+---------+---------+--------+-----------+------------+-------+--------------+----------+
+|     | batch_id |            Promt Text             |          Generated Text           | Success | Latency |  TTFT  | Input Len | Output Len | Error | Rel Deadline | Priority |
++-----+----------+-----------------------------------+-----------------------------------+---------+---------+--------+-----------+------------+-------+--------------+----------+
+|  0  |    0     | It also sets a series of myste... |         to tell it ? "...         |  True   | 0.3698  | 0.3211 |    38     |     10     |       |   124.3264   |          |
+|  1  |    0     | The events of The Web of Fear ... | bombing of the British Parlia...  |  True   | 0.2035  | 0.1472 |    56     |     10     |       |   69.6863    |          |
+|  2  |    0     | The suicide of Nero on 9 June ... | , who was the first empress o...  |  True   | 0.2743  | 0.2088 |    49     |     14     |       |   221.8035   |          |
+|  3  |    0     | Plans to transport a tank went... |   designed for the purpose....    |  True   |  0.219  | 0.1366 |    59     |     15     |       |   188.3876   |          |
+|  4  |    0     | Another issue was that Japanes... |   US Navy's M-16 and M-16A1....   |  True   | 0.2755  | 0.1894 |    45     |     7      |       |   342.6597   |          |
+|  5  |    0     | A few hours after this convers... |               ....                |  True   | 0.4617  | 0.3509 |    60     |     21     |       |   224.0943   |          |
+|  6  |    0     | The image impedance of the hal... | , but on the side presenting ...  |  True   | 0.3681  | 0.2496 |    51     |     22     |       |   60.9646    |          |
+|  7  |    0     | On November 1 , 2005 , the Nia... | . The NY 93 designation was r...  |  True   | 0.3583  | 0.2398 |    57     |     25     |       |   73.6408    |          |
+|  8  |    0     | After two of the class , UB @-... | to be sent to the Austro @-@ ...  |  True   | 0.2903  | 0.1676 |    55     |     20     |       |   223.3764   |          |
+|  9  |    0     | According to Suetonius , Nero ... | , and then fled to the island ... |  True   | 0.2301  | 0.0962 |    58     |     26     |       |   186.521    |          |
+| 10  |    0     | Other memorials followed : the... |               ....                |  True   | 0.4826  | 0.3406 |    40     |     23     |       |   93.8529    |          |
+| 11  |    0     | Hentzi concluded that American... | " " the " ' ' ' ' ' ' ' ' ' '...  |  True   | 0.3301  | 0.1774 |    63     |     37     |       |   253.4634   |          |
+| 12  |    0     | The turbines were designed to ... |           turbines....            |  True   | 0.4366  | 0.2807 |    37     |     28     |       |    89.622    |          |
+| 13  |    0     | By late October of that year ,... |  $ 90 @,@ 000 worth of paper....  |  True   | 0.5441  | 0.3813 |    39     |     30     |       |   57.8097    |          |
+| 14  |    0     | Accordingly , the 1907 Imperia... | battleships , 20 @,@ 321 t , ...  |  True   | 0.3992  | 0.2289 |    37     |     33     |       |   369.056    |          |
+| 15  |    0     | In 1943 a British Court of Inq... |                ...                |  True   | 0.3444  | 0.1573 |    46     |     39     |       |   101.8403   |          |
+| 16  |    0     | UB @-@ 10 was eventually joine... | @-@ 18 , UB @-@ 19 , UB @-@ 2...  |  True   | 0.2631  | 0.0758 |    49     |     27     |       |   305.2415   |          |
+| 17  |    0     | On Jeju Island , Maemi produce... | to hit the island in a decade...  |  True   | 0.4672  | 0.2619 |    45     |     36     |       |   333.6337   |          |
+| 18  |    0     | The primary tasks of the briga... |       the German forces....       |  True   | 0.2922  | 0.0859 |    59     |     39     |       |   267.9117   |          |
+| 19  |    0     | In the Royal Navy , the switch... | ship that was not equipped wi...  |  True   | 0.3226  | 0.1164 |    48     |     46     |       |   67.5152    |          |
+| 20  |    0     | In assessing the battle and it... | the French Revolution ", he s...  |  True   |  0.429  | 0.1989 |    58     |     40     |       |   170.1417   |          |
+| 21  |    0     | A few hours after this convers... |     enemy's supply lines....      |  True   | 0.5461  | 0.3106 |    48     |     56     |       |   372.7247   |          |
+| 22  |    0     | In May 1942 , a small number o... |               ....                |  True   | 0.4622  | 0.2194 |    54     |     62     |       |   128.1807   |          |
+| 23  |    0     | On November 1 , 2005 , the Nia... |             93 )....              |  True   | 0.5768  | 0.3308 |    55     |     53     |       |   169.1947   |          |
+| 24  |    0     | López de Legazpi had the local... | to create a new Republic of t...  |  True   |  0.632  | 0.3609 |    43     |     66     |       |   206.7468   |          |
+| 25  |    0     | At the first ever SmackDown br... |          second time....          |  True   | 0.5331  | 0.2591 |    60     |     50     |       |   76.2648    |          |
+| 26  |    0     | In contrast , a Time magazine ... | is not a man who is not a man...  |  True   | 0.5816  | 0.3006 |    64     |     81     |       |   199.7864   |          |
+| 27  |    0     | The most obvious use of pop mu... |          pop music "...           |  True   | 0.6519  | 0.3711 |    46     |     71     |       |   384.596    |          |
+| 28  |    0     | In total , the schedule allowe... |         -place teams....          |  True   | 0.4262  | 0.1266 |    48     |     71     |       |   283.5892   |          |
+| 29  |    0     | During the year , the Japan Me... |  the International Date Line....  |  True   | 0.5952  | 0.291  |    57     |     72     |       |   234.2462   |          |
+| 30  |    0     | The legislature passed resolve... |            the UK....             |  True   | 0.4189  | 0.1062 |    54     |     82     |       |   317.1273   |          |
+| 31  |    1     | In early September , elements ... |  number of the German cities....  |  True   | 0.0845  | 0.0435 |    59     |     8      |       |   75.0872    |          |
+| 32  |    1     | The lopsided result is due to ... |               ....                |  True   | 0.3157  | 0.247  |    43     |     12     |       |   112.3221   |          |
+| 33  |    1     | Before filming , Mendes and Sp... |               ....                |  True   | 0.1375  | 0.0736 |    52     |     12     |       |   144.3399   |          |
+| 34  |    1     | " El Amor " was motivated by A... | " ; he said , " I am not afra...  |  True   | 0.3155  | 0.2253 |    37     |     22     |       |   386.9359   |          |
+| 35  |    1     | Operation California began in ... | still active as President & C...  |  True   | 0.1841  | 0.0936 |    39     |     20     |       |   129.8329   |          |
+| 36  |    1     | On 1 August , before leaving t... |    the US Central Command....     |  True   | 0.2389  | 0.1448 |    43     |     19     |       |   220.8341   |          |
+| 37  |    1     | Only Colegio de San Juan de Le... | la Universidad de San Juan de...  |  True   | 0.3102  | 0.2051 |    45     |     20     |       |   327.5664   |          |
+| 38  |    1     | Osbert was still alive in 1184... | that time , or if he was dead...  |  True   | 0.3406  | 0.2358 |    59     |     26     |       |   238.5291   |          |
+| 39  |    1     | The primary patterns used are ... |            T5.0 ) ....            |  True   | 0.1893  | 0.0634 |    58     |     19     |       |   307.6884   |          |
+| 40  |    1     | The NK 9th Division had effect... |               ....                |  True   |  0.237  | 0.1042 |    54     |     28     |       |   216.6216   |          |
+| 41  |    1     | That day , the JMA estimated p... |               ....                |  True   | 0.2709  | 0.114  |    49     |     37     |       |   238.5577   |          |
+| 42  |    1     | Aside from losing five guns , ... | the 4th Infantry Regiment ( F...  |  True   | 0.2299  | 0.0534 |    47     |     44     |       |   150.9662   |          |
+| 43  |    1     | San Lorenzo Colossal Head 8 ( ... | 1 @.@ 1.5 metres ( 5 @.@ 4 ft...  |  True   |  0.317  | 0.1341 |    41     |     36     |       |   169.8298   |          |
+| 44  |    1     | " Ambassador Bishop understood... | " and " the embassy is ready t... |  True   |  0.493  | 0.2972 |    49     |     48     |       |   363.6144   |          |
+| 45  |    1     | and the Symbolist source was a... |         a few degrees....         |  True   | 0.3825  | 0.1743 |    48     |     49     |       |   224.584    |          |
+| 46  |    1     | By late October of that year ,... |             allow....             |  True   | 0.4298  | 0.1851 |    50     |     54     |       |   212.4181   |          |
+| 47  |    1     | Soon after returning to Washin... |          aid workers....          |  True   | 0.4531  | 0.1953 |    37     |     59     |       |   158.6661   |          |
+| 48  |    1     | The head was largely buried wh... | . The knife was found in the m... |  True   |  0.481  | 0.2152 |    49     |     77     |       |   74.9048    |          |
+| 49  |    1     | Lesnar added that " [ he 's ] ... | with full @-@ time with full ...  |  True   | 0.5377  | 0.2669 |    47     |     54     |       |   190.8065   |          |
+| 50  |    1     | Mayors Lacson , Villegas , and... | for their role in the city's ...  |  True   |  0.396  | 0.1241 |    45     |     65     |       |   240.7578   |          |
+| 51  |    1     | Following the demonstration of... | which were to be used in the ...  |  True   |  0.37   | 0.0837 |    52     |     70     |       |   106.5179   |          |
+| 52  |    1     | On board was General Władysław... | . pic.twitter.com/qR9Zc3qq7 — ... |  True   | 0.5431  | 0.2498 |    38     |     44     |       |   84.5378    |          |
+| 53  |    1     | Plans to transport a tank went... |   designed for the purpose....    |  True   | 0.4511  | 0.1517 |    59     |     81     |       |   188.3141   |          |
+| 54  |    1     | " Megan Frye of Allmusic opens... | been listening to them for ye...  |  True   | 0.4653  | 0.1637 |    46     |     75     |       |   367.3412   |          |
+| 55  |    1     | After the first clashes of iro... | the same name. The ironclad w...  |  True   | 0.5929  | 0.2871 |    38     |     75     |       |   106.7852   |          |
+| 56  |    1     | In an article titled " Teens a... | 7 , against the #1 ranked Iow...  |  True   | 0.5908  | 0.277  |    60     |     76     |       |   226.235    |          |
+| 57  |    2     | The events of The Web of Fear ... |           bombings....            |  True   | 0.1844  | 0.1355 |    56     |     8      |       |   107.4578   |          |
+| 58  |    2     | Soon after the evacuation requ... |               ....                |  True   | 0.2926  | 0.2142 |    50     |     13     |       |   207.3263   |          |
+| 59  |    2     | His are free translations , wh... |   are not in his collection....   |  True   | 0.1432  | 0.0486 |    51     |     20     |       |   40.3242    |          |
+| 60  |    2     | The Soviet Union was unable to... |       way to Mogadishu....        |  True   | 0.2089  | 0.1102 |    48     |     17     |       |   299.1843   |          |
+| 61  |    2     | Manila 's population density d... | inhabitants per km2 ) , Londo...  |  True   | 0.3803  | 0.2816 |    42     |     19     |       |   201.7817   |          |
+| 62  |    2     | Despite a 34 % gain in weekly ... | -year-old girl from the UK, wh... |  True   | 0.2141  | 0.0948 |    45     |     21     |       |    68.107    |          |
+| 63  |    2     | Tres Zapotes Monument A ( also... |            Zapotes....            |  True   | 0.2637  | 0.1252 |    51     |     26     |       |   210.4148   |          |
+| 64  |    2     | He retained his place in the U... |               ....                |  True   | 0.2001  | 0.059  |    57     |     32     |       |   48.5647    |          |
+| 65  |    2     | The 29th Brigade formed the co... | Luftwaffe B-29s , and the ' B...  |  True   | 0.5028  | 0.3325 |    42     |     29     |       |   291.7703   |          |
+| 66  |    2     | Before filming , Mendes and Sp... |        very good actor....        |  True   | 0.3658  | 0.1863 |    55     |     30     |       |   284.4448   |          |
+| 67  |    2     | Hed PE 's second album , Broke... |  the late 80s and early 90s....   |  True   | 0.4968  | 0.3017 |    54     |     35     |       |   146.7406   |          |
+| 68  |    2     | The Chicago Film Critics Assoc... |               ....                |  True   | 0.4569  | 0.2618 |    53     |     48     |       |   282.2999   |          |
+| 69  |    2     | As information slowly built up... |               ....                |  True   |  0.521  | 0.3223 |    42     |     39     |       |   55.6169    |          |
+| 70  |    2     | The North Korean strategy was ... | off the enemy from the front ...  |  True   | 0.4165  | 0.2111 |    49     |     47     |       |   71.8212    |          |
+| 71  |    2     | David Bowers writes that it wa... | city, and the studio was loca...  |  True   | 0.3787  | 0.1557 |    49     |     48     |       |   129.9387   |          |
+| 72  |    2     | It also sets a series of myste... | of whether or not he is reall...  |  True   | 0.3067  | 0.0792 |    59     |     47     |       |   166.4964   |          |
+| 73  |    2     | Alternatively , Kirby 's Block... | on the Yamanote train line " ...  |  True   | 0.4609  | 0.2042 |    54     |     56     |       |   142.0125   |          |
+| 74  |    2     | These 25 @-@ millimetre ( 0 @.... |              ) ....               |  True   | 0.4955  | 0.2415 |    49     |     53     |       |   146.1827   |          |
+| 75  |    2     | The effect is one that Stan Li... |         infinite ' " ....         |  True   | 0.5966  | 0.3424 |    49     |     63     |       |   229.8156   |          |
+| 76  |    2     | Gibson and Maurice Prendergast... |     of time in the water....      |  True   | 0.5142  | 0.2514 |    39     |     62     |       |   152.5551   |          |
+| 77  |    2     | The main reason for the French... |      built in the 1860s....       |  True   | 0.3347  | 0.069  |    53     |     65     |       |   244.4652   |          |
+| 78  |    2     | The soundtrack features songs ... | 's " " " " " " " " " " " " " "... |  True   | 0.4187  | 0.1455 |    61     |     74     |       |   276.9673   |          |
+| 79  |    2     | After a Falangist attempt agai... |               ....                |  True   | 0.4572  | 0.1761 |    53     |     59     |       |   136.8704   |          |
+| 80  |    2     | Chad sent a delegation of two ... |         the ceremony....          |  True   | 0.6361  | 0.3522 |    51     |     56     |       |   160.5642   |          |
+| 81  |    2     | During Night of Champions , it... |             feud....              |  True   | 0.5977  | 0.3114 |    47     |     61     |       |   283.1251   |          |
+| 82  |    2     | At the first ever SmackDown br... |             Angle....             |  True   | 0.3762  | 0.0899 |    49     |     68     |       |   393.9487   |          |
+| 83  |    2     | Between the Ulm capitulation a... | the Battle of the Somme , and...  |  True   |  0.661  | 0.363  |    42     |     69     |       |   105.1676   |          |
+| 84  |    2     | This period of unhappiness was... | the words of his poems, and t...  |  True   | 0.5137  | 0.1962 |    59     |     79     |       |   336.6224   |          |
+| 85  |    2     | One Direction performed " Kiss... | Tour ( 2015 ) , and the band ...  |  True   | 0.6083  | 0.2916 |    40     |     94     |       |   58.5564    |          |
+| 86  |    2     | Eastern sources , namely Philo... | " "was a man of great courage...  |  True   | 0.4922  | 0.1707 |    40     |     95     |       |   251.6438   |          |
+| 87  |    2     | With the help of executives Gl... | out" the problems with the fi...  |  True   | 0.4437  | 0.1152 |    54     |     74     |       |   224.9556   |          |
+| 88  |    2     | One critic , while acknowledgi... | and that the book was a "hist...  |  True   | 0.5991  | 0.2664 |    43     |     74     |       |   276.1617   |          |
+| 89  |    3     | The military history of Gibral... | of British naval power in the...  |  True   | 0.0989  |  0.06  |    46     |     9      |       |   94.2629    |          |
+| 90  |    3     | The ironclad 's vulnerability ... |          the torpedo....          |  True   | 0.1391  | 0.1003 |    48     |     7      |       |   398.3415   |          |
+| 91  |    3     | Director Saul Metzstein explai... |               ....                |  True   | 0.1693  | 0.1102 |    45     |     14     |       |   194.8543   |          |
+| 92  |    3     | The system was fitted during J... | the Tetrarch , and the Tetrar...  |  True   | 0.2164  | 0.141  |    49     |     17     |       |   168.1606   |          |
+| 93  |    3     | Fueled in large part by Gordon... | the Coaches ' Poll . Butler f...  |  True   | 0.3146  | 0.1514 |    49     |     43     |       |   91.0775    |          |
+| 94  |    3     | The North Korean strategy was ... | a large number of dead and wo...  |  True   | 0.2436  | 0.0803 |    67     |     44     |       |   382.8425   |          |
+| 95  |    3     | The removal of the secondary a... | result of the reduction in th...  |  True   | 0.3034  | 0.1308 |    62     |     47     |       |   316.7994   |          |
+| 96  |    3     | Chad sent a delegation of two ... | flag of the Olympic Committee...  |  True   | 0.2181  | 0.0397 |    48     |     22     |       |   142.9167   |          |
+| 97  |    3     | Simeon – search party leader a... | the 'southern 'southern 'sout...  |  True   | 0.3807  | 0.1818 |    44     |     22     |       |   179.6761   |          |
+| 98  |    3     | The Unionists maintained their... | the Unionists were able to ga...  |  True   | 0.3282  | 0.1209 |    62     |     58     |       |   58.5505    |          |
+| 99  |    3     | A Spaniard working on the Rock... | the early hours of the mornin...  |  True   | 0.4211  | 0.204  |    56     |     54     |       |   82.7544    |          |
+| 100 |    3     | However , the iron @-@ hulled ... | iron was more brittle than st...  |  True   | 0.2967  | 0.0697 |    34     |     73     |       |   186.0817   |          |
+| 101 |    3     | In the century 's first decade... | 's The Poems of a Cheechako ,...  |  True   | 0.3192  | 0.0901 |    56     |     52     |       |   115.2241   |          |
+| 102 |    3     | With the Visayan @-@ born Arse... | , a place where the Philippin...  |  True   | 0.3018  | 0.0498 |    43     |     65     |       |   297.6099   |          |
+| 103 |    3     | Intensity estimates of maximum... | ( 80 miles per hour ( 97 km /...  |  True   | 0.4154  | 0.1614 |    67     |     77     |       |   207.7798   |          |
+| 104 |    3     | He trialled several versions o... | not have the same quality as ...  |  True   | 0.4515  | 0.1887 |    51     |     75     |       |   343.8571   |          |
+| 105 |    3     | On July 19 at Battleground , L... | pinfall , after performing an...  |  True   | 0.4424  | 0.1711 |    52     |     68     |       |   291.3429   |          |
+| 106 |    3     | A number of older residents ca... |           English ....            |  True   | 0.3106  | 0.0298 |    53     |     87     |       |   172.041    |          |
+| 107 |    4     | Accordingly , the 1907 Imperia... | tons ( 18 @,@ 321 t ) each , ...  |  True   | 0.5316  | 0.4501 |    43     |     13     |       |    213.65    |          |
+| 108 |    4     | These included allowing women ... | the matriarchs of the Torah ,...  |  True   | 0.3485  | 0.267  |    53     |     11     |       |   382.7188   |          |
+| 109 |    4     | According to the Encyclopædia ... | other language has ever posse...  |  True   | 0.5982  | 0.5111 |    58     |     12     |       |   396.9739   |          |
+| 110 |    4     | " The Burnhams ' household was... | -round " , but in reality it i... |  True   | 0.2249  | 0.1378 |    48     |     13     |       |   369.5969   |          |
+| 111 |    4     | During his term , Estrada has ... | additional ₱ 5 billion in 201...  |  True   |  0.245  | 0.157  |    46     |     14     |       |   310.3759   |          |
+| 112 |    4     | Along the bypass , NY 93 brief... |            bypass....             |  True   | 0.4918  | 0.3994 |    34     |     13     |       |   69.0506    |          |
+| 113 |    4     | What did concern the reviewer ... | of the former " and the latte...  |  True   | 0.4817  | 0.3657 |    53     |     17     |       |   163.9029   |          |
+| 114 |    4     | In the late nineteenth century... | the work of José Melgar y Ser...  |  True   | 0.4056  | 0.2882 |    40     |     12     |       |   122.284    |          |
+| 115 |    4     | These Melanaus used to live fu... |               ....                |  True   | 0.5737  | 0.4604 |    54     |     16     |       |   376.361    |          |
+| 116 |    4     | Reviewing the posters of sever... |            new . "...             |  True   | 0.3254  | 0.207  |    47     |     17     |       |   198.6613   |          |
+| 117 |    4     | The JTWC estimated peak winds ... | mph ) and maximum gusts of 14...  |  True   | 0.4207  | 0.2784 |    45     |     23     |       |   71.7362    |          |
+| 118 |    4     | Eighth Army had in reserve thr... | Infantry Brigade at Changwon ...  |  True   | 0.4001  | 0.2479 |    64     |     23     |       |   77.7804    |          |
+| 119 |    4     | On 27 June , each squadron con... |          loud bang."...           |  True   |  0.384  | 0.227  |    65     |     21     |       |   167.4808   |          |
+| 120 |    4     | In 1836 , Jean Antoine Siméon ... |               ....                |  True   | 0.6483  | 0.4907 |    54     |     23     |       |   117.1485   |          |
+| 121 |    4     | Currently , the film holds an ... | and emotional depth, this is ...  |  True   | 0.5472  | 0.3354 |    42     |     30     |       |   144.9347   |          |
+| 122 |    4     | The following night on Raw , W... |         his contract....          |  True   | 0.5156  | 0.3085 |    52     |     33     |       |   152.0436   |          |
+| 123 |    4     | The programme of commemorating... |             1939....              |  True   | 0.4493  | 0.2469 |    57     |     32     |       |   194.3522   |          |
+| 124 |    4     | The Olmec heartland lies on th... | 1,000 kilometres ( 890 mi ) n...  |  True   | 0.4535  | 0.2166 |    34     |     36     |       |   201.233    |          |
+| 125 |    4     | He masturbates in the confines... |          of the room"...          |  True   | 0.6238  | 0.3695 |    57     |     45     |       |   326.1226   |          |
+| 126 |    4     | Despite a 34 % gain in weekly ... | % increase in Twitter reactio...  |  True   | 0.4465  | 0.1966 |    55     |     46     |       |   316.7523   |          |
+| 127 |    4     | " Although some have suggested... |           elements....            |  True   | 0.3505  | 0.0967 |    35     |     17     |       |   291.3988   |          |
+| 128 |    4     | " The Burnhams ' household was... | sic] , with a " " " " " " " " ... |  True   | 0.7849  | 0.5311 |    64     |     51     |       |    245.01    |          |
+| 129 |    4     | The primary patterns used are ... | pattern ( CDO ) pattern , cen...  |  True   | 0.6976  | 0.4399 |    45     |     47     |       |   114.388    |          |
+| 130 |    4     | Professor Vincent Hausmann cha... | , and ' ' ' ' ' ' ' ' ' ' ' '...  |  True   | 0.7417  | 0.4714 |    51     |     54     |       |   214.4296   |          |
+| 131 |    4     | Following the demonstration of... |  with the latest technology....   |  True   | 0.3518  | 0.087  |    53     |     47     |       |   129.3316   |          |
+| 132 |    4     | What did concern the reviewer ... |     of the former 's self....     |  True   | 0.6884  | 0.4107 |    53     |     47     |       |   303.3466   |          |
+| 133 |    4     | On 25 February 1994 , the Zrin... | 1 @.@ hrvatski gardijski zdru...  |  True   | 0.4268  | 0.1472 |    65     |     36     |       |   66.9355    |          |
+| 134 |    4     | The men actually had the goal ... |     throne could be born....      |  True   | 0.3934  | 0.1071 |    43     |     53     |       |   171.9882   |          |
+| 135 |    4     | Financed , trained and equippe... |        over 100 people....        |  True   | 0.6656  | 0.3689 |    32     |     47     |       |   365.7921   |          |
+| 136 |    4     | These Melanaus used to live fu... |              sea....              |  True   | 0.7706  | 0.4704 |    58     |     45     |       |   394.2902   |          |
+| 137 |    4     | Neela Debnath of The Independe... |    it is to be successful....     |  True   |  0.71   | 0.4094 |    50     |     48     |       |   234.4464   |          |
+| 138 |    4     | Dickins 's 1866 Hyak nin is 's... | , the first English @-@ centu...  |  True   | 0.5841  | 0.2682 |    51     |     53     |       |   262.3651   |          |
+| 139 |    4     | The fuel storage of the ships ... | 1.5 km/h ( 1.5 km/h ) per hou...  |  True   | 0.4742  | 0.1673 |    52     |     48     |       |   95.7092    |          |
+| 140 |    4     | In a February 2012 interview ,... | " most tawdry " song he had r...  |  True   |  0.386  | 0.0668 |    44     |     63     |       |   248.9053   |          |
+| 141 |    4     | Although throughout the 1860s ... |           ' system....            |  True   | 0.5594  | 0.2367 |    49     |     69     |       |   77.1659    |          |
+| 142 |    4     | David Bowers writes that it wa... | in the studio was due to the ...  |  True   | 0.4427  | 0.1171 |    54     |     58     |       |   289.4573   |          |
+| 143 |    4     | In May 1942 , a small number o... |               ....                |  True   | 0.5114  | 0.1774 |    59     |     67     |       |   81.8141    |          |
+| 144 |    4     | If nothing else the experience... | confirmed the emergence of th...  |  True   | 0.6417  | 0.2984 |    61     |     68     |       |   94.9751    |          |
+| 145 |    4     | The members are : the High Com... | United Kingdom John Burt , th...  |  True   | 0.8436  | 0.5014 |    53     |     74     |       |   277.7804   |          |
+| 146 |    4     | Another contemporary , Gilbert... | from taking part in the trial...  |  True   | 0.5324  | 0.1868 |    47     |     64     |       |   141.1976   |          |
+| 147 |    4     | Changed by Ricky 's " attracti... | more " " " " " " " " " " " " ...  |  True   |  0.692  | 0.3297 |    52     |     83     |       |   77.2074    |          |
+| 148 |    4     | In a February 2012 interview ,... | world " but rather " the song...  |  True   |  0.502  | 0.1275 |    51     |     91     |       |   68.3512    |          |
+| 149 |    4     | Ball 's inspiration for the ch... | seen wearing matching clothes...  |  True   | 0.7085  | 0.3196 |    42     |     84     |       |   211.3482   |          |
+| 150 |    4     | The equivalent strengths of th... | in ( ( ( ( ( ( ( ( ( ( ( ( ( ...  |  True   | 0.8146  | 0.4299 |    56     |     95     |       |   100.4293   |          |
+| 151 |    4     | From here , the route crosses ... |     of Lockport Junction....      |  True   | 0.9061  | 0.5213 |    42     |     73     |       |   93.6019    |          |
+| 152 |    4     | The following year , Pound and... |               ....                |  True   | 0.7338  | 0.3395 |    41     |     77     |       |   336.721    |          |
+| 153 |    4     | Neela Debnath of The Independe... | up to its reputation as a " D...  |  True   | 0.4681  | 0.0763 |    54     |     98     |       |   250.0282   |          |
+| 154 |    5     | She finished the race in 12 @.... | ( 12 @.@ 57 seconds ) in the ...  |  True   | 0.2856  | 0.1794 |    39     |     22     |       |   398.0848   |          |
+| 155 |    5     | Popular tourist destinations i... | de la Ciencia , Plaza de la C...  |  True   | 0.4014  | 0.291  |    44     |     20     |       |    59.047    |          |
+| 156 |    5     | The French line was eventually... | attack from the French front ...  |  True   | 0.3379  | 0.2201 |    47     |     26     |       |   178.815    |          |
+| 157 |    5     | The primary tasks of the briga... |   the area for the brigade....    |  True   | 0.2342  | 0.1086 |    51     |     25     |       |   217.5384   |          |
+| 158 |    5     | Mayors Lacson , Villegas , and... |           the city....            |  True   | 0.3463  | 0.2099 |    56     |     24     |       |   102.6502   |          |
+| 159 |    5     | However , when the UN forces ,... |               ....                |  True   | 0.2887  | 0.1487 |    56     |     30     |       |   208.5658   |          |
+| 160 |    5     | By the early 1990s serious div... | and the " ' ' ' ' ' ' ' ' ' '...  |  True   | 0.4048  | 0.2301 |    48     |     43     |       |   43.8873    |          |
+| 161 |    5     | In one shot during Lester 's e... | was not affected by the rain ...  |  True   | 0.4685  | 0.301  |    60     |     39     |       |   304.9021   |          |
+| 162 |    5     | Lim was sued by councilor Denn... | in the history of the Philipp...  |  True   | 0.3364  | 0.1593 |    45     |     35     |       |   283.0815   |          |
+| 163 |    5     | Early positive comments came f... |      on the poet's style....      |  True   | 0.3499  | 0.1736 |    55     |     39     |       |   331.7168   |          |
+| 164 |    5     | The primary tasks of the briga... | assist the brigade in the are...  |  True   | 0.3793  | 0.1939 |    50     |     41     |       |   255.0386   |          |
+| 165 |    5     | In contrast , a Time magazine ... | 's use of language as a weapon... |  True   | 0.2441  | 0.0525 |    55     |     53     |       |   322.8741   |          |
+| 166 |    5     | According to Suetonius ; Nero ... | Emperor, and was not yet in h...  |  True   | 0.3345  | 0.1387 |    47     |     43     |       |   269.7494   |          |
+| 167 |    5     | Beginning at 09 : 30 and conti... | supplies to the North Koreans...  |  True   | 0.2916  | 0.0831 |    47     |     59     |       |   144.7687   |          |
+| 168 |    5     | Hentzi concluded that American... |             time....              |  True   | 0.3202  | 0.1032 |    62     |     43     |       |   129.8335   |          |
+| 169 |    5     | Two CH @-@ 53E Super Stallions... | , 5: 20 , 5: 20 , 5: 20 , 5: ...  |  True   | 0.3403  | 0.1233 |    51     |     47     |       |   310.4043   |          |
+| 170 |    5     | In contrast , a Time magazine ... | a time when the world will be...  |  True   | 0.4571  | 0.2346 |    60     |     51     |       |   269.5542   |          |
+| 171 |    5     | These included allowing women ... | and the Torah , and the Torah...  |  True   | 0.4318  | 0.1998 |    49     |     66     |       |   187.7626   |          |
+| 172 |    5     | A Spaniard working on the Rock... |             1943....              |  True   | 0.2703  | 0.0427 |    58     |     52     |       |   169.8614   |          |
+| 173 |    5     | The assault forces would compr... |        artillery units....        |  True   | 0.5156  | 0.2753 |    51     |     54     |       |   139.3353   |          |
+| 174 |    5     | Major destinations include the... |             Park ....             |  True   | 0.5377  | 0.2855 |    40     |     51     |       |   225.4376   |          |
+| 175 |    5     | The city also contains the Man... | ; the National Museum of Art ,... |  True   | 0.3173  | 0.0627 |    61     |     62     |       |   113.2296   |          |
+| 176 |    5     | Tropical cyclones with maximum... |           difficult....           |  True   | 0.3568  | 0.093  |    50     |     67     |       |    137.73    |          |
+| 177 |    5     | In assessing the battle and it... |      his own country . "...       |  True   | 0.4085  | 0.133  |    58     |     75     |       |   118.4426   |          |
+| 178 |    5     | Although there were tensions b... |             1968....              |  True   | 0.5331  | 0.251  |    52     |     69     |       |   71.4742    |          |
+| 179 |    5     | The city is a major center for... |             city....              |  True   | 0.5539  | 0.2655 |    48     |     82     |       |   88.3463    |          |
+| 180 |    5     | Plans to transport a tank went... | not be able to carry the tank...  |  True   | 0.3674  | 0.073  |    55     |     86     |       |   172.7235   |          |
+| 181 |    6     | Even though remnants of the NK... |      was not successful....       |  True   | 0.2255  | 0.1783 |    44     |     10     |       |   261.5746   |          |
+| 182 |    6     | Currently , the film holds an ... |      summer/early fall"....       |  True   |  0.176  | 0.0986 |    55     |     15     |       |   142.2046   |          |
+| 183 |    6     | Early positive comments came f... | them by the Chinese Communist...  |  True   | 0.1633  | 0.0787 |    57     |     18     |       |   314.1365   |          |
+| 184 |    6     | Known as the U @-@ 10 or the O... |      the coast of Italy....       |  True   | 0.3158  | 0.2206 |    36     |     17     |       |   72.2994    |          |
+| 185 |    6     | Amos ' team 's goalkeeper was ... | pitch to save it , and then h...  |  True   | 0.2286  | 0.1188 |    55     |     30     |       |   177.1434   |          |
+| 186 |    6     | By late October of that year ,... |      000 worth of paper....       |  True   | 0.3715  | 0.2513 |    42     |     27     |       |   382.8492   |          |
+| 187 |    6     | " Moffat compared the withdraw... | . Moffat also compared the Doc... |  True   | 0.3684  | 0.2307 |    37     |     32     |       |   143.9059   |          |
+| 188 |    6     | David Young describes this as ... |               ....                |  True   | 0.2334  | 0.0889 |    44     |     27     |       |   312.3125   |          |
+| 189 |    6     | A Spaniard working on the Rock... |         the Spaniard....          |  True   | 0.2482  | 0.0682 |    44     |     35     |       |   263.8532   |          |
+| 190 |    6     | Manila 's population density d... | Shanghai ( 16 @,@ 447 inhabit...  |  True   | 0.4209  | 0.2407 |    56     |     36     |       |   363.066    |          |
+| 191 |    6     | Vickers @-@ Armstrong installe... |           -man crew....           |  True   | 0.4595  | 0.2553 |    49     |     35     |       |   367.2638   |          |
+| 192 |    6     | Organized by Rabbis for Human ... | and " the use of torture and ...  |  True   |  0.409  | 0.1991 |    42     |     53     |       |   58.3527    |          |
+| 193 |    6     | By late October of that year ,... | to buy $ 100 @,@ 000 , and th...  |  True   | 0.2668  | 0.0481 |    34     |     52     |       |   325.3718   |          |
+| 194 |    6     | In 2010 , Arjona wanted to cha... |           the music....           |  True   | 0.2622  | 0.038  |    50     |     47     |       |   374.3219   |          |
+| 195 |    6     | The route begins at an interse... |      the city of Buffalo....      |  True   | 0.3332  | 0.1085 |    47     |     57     |       |   52.9354    |          |
+| 196 |    6     | At any rate , after Claudius '... | been a good man ; and that he...  |  True   | 0.3802  | 0.1286 |    45     |     76     |       |   181.4441   |          |
+| 197 |    6     | On the southern @-@ most flank... |               ....                |  True   | 0.4286  | 0.1587 |    52     |     67     |       |   173.2009   |          |
+| 198 |    6     | The Chicago Film Critics Assoc... | films as the best of 1999, th...  |  True   | 0.3414  | 0.0585 |    43     |     84     |       |   204.6033   |          |
+| 199 |    6     | The story would also show how ... | ' I'm not sure if I can do th...  |  True   | 0.5061  | 0.2103 |    56     |     84     |       |   340.303    |          |
+| 200 |    6     | Peppiatt notes that the exhibi... | way that was not only more in...  |  True   |  0.467  | 0.1685 |    56     |     94     |       |   397.4525   |          |
+| 201 |    6     | Clearly linking Objectivism 's... | the lines of the ideas of the...  |  True   | 0.4873  | 0.189  |    52     |     94     |       |   287.7334   |          |
+| 202 |    6     | During this time , palaeontolo... | as being the pits of the skul...  |  True   | 0.4519  | 0.1488 |    59     |     82     |       |   81.0429    |          |
+| 203 |    6     | The squadron 's strength was f... |       serious injuries ....       |  True   |  0.444  | 0.1386 |    54     |     60     |       |   53.7972    |          |
+| 204 |    7     | The translators have had to co... | translation of the first two ...  |  True   | 0.1286  | 0.0561 |    50     |     17     |       |   175.9701   |          |
+| 205 |    7     | Manila then became famous duri... |        the Philippines....        |  True   | 0.2243  | 0.1465 |    50     |     9      |       |   332.9612   |          |
+| 206 |    7     | Other museums in the city are ... | Angels , the National Museum ...  |  True   | 0.4251  | 0.3386 |    57     |     20     |       |   156.0831   |          |
+| 207 |    7     | The main reason for the French... |     of the available iron....     |  True   | 0.3009  | 0.1971 |    48     |     20     |       |   108.1697   |          |
+| 208 |    7     | In one of the earliest phyloge... | the parasphenoid , the parasp...  |  True   | 0.3438  | 0.228  |    54     |     15     |       |   201.7965   |          |
+| 209 |    7     | López de Legazpi had the local... | , and the Japanese would be f...  |  True   | 0.4485  |  0.32  |    57     |     28     |       |   178.0222   |          |
+| 210 |    7     | Problems were also found with ... |            remove....             |  True   | 0.2878  | 0.1673 |    49     |     20     |       |   300.8861   |          |
+| 211 |    7     | He finished his amateur career... |               1....               |  True   | 0.3664  | 0.2378 |    50     |     13     |       |   320.2498   |          |
+| 212 |    7     | The helicopters arrived in Mog... |         past few days....         |  True   | 0.2292  | 0.0971 |    49     |     22     |       |   184.7696   |          |
+| 213 |    7     | Then , the first shell guns fi... |        the Royal Navy....         |  True   | 0.2178  | 0.0661 |    48     |     29     |       |   113.4913   |          |
+| 214 |    7     | Several agencies issue Dvorak ... |           ( NMCOC )....           |  True   | 0.3198  | 0.1571 |    52     |     29     |       |   99.1607    |          |
+| 215 |    7     | The Soviet Union was unable to... |            airport....            |  True   | 0.5298  | 0.3512 |    52     |     36     |       |   230.3487   |          |
+| 216 |    7     | Razon Sports Center and the Un... | Association of the Philippine...  |  True   | 0.4885  | 0.3182 |    42     |     31     |       |   65.4488    |          |
+| 217 |    7     | " Weevils Wobble But They Don ... | and " The Last Man on Earth "...  |  True   | 0.5538  | 0.359  |    54     |     35     |       |   299.9431   |          |
+| 218 |    7     | Throughout the course of the d... |   ( hPa ; 29 @.@ 09 inHg ) ....   |  True   |  0.523  | 0.3406 |    44     |     31     |       |   351.6041   |          |
+| 219 |    7     | Taylor wrote : " Broke may hav... | than any other album in the g...  |  True   | 0.3752  | 0.1875 |    43     |     38     |       |   202.4934   |          |
+| 220 |    7     | Bintulu / biːnˈtuːluː / ( Chin... | the island of Borneo. It is l...  |  True   | 0.5576  | 0.3614 |    42     |     32     |       |   322.2424   |          |
+| 221 |    7     | " The Snowmen " aired on BBC O... |            the UK....             |  True   | 0.5023  | 0.2995 |    43     |     33     |       |   226.5121   |          |
+| 222 |    7     | The events of August 1969 in D... |             IRA ....              |  True   | 0.4491  | 0.248  |    67     |     47     |       |   197.6548   |          |
+| 223 |    7     | Other museums in the city are ... | Museum of Philippine History ...  |  True   | 0.3816  | 0.1774 |    50     |     51     |       |   309.7158   |          |
+| 224 |    7     | The Philippine Capitol was to ... | and a square , with a central...  |  True   | 0.4723  | 0.2678 |    42     |     51     |       |   46.1067    |          |
+| 225 |    7     | This period of inactivity ende... | ) and a maximum sustained win...  |  True   | 0.5259  | 0.2797 |    48     |     51     |       |   138.8018   |          |
+| 226 |    7     | On 12 January 2009 , at least ... |  of the Spanish Inquisition....   |  True   |  0.357  | 0.1069 |    41     |     61     |       |   101.0604   |          |
+| 227 |    7     | The perimeter position taken b... | point, which is the base of t...  |  True   | 0.4605  | 0.2074 |    53     |     58     |       |   297.7967   |          |
+| 228 |    7     | In storm information below , w... | to designate maximum sustaine...  |  True   | 0.3544  | 0.0869 |    51     |     61     |       |   378.7285   |          |
+| 229 |    7     | It is too indistinctly drawn t... |             work....              |  True   | 0.5258  | 0.258  |    50     |     61     |       |   304.5861   |          |
+| 230 |    7     | Although there were tensions b... |         the same time....         |  True   | 0.4151  | 0.1369 |    46     |     64     |       |   186.8804   |          |
+| 231 |    7     | In assessing the battle and it... |   the French Revolution . "...    |  True   | 0.5729  | 0.2696 |    58     |     69     |       |   83.9501    |          |
+| 232 |    7     | " The Burnhams ' household was... | a " perfect all @-@ American ...  |  True   | 0.3758  | 0.0765 |    58     |     67     |       |   161.2829   |          |
+| 233 |    7     | According to the Encyclopædia ... |          can match."...           |  True   | 0.5996  | 0.2896 |    59     |     72     |       |   366.6004   |          |
+| 234 |    7     | The guns of the pre @-@ Dreadn... |          more power....           |  True   | 0.5285  | 0.2174 |    49     |     69     |       |   264.5446   |          |
+| 235 |    7     | If nothing else the experience... | , and the fact that the ironc...  |  True   | 0.4485  | 0.1269 |    47     |     89     |       |   221.9973   |          |
+| 236 |    7     | In March 1915 , with the suppo... |               ....                |  True   | 0.4483  | 0.1165 |    43     |     77     |       |   287.2125   |          |
+| 237 |    8     | The Type UB I boats of the Fla... |         18th century....          |  True   |  0.425  | 0.3751 |    47     |     5      |       |   50.4668    |          |
+| 238 |    8     | Spacey was Mendes ' first choi... |          ' approval....           |  True   | 0.1213  | 0.0578 |    46     |     10     |       |   181.7369   |          |
+| 239 |    8     | The ships had a successful des... | they were also more expensive...  |  True   | 0.2468  | 0.1782 |    36     |     12     |       |   235.4769   |          |
+| 240 |    8     | According to Suetonius ; Nero ... | been 17 years old , and there...  |  True   | 0.3042  | 0.1987 |    59     |     21     |       |   198.6617   |          |
+| 241 |    8     | This period of inactivity ende... | ) and a maximum sustained wind... |  True   |  0.363  | 0.2433 |    48     |     21     |       |   63.2468    |          |
+| 242 |    8     | But when the search party lose... |  will be the first to know ?...   |  True   |  0.361  | 0.2288 |    53     |     26     |       |   365.0163   |          |
+| 243 |    8     | Kershaw finished the 2011 seas... |         World Series....          |  True   | 0.4645  | 0.302  |    55     |     22     |       |   247.9022   |          |
+| 244 |    8     | He threw his first career comp... |               ....                |  True   | 0.2821  | 0.1282 |    43     |     27     |       |   87.5241    |          |
+| 245 |    8     | The events of August 1969 in D... |       republican party....        |  True   | 0.5265  |  0.34  |    44     |     33     |       |   320.6864   |          |
+| 246 |    8     | The equivalent strengths of th... | in ( ( ( ( ( ( ( ( ( ( ( ( ( ...  |  True   | 0.3291  | 0.1581 |    56     |     38     |       |   232.9967   |          |
+| 247 |    8     | At the first ever SmackDown br... |               ....                |  True   | 0.3517  | 0.1686 |    58     |     32     |       |   373.778    |          |
+| 248 |    8     | On September 4 , Haynes change... |               ....                |  True   | 0.5659  | 0.3651 |    48     |     34     |       |   111.4448   |          |
+| 249 |    8     | These 25 @-@ millimetre ( 0 @.... |               ....                |  True   | 0.5568  | 0.3325 |    50     |     35     |       |   303.0034   |          |
+| 250 |    8     | The Unionists maintained their... | elections , the Unionists had...  |  True   |  0.371  | 0.1482 |    60     |     39     |       |   329.025    |          |
+| 251 |    8     | This period of inactivity ende... |           100 km/h....            |  True   | 0.3149  | 0.0878 |    41     |     39     |       |   137.1317   |          |
+| 252 |    8     | Unusually , the storm hit Flor... |           proximity....           |  True   |  0.57   | 0.3225 |    45     |     32     |       |   267.0037   |          |
+| 253 |    8     | After two of the class , UB @-... | to join the German Navy , the...  |  True   | 0.3288  | 0.0982 |    53     |     41     |       |   240.691    |          |
+| 254 |    8     | Peppiatt notes that the exhibi... | as a person who is not afraid ... |  True   | 0.4539  | 0.209  |    54     |     52     |       |   287.0953   |          |
+| 255 |    8     | Razon Sports Center and the Un... |        Sports Complex....         |  True   | 0.4745  | 0.2135 |    48     |     45     |       |   94.7328    |          |
+| 256 |    8     | In an article in La France , 1... | out that the Imagists were de...  |  True   | 0.5392  | 0.252  |    50     |     54     |       |   92.0803    |          |
+| 257 |    8     | He finished the race in 11 @.@... | @.@ 86 seconds ) and the Unit...  |  True   | 0.3448  | 0.068  |    52     |     51     |       |   199.9755   |          |
+| 258 |    8     | The events of August 1969 in D... |         the movement....          |  True   | 0.6684  | 0.3742 |    58     |     61     |       |   361.274    |          |
+| 259 |    8     | Intensity estimates of maximum... | 8 @.@ 0 km / h ) is not yet k...  |  True   | 0.4719  | 0.1886 |    54     |     59     |       |   182.6667   |          |
+| 260 |    8     | Tres Zapotes Monument A ( also... | m) long, and 1 kilometre ( 0 ...  |  True   | 0.7018  | 0.4064 |    40     |     52     |       |   261.3388   |          |
+| 261 |    8     | During this time , palaeontolo... | of the arches ; and a large, ...  |  True   | 0.3679  | 0.0778 |    45     |     56     |       |   127.6171   |          |
+| 262 |    8     | Tondo district was maintained ... | kings " ) ; and a kanganganga...  |  True   | 0.7102  | 0.3963 |    45     |     44     |       |   202.9393   |          |
+| 263 |    8     | On July 4 , Lesnar made his fi... |             Woods....             |  True   | 0.4387  | 0.1184 |    55     |     64     |       |   373.8175   |          |
+| 264 |    8     | The two Valentines advanced fi... |         was carrying....          |  True   | 0.6557  | 0.3124 |    48     |     79     |       |   273.2037   |          |
+| 265 |    8     | The ships had a successful des... |  a speed of up to 100 knots....   |  True   | 0.6382  | 0.2921 |    52     |     74     |       |   306.8437   |          |
+| 266 |    8     | During his term , Estrada has ... | on the construction of the ne...  |  True   |  0.475  | 0.1384 |    45     |     73     |       |   351.9796   |          |
+| 267 |    8     | On November 1 , 2005 , the Nia... |   to the County of Niagara....    |  True   | 0.4523  | 0.108  |    50     |     71     |       |   313.7177   |          |
+| 268 |    8     | Eastern sources , namely Philo... | " in his hands " and that he ...  |  True   |  0.615  | 0.2531 |    44     |     94     |       |   108.4262   |          |
+| 269 |    8     | He was struck by the book 's i... | they " are " " " " " " " " " ...  |  True   | 0.6502  | 0.2889 |    63     |     96     |       |   352.1237   |          |
+| 270 |    8     | He was struck by the book 's i... | with its " " " " " " " " " " ...  |  True   | 0.6404  | 0.2737 |    49     |     96     |       |   240.3392   |          |
+| 271 |    8     | The obvious unit for conversio... |               ....                |  True   | 0.7836  | 0.4169 |    53     |     81     |       |   336.0137   |          |
+| 272 |    8     | The interest in Japanese verse... | Sullivan's 'The Lion King' in...  |  True   | 0.6644  | 0.2821 |    56     |     76     |       |   323.5404   |          |
+| 273 |    8     | Spacey and Bening worked to cr... |    " and " not a good one"....    |  True   | 0.6042  | 0.2387 |    47     |     70     |       |   186.2423   |          |
+| 274 |    9     | The lyrics , which speak of " ... | , the timid , the timid , the...  |  True   | 0.1804  | 0.137  |    49     |     14     |       |   399.4293   |          |
+| 275 |    9     | The suicide of Nero on 9 June ... |              68....               |  True   | 0.1937  | 0.1267 |    52     |     16     |       |   56.7055    |          |
+| 276 |    9     | The obvious unit for conversio... |             unit....              |  True   | 0.2211  | 0.1064 |    48     |     29     |       |   43.6563    |          |
+| 277 |    9     | The North Korean strategy was ... | to take advantage of the situ...  |  True   | 0.3654  | 0.2239 |    45     |     39     |       |   394.4763   |          |
+| 278 |    9     | López de Legazpi had the local... | together to form the Republic...  |  True   | 0.3816  | 0.2087 |    42     |     48     |       |   165.3407   |          |
+| 279 |    9     | Matsuo Bashō , the greatest ha... |    poems in the same style....    |  True   | 0.3725  | 0.173  |    48     |     45     |       |   188.7313   |          |
+| 280 |    9     | As the North Korean attack dev... |       south of the city....       |  True   | 0.3834  | 0.1935 |    47     |     47     |       |   351.2213   |          |
+| 281 |    9     | At this time , a courier arriv... |              him....              |  True   | 0.2977  | 0.0962 |    42     |     59     |       |   149.1037   |          |
+| 282 |    9     | He led the National League in ... |          , and more....           |  True   | 0.3728  | 0.1523 |    38     |     59     |       |   185.8374   |          |
+| 283 |    9     | Besides , Peru was able to dep... | of iron production in the Ame...  |  True   | 0.3346  | 0.1163 |    60     |     62     |       |   160.6475   |          |
+| 284 |    9     | Although throughout the 1860s ... | is, a ' two-class system of n...  |  True   | 0.2925  | 0.0665 |    54     |     63     |       |   248.5589   |          |
+| 285 |    9     | San Lorenzo Colossal Head 8 ( ... |             tall....              |  True   | 0.2676  | 0.0365 |    51     |     56     |       |   109.7848   |          |
+| 286 |    9     | " When talking about the speci... | are really excited about this...  |  True   | 0.2876  | 0.0562 |    47     |     76     |       |   86.2569    |          |
+| 287 |    9     | Her career received a signific... |        art of painting....        |  True   | 0.3199  | 0.0762 |    49     |     66     |       |   344.7631   |          |
+| 288 |    9     | Both ships comfortably exceede... | ) from 5,@ 498 shp ( ) from 6...  |  True   | 0.3905  | 0.1467 |    49     |     49     |       |   113.1249   |          |
+| 289 |    9     | Matsuo Bashō , the greatest ha... |      of his other works....       |  True   | 0.3299  | 0.0861 |    46     |     60     |       |   375.4574   |          |
+| 290 |    9     | Plans have been laid out to re... | well as the historic building...  |  True   |  0.439  | 0.1624 |    52     |     78     |       |   305.7358   |          |
+| 291 |    9     | The interest in Japanese verse... |           the like....            |  True   | 0.3181  | 0.0462 |    51     |     76     |       |   117.6831   |          |
+| 292 |    9     | Grant had previously played th... |               ....                |  True   | 0.4926  | 0.2188 |    59     |     80     |       |   345.5913   |          |
+| 293 |    9     | Head I ( actually begun in the... | not clear if they are the sam...  |  True   | 0.4629  | 0.1724 |    38     |     80     |       |   148.2307   |          |
+| 294 |    10    | At this time , a courier arriv... |               ....                |  True   | 0.2063  | 0.1626 |    49     |     9      |       |   260.3132   |          |
+| 295 |    10    | Shot by November 2012 , the mu... | , as " a lot of hard work " b...  |  True   | 0.3758  | 0.316  |    50     |     13     |       |   135.5061   |          |
+| 296 |    10    | Eastern sources , namely Philo... | with a spirit of humility and...  |  True   | 0.1286  | 0.0719 |    50     |     11     |       |   318.1416   |          |
+| 297 |    10    | The legislature passed resolve... | ambassador to the United Stat...  |  True   | 0.1488  | 0.0919 |    47     |     11     |       |   391.1256   |          |
+| 298 |    10    | He said he had started the 1st... |               ....                |  True   | 0.2991  | 0.2422 |    54     |     10     |       |   115.464    |          |
+| 299 |    10    | Chūgan 's student Gidō Shūshin... | want to learn the poetry of D...  |  True   | 0.1119  | 0.0511 |    70     |     15     |       |   339.3793   |          |
+| 300 |    10    | Stevens remains in close touch... |               ....                |  True   | 0.1505  | 0.0819 |    54     |     14     |       |   62.0155    |          |
+| 301 |    10    | The building used " energy eff... | ) , and , in accord with Jewi...  |  True   |  0.288  | 0.1919 |    58     |     24     |       |   59.3771    |          |
+| 302 |    10    | The lyrical content regards th... | , yeah , yeah , yeah , yeah ,...  |  True   | 0.4554  | 0.2955 |    52     |     39     |       |   110.0298   |          |
+| 303 |    10    | In the First Battle of Naktong... | the North Korean army capture...  |  True   | 0.3173  | 0.1425 |    40     |     38     |       |   265.2652   |          |
+| 304 |    10    | The volunteers — two doctors ,... |               ....                |  True   | 0.4303  | 0.2444 |    44     |     38     |       |   260.5705   |          |
+| 305 |    10    | Upon moving into the South Chi... |            cyclone....            |  True   | 0.3609  | 0.1823 |    47     |     28     |       |   202.2187   |          |
+| 306 |    10    | This new editorial policy was ... | . We have chosen to use the sa... |  True   | 0.3144  | 0.1323 |    37     |     44     |       |   265.6804   |          |
+| 307 |    10    | Kershaw finished the 2011 seas... |        Koufax in 2000....         |  True   | 0.4572  | 0.2646 |    49     |     35     |       |   209.3685   |          |
+| 308 |    10    | The Strait would be effectivel... |         Persian Gulf....          |  True   | 0.4077  | 0.2222 |    45     |     43     |       |   149.8875   |          |
+| 309 |    10    | A number of older residents ca... | English' , 'Spanish' , or 'Spa... |  True   | 0.3508  | 0.1527 |    47     |     35     |       |   214.9051   |          |
+| 310 |    10    | As of February 18 , the most s... |              ) ....               |  True   | 0.5312  | 0.306  |    54     |     49     |       |   59.7265    |          |
+| 311 |    10    | Speculation about a return to ... |               ....                |  True   | 0.4006  | 0.1722 |    58     |     53     |       |   99.6401    |          |
+| 312 |    10    | Hed PE 's second album , Broke... | , and The Clash was influence...  |  True   | 0.3431  | 0.1124 |    56     |     36     |       |   73.4176    |          |
+| 313 |    10    | Near the end of the month two ... |               ....                |  True   | 0.5187  | 0.2748 |    42     |     46     |       |   219.8298   |          |
+| 314 |    10    | Head VI drew a mixed reaction ... | to be known as the 'Bacon of ...  |  True   | 0.5931  | 0.3534 |    44     |     51     |       |   262.3195   |          |
+| 315 |    10    | On the night of 10 – 11 Novemb... |            strait....             |  True   | 0.3532  | 0.1021 |    50     |     46     |       |   184.9809   |          |
+| 316 |    10    | He was willing to officiate at... | not to be a Jew" , and "not to... |  True   |  0.596  | 0.3149 |    38     |     59     |       |   332.5828   |          |
+| 317 |    10    | Well @-@ known poets of the Ed... |          of the time....          |  True   | 0.6144  | 0.3249 |    41     |     59     |       |   100.7108   |          |
+| 318 |    10    | A supplemental chapter was add... | the Imperial War Graves Commi...  |  True   | 0.3352  | 0.0617 |    46     |     71     |       |   94.4878    |          |
+| 319 |    10    | The medical officer of the NK ... |           fighting....            |  True   | 0.4785  | 0.2018 |    59     |     61     |       |   52.9937    |          |
+| 320 |    10    | In the 20th century , he was t... | ist , as a poet , as a philoso... |  True   |  0.494  | 0.2125 |    54     |     80     |       |   397.8683   |          |
+| 321 |    10    | San Lorenzo Colossal Head 8 ( ... |       .5 kg ( 18.5 lbs)...        |  True   |  0.519  | 0.232  |    55     |     61     |       |   186.5863   |          |
+| 322 |    10    | At the first ever SmackDown br... |            the mat....            |  True   | 0.5584  | 0.2618 |    55     |     76     |       |   101.0882   |          |
+| 323 |    10    | Writing in Time magazine , Ott... |            of " " ....            |  True   | 0.5978  | 0.2854 |    45     |     67     |       |   309.6226   |          |
+| 324 |    10    | Designed with the assistance o... | most beautiful and unique bui...  |  True   | 0.4273  | 0.1223 |    50     |     74     |       |   238.3244   |          |
+| 325 |    11    | On the February 24 , 2014 epis... | , he was asked to leave the ri... |  True   | 0.2832  | 0.2432 |    41     |     8      |       |   296.1591   |          |
+| 326 |    11    | By the early 1990s serious div... |     and the " " " " " " " " "     |  True   | 0.1971  | 0.1527 |    41     |     11     |       |   360.6544   |          |
+| 327 |    11    | The tanks followed the road le... | was able to escape , and the ...  |  True   |  0.342  | 0.293  |    51     |     12     |       |   156.3539   |          |
+| 328 |    11    | On 25 February 1994 , the Zrin... | Croatian Guards Brigade ( 1 @...  |  True   | 0.4045  | 0.3484 |    61     |     7      |       |   284.1807   |          |
+| 329 |    11    | Since the establishment of the... |          " language....           |  True   | 0.3261  | 0.2733 |    46     |     10     |       |   78.3472    |          |
+| 330 |    11    | A supplemental chapter was add... |               ....                |  True   | 0.3988  | 0.3068 |    53     |     19     |       |   350.6305   |          |
+| 331 |    11    | As information slowly built up... | damage than the US had expect...  |  True   | 0.3644  | 0.2632 |    47     |     20     |       |   211.1068   |          |
+| 332 |    11    | By late October of that year ,... |        was not enough....         |  True   | 0.2916  | 0.1826 |    49     |     23     |       |   285.6642   |          |
+| 333 |    11    | The following night on Raw , U... | Lesnar out of the ring and th...  |  True   | 0.3333  | 0.2129 |    67     |     25     |       |   68.2954    |          |
+| 334 |    11    | The primary tasks of the briga... | squadron , and the 7th Airbor...  |  True   | 0.1859  | 0.0614 |    48     |     26     |       |   202.7458   |          |
+| 335 |    11    | The video features scenes remi... |    " The Last Airbender " ....    |  True   | 0.3357  | 0.1927 |    53     |     30     |       |   391.2178   |          |
+| 336 |    11    | Gibson and Maurice Prendergast... |     of continuous action....      |  True   | 0.4576  | 0.2966 |    51     |     33     |       |   133.0067   |          |
+| 337 |    11    | However , three days later , h... |          a defender....           |  True   | 0.4827  | 0.2835 |    44     |     40     |       |   101.2809   |          |
+| 338 |    11    | Scenes that were included in t... |      the end of the film....      |  True   | 0.5338  | 0.327  |    55     |     37     |       |   293.8257   |          |
+| 339 |    11    | Kershaw 's repertoire includes... |                ...                |  True   | 0.2919  | 0.082  |    48     |     47     |       |   77.2481    |          |
+| 340 |    11    | View of the World from 9th Ave... |  for the New Yorker magazine....  |  True   |  0.265  | 0.0517 |    46     |     37     |       |   276.5371   |          |
+| 341 |    11    | Vickers @-@ Armstrong installe... |               ....                |  True   | 0.3796  | 0.1626 |    52     |     44     |       |   211.8035   |          |
+| 342 |    11    | Near the end of the month two ... | ) south of the city. The patro... |  True   | 0.3418  | 0.1122 |    37     |     43     |       |   383.2668   |          |
+| 343 |    11    | The lyrics , which speak of " ... | the dark, sinister, and sinis...  |  True   | 0.3216  | 0.0917 |    46     |     51     |       |   204.1346   |          |
+| 344 |    11    | Unusually , the storm hit Flor... |               ....                |  True   | 0.4325  | 0.2024 |    46     |     39     |       |   332.0891   |          |
+| 345 |    11    | Pretending you know what you '... | know what you're talking abou...  |  True   |  0.425  | 0.1727 |    41     |     47     |       |   346.7526   |          |
+| 346 |    11    | Grant had previously played th... |     be a Doctor Who spoof....     |  True   | 0.3976  | 0.1426 |    53     |     54     |       |   170.3587   |          |
+| 347 |    11    | On the August 19 episode of Ma... |               ....                |  True   | 0.4933  | 0.2329 |    41     |     62     |       |   260.0711   |          |
+| 348 |    11    | In the 20th century , he was t... | poet " , and that he has made...  |  True   | 0.6233  | 0.3376 |    59     |     75     |       |   309.6835   |          |
+| 349 |    11    | San Lorenzo Colossal Head 7 ( ... | 1.5 kg ( 1.5 kg ( 1.5 kg ( 1....  |  True   | 0.5039  | 0.2225 |    52     |     47     |       |   334.3132   |          |
+| 350 |    11    | Intensity estimates of maximum... | 8 @.@ 0 km / h ) is not yet k...  |  True   | 0.3833  | 0.1022 |    54     |     68     |       |   309.2351   |          |
+| 351 |    11    | " Aware that he was a novice ,... | ' ' I 'm not sure what you 'r...  |  True   | 0.4159  | 0.1323 |    52     |     69     |       |   217.135    |          |
+| 352 |    11    | Before the morning of 1 Septem... |    artillery in the south....     |  True   | 0.4197  | 0.1224 |    62     |     68     |       |   269.3632   |          |
+| 353 |    11    | As Burton Watson remarks in Th... |              . 5)...              |  True   | 0.6638  | 0.3488 |    42     |     77     |       |   275.1043   |          |
+| 354 |    11    | With the Visayan @-@ born Arse... |           World War....           |  True   | 0.5574  | 0.2529 |    51     |     74     |       |   304.9183   |          |
+| 355 |    11    | On the January 11 episode of R... | , who was in the ring with Th...  |  True   |  0.387  | 0.072  |    47     |     80     |       |   143.9156   |          |
+| 356 |    11    | The following night on Raw , L... | more rounds of the match to U...  |  True   | 0.6415  | 0.317  |    37     |     83     |       |    205.69    |          |
+| 357 |    12    | On 6 April 1944 the first grou... |          the island....           |  True   | 0.4532  | 0.3728 |    47     |     12     |       |   367.563    |          |
+| 358 |    12    | The lyrics , which speak of " ... | the timid , the timid , the t...  |  True   | 0.4474  | 0.3746 |    50     |     16     |       |   280.9994   |          |
+| 359 |    12    | On the night of 10 – 11 Novemb... |      city of Dürenstein....       |  True   | 0.3251  | 0.2436 |    54     |     11     |       |   219.5334   |          |
+| 360 |    12    | On July 4 , Lesnar made his fi... | The Rock in the main event of...  |  True   | 0.4245  | 0.3344 |    54     |     14     |       |   286.8243   |          |
+| 361 |    12    | Some modern biblical scholars ... | a sign of the presence of the...  |  True   | 0.4429  | 0.3446 |    43     |     18     |       |   371.579    |          |
+| 362 |    12    | In 2009 Alan Meerow and collea... | members were not in the same ...  |  True   | 0.3234  | 0.2187 |    46     |     23     |       |   290.4904   |          |
+| 363 |    12    | An initial capital campaign ra... |         $ 1.5 million....         |  True   | 0.2406  | 0.128  |    40     |     21     |       |   194.1787   |          |
+| 364 |    12    | They had three settings for ra... | @,@ 000 yd ) at 33 knots ( 59...  |  True   | 0.4887  | 0.3545 |    62     |     25     |       |   264.9437   |          |
+| 365 |    12    | The Soviet Union was unable to... |            airport....            |  True   | 0.4198  | 0.2743 |    52     |     29     |       |   146.0289   |          |
+| 366 |    12    | In an article in La France , 1... | that the Imagists were not th...  |  True   | 0.3171  | 0.1582 |    51     |     31     |       |   339.3649   |          |
+| 367 |    12    | " Aware that he was a novice ,... |            to me "...             |  True   | 0.5436  | 0.3647 |    54     |     38     |       |   155.2645   |          |
+| 368 |    12    | Professor Vincent Hausmann cha... | to be " a " " " " " " " " " "...  |  True   | 0.4238  | 0.2395 |    48     |     46     |       |   167.3366   |          |
+| 369 |    12    | The boats were equipped with c... | result, the boats were not ab...  |  True   | 0.4982  | 0.3043 |    43     |     39     |       |   243.2997   |          |
+| 370 |    12    | Additional testing of the Tetr... |               ....                |  True   |  0.397  | 0.2086 |    41     |     39     |       |   179.1696   |          |
+| 371 |    12    | In contrast , a Time magazine ... | that " the Nazi language was ...  |  True   | 0.2861  | 0.0975 |    50     |     47     |       |   161.0067   |          |
+| 372 |    12    | The positioning of the stapes ... |          and mammals....          |  True   | 0.4611  | 0.2595 |    42     |     36     |       |   346.9128   |          |
+| 373 |    12    | " This is very evident in the ... | be the basis for a new series...  |  True   | 0.3903  | 0.1885 |    44     |     47     |       |   50.8432    |          |
+| 374 |    12    | Despite a 34 % gain in weekly ... | % increase in Twitter reactio...  |  True   | 0.2823  | 0.0513 |    55     |     53     |       |   222.4326   |          |
+| 375 |    12    | The 29th Brigade formed the co... |          single unit....          |  True   | 0.5572  | 0.3143 |    50     |     49     |       |   75.2389    |          |
+| 376 |    12    | According to Suetonius , Nero ... | sea and dying in the process....  |  True   | 0.5305  | 0.284  |    55     |     50     |       |   300.2805   |          |
+| 377 |    12    | With the help of executives Gl... |   T]heater's ironing board."...   |  True   | 0.3818  | 0.138  |    56     |     46     |       |   301.3178   |          |
+| 378 |    12    | During Night of Champions , it... |               ....                |  True   | 0.4313  | 0.1784 |    44     |     30     |       |   393.2592   |          |
+| 379 |    12    | A number of Tetrarchs were sen... |    the Battle of the Somme....    |  True   | 0.3634  | 0.1075 |    46     |     49     |       |   250.7823   |          |
+| 380 |    12    | In an article in La France , 1... |    others to the Imagists....     |  True   | 0.5392  | 0.2635 |    70     |     48     |       |   156.0997   |          |
+| 381 |    12    | Peppiatt believes that Bacon w... | the finest ever painted . Bac...  |  True   | 0.3342  | 0.0615 |    46     |     71     |       |   192.525    |          |
+| 382 |    12    | Currently , there are 57 @,@ 7... | ( 7.5 km2 ( 7.5 km2 ( 7.5 km2...  |  True   | 0.5181  | 0.2289 |    47     |     41     |       |   61.4283    |          |
+| 383 |    12    | However , in response to indic... | 790 km ; 1 @,@ 790 km ; 1 @,@...  |  True   | 0.4512  | 0.1484 |    53     |     54     |       |   363.4817   |          |
+| 384 |    12    | Speculation about a return to ... |     a contract extension....      |  True   | 0.4741  | 0.1688 |    45     |     78     |       |   238.3728   |          |
+| 385 |    12    | Some modern biblical scholars ... | the number of the Holy Spirit...  |  True   | 0.4446  | 0.1177 |    43     |     73     |       |   343.5602   |          |
+| 386 |    12    | Tres Zapotes Monument A ( also... | the city of San Juan de la Pl...  |  True   | 0.6267  | 0.2942 |    46     |     76     |       |   184.0367   |          |
+| 387 |    12    | The programme of commemorating... |       the war broke out....       |  True   | 0.5254  | 0.1983 |    53     |     72     |       |   209.691    |          |
+| 388 |    12    | During this period of closure ... | College ) from 1999 to July 2...  |  True   | 0.6591  | 0.3303 |    53     |     73     |       |   322.4401   |          |
+| 389 |    13    | There , 5 miles ( 8 @.@ 0 km )... |               ....                |  True   | 0.2623  | 0.2185 |    41     |     8      |       |   158.8262   |          |
+| 390 |    13    | Matsuo Bashō , the greatest ha... |               ....                |  True   | 0.4085  | 0.3505 |    55     |     7      |       |   279.419    |          |
+| 391 |    13    | Intensity estimates of maximum... | -force ( 100 miles per hour ( ... |  True   | 0.1928  | 0.098  |    65     |     17     |       |   254.438    |          |
+| 392 |    13    | According to Suetonius ; Nero ... | and that he was the youngest ...  |  True   | 0.5064  | 0.3619 |    52     |     25     |       |   95.0753    |          |
+| 393 |    13    | The boats were equipped with c... | a result, the boats were not ...  |  True   | 0.4644  | 0.3197 |    42     |     27     |       |   42.7368    |          |
+| 394 |    13    | UB @-@ 10 was eventually joine... | course, the UB @-@ 18 was joi...  |  True   | 0.3535  | 0.2088 |    45     |     19     |       |   75.2055    |          |
+| 395 |    13    | The Assistant Architects were ... | William Henry Smith ( who in ...  |  True   | 0.2412  | 0.0879 |    53     |     34     |       |   328.0717   |          |
+| 396 |    13    | The suicide of Nero on 9 June ... |    of Nero in the year 68....     |  True   | 0.5346  | 0.372  |    47     |     28     |       |   50.6695    |          |
+| 397 |    13    | View of the World from 9th Ave... |    issue of the New Yorker....    |  True   |  0.36   | 0.1984 |    52     |     28     |       |   290.8691   |          |
+| 398 |    13    | The events of The Web of Fear ... | " that the biscuit tin is a "...  |  True   | 0.4559  | 0.2899 |    40     |     36     |       |   263.856    |          |
+| 399 |    13    | He finished his amateur career... |               ....                |  True   | 0.2622  | 0.0675 |    55     |     21     |       |   316.1934   |          |
+| 400 |    13    | The first notable Japanese app... |         on his poetry....         |  True   | 0.3902  | 0.1884 |    47     |     35     |       |   320.8585   |          |
+| 401 |    13    | Manila 's population density d... | per km2 ) , Jakarta ( 16 @,@ ...  |  True   | 0.6141  | 0.403  |    53     |     33     |       |   195.0819   |          |
+| 402 |    13    | Taylor wrote : " Broke may hav... |            albums....             |  True   | 0.3441  | 0.1382 |    49     |     40     |       |   302.3756   |          |
+| 403 |    13    | In addition , the vast palace ... | Palatine Hill , where he had ...  |  True   | 0.3136  | 0.1079 |    44     |     34     |       |   179.3231   |          |
+| 404 |    13    | The Dvorak technique ( develop... | images. The Dvorak technique ...  |  True   | 0.3578  | 0.1487 |    49     |     39     |       |   362.1902   |          |
+| 405 |    13    | The city also contains the Man... | Museum , the National Museum ...  |  True   | 0.4993  | 0.2793 |    54     |     51     |       |   193.1036   |          |
+| 406 |    13    | Eighth Army had in reserve thr... | Changwon , 6 miles ( 9 @.@ 7 ...  |  True   | 0.4858  | 0.2589 |    59     |     43     |       |   342.8363   |          |
+| 407 |    13    | Clearly linking Objectivism 's... | the lines of the way they are...  |  True   | 0.4689  | 0.239  |    52     |     49     |       |   172.2999   |          |
+| 408 |    13    | The Dvorak technique ( develop... | . The Dvorak technique is a we... |  True   | 0.5362  | 0.2999 |    50     |     45     |       |   106.2388   |          |
+| 409 |    13    | Two CH @-@ 53E Super Stallions... | to arrive at the embassy at 0...  |  True   | 0.4049  | 0.1683 |    45     |     46     |       |   257.9042   |          |
+| 410 |    13    | The primary patterns used are ... |               ....                |  True   | 0.4178  | 0.178  |    60     |     33     |       |   371.4068   |          |
+| 411 |    13    | The tanks followed the road le... | of the tanks were able to esc...  |  True   | 0.6454  | 0.3908 |    53     |     62     |       |   115.2856   |          |
+| 412 |    13    | Dickins 's 1866 Hyak nin is 's... | the first English @-@ poetry ...  |  True   | 0.6588  | 0.3922 |    50     |     49     |       |   198.8145   |          |
+| 413 |    13    | He trialled several versions o... |           the film....            |  True   | 0.5901  | 0.3206 |    57     |     56     |       |   378.6222   |          |
+| 414 |    13    | Aside from these , important i... |               ....                |  True   | 0.4045  | 0.1179 |    49     |     61     |       |   164.3867   |          |
+| 415 |    13    | These included allowing women ... | the Torah , and the Torah , a...  |  True   | 0.3549  | 0.0575 |    44     |     77     |       |   309.1803   |          |
+| 416 |    13    | However , in response to indic... | same number of passengers as ...  |  True   | 0.4287  | 0.1286 |    59     |     61     |       |   295.9539   |          |
+| 417 |    13    | Peppiatt notes that the exhibi... | in a way that was not necessar... |  True   | 0.6632  | 0.3605 |    54     |     72     |       |   109.5663   |          |
+| 418 |    13    | Gibson and Maurice Prendergast... |       a year of service....       |  True   | 0.6664  | 0.3306 |    49     |     73     |       |   135.2879   |          |
+| 419 |    13    | A number of older residents ca... |         speak Spanish....         |  True   | 0.6364  | 0.3093 |    43     |     59     |       |   129.5547   |          |
+| 420 |    13    | His reputation and the value o... |           his time....            |  True   | 0.5856  | 0.249  |    47     |     77     |       |   184.1851   |          |
+| 421 |    13    | American Beauty was edited by ... |               )...                |  True   | 0.6109  | 0.269  |    47     |     74     |       |   177.3016   |          |
+| 422 |    13    | " Following the ambassador 's ... |      invasion of Somalia....      |  True   | 0.7696  | 0.4006 |    43     |     75     |       |   62.0221    |          |
+| 423 |    13    | Alternatively , Kirby 's Block... |         a score of 0....          |  True   | 0.5797  | 0.2285 |    47     |     76     |       |   78.3688    |          |
+| 424 |    13    | " Aware that he was a novice ,... |     it ' , " Mendes said....      |  True   | 0.5142  | 0.1582 |    45     |     88     |       |   137.9104   |          |
+| 425 |    13    | All of the stone heads have be... |         – 1000 BC ) ....          |  True   | 0.4336  | 0.0777 |    47     |     77     |       |   360.1141   |          |
+| 426 |    14    | After the season , Kershaw was... | of the Year Award for Most Ou...  |  True   | 0.2275  | 0.1788 |    54     |     12     |       |   296.5893   |          |
+| 427 |    14    | A few hours after this convers... | enemy's base and the entire U...  |  True   | 0.3203  | 0.2517 |    48     |     15     |       |   197.3616   |          |
+| 428 |    14    | These changes increased their ... |               ....                |  True   | 0.1919  | 0.1086 |    43     |     20     |       |   350.4975   |          |
+| 429 |    14    | Lester takes a minimum @-@ wag... |            married....            |  True   | 0.2835  | 0.189  |    49     |     18     |       |   162.2821   |          |
+| 430 |    14    | The primary patterns used are ... | CDO ) pattern , central cold ...  |  True   | 0.1358  | 0.038  |    47     |     24     |       |   251.666    |          |
+| 431 |    14    | Razon Sports Center and the Un... |               ....                |  True   | 0.2499  | 0.1483 |    54     |     20     |       |   293.3352   |          |
+| 432 |    14    | Matsuo Bashō , the greatest ha... |           structure....           |  True   | 0.3812  | 0.263  |    54     |     21     |       |   194.8359   |          |
+| 433 |    14    | Each of the boilers consumed a... |  ( 9 @,@ 681 t ) of fuel oil....  |  True   | 0.2101  | 0.0883 |    59     |     26     |       |   139.5653   |          |
+| 434 |    14    | A number of Tetrarchs were sen... |     on 31 September 1943....      |  True   |  0.297  | 0.1688 |    55     |     26     |       |   101.5237   |          |
+| 435 |    14    | Before filming , Mendes and Sp... |            moment ....            |  True   |  0.206  | 0.0681 |    43     |     31     |       |   154.2991   |          |
+| 436 |    14    | The soundtrack features songs ... | Down " performed by John Lenn...  |  True   | 0.2999  | 0.1587 |    69     |     32     |       |   287.3272   |          |
+| 437 |    14    | However , he felt the characte... |                ...                |  True   | 0.3468  | 0.1998 |    46     |     37     |       |   68.0144    |          |
+| 438 |    14    | He said he had started the 1st... |           missions....            |  True   | 0.3579  | 0.2105 |    49     |     36     |       |   352.1416   |          |
+| 439 |    14    | Steiner also pointed out that ... | wants to understand the meani...  |  True   | 0.3898  | 0.2311 |    52     |     40     |       |   109.3802   |          |
+| 440 |    14    | Nero ( / ˈnɪəroʊ / ; Latin : N... |            dynasty....            |  True   | 0.2515  | 0.0779 |    40     |     39     |       |   357.2125   |          |
+| 441 |    14    | Hall used a 1 / 8 inch Tiffen ... | , he said he would have prefer... |  True   | 0.2867  | 0.0981 |    53     |     46     |       |   185.3788   |          |
+| 442 |    14    | Despite this finding , the pol... |  or even a US, assassination....  |  True   | 0.3168  | 0.1183 |    46     |     51     |       |    73.815    |          |
+| 443 |    14    | In March 1942 , a Gibraltarian... |               ....                |  True   |  0.337  | 0.1382 |    43     |     49     |       |   399.6938   |          |
+| 444 |    14    | The film is described by acade... | and the social and political ...  |  True   |  0.45   | 0.221  |    46     |     64     |       |    201.86    |          |
+| 445 |    14    | As of February 18 , the most s... |       ( $ 6 million ) ....        |  True   | 0.3882  | 0.1284 |    48     |     75     |       |   323.0891   |          |
+| 446 |    14    | On January 11 , 2011 , Lesnar ... |         from the bout....         |  True   | 0.3225  | 0.058  |    51     |     78     |       |   300.5143   |          |
+| 447 |    14    | Mendes ' dominating visual sty... | the space between the stage a...  |  True   | 0.5101  | 0.2352 |    50     |     77     |       |   53.2516    |          |
+| 448 |    14    | With the help of executives Gl... | be a sequel to the original," ... |  True   | 0.3349  | 0.048  |    53     |     76     |       |   43.7515    |          |
+| 449 |    15    | They are : Kemena Industrial E... | medium and light industries )...  |  True   | 0.2301  | 0.1974 |    52     |     8      |       |   90.6403    |          |
+| 450 |    15    | Simeon – search party leader a... | the 'southern 'southern 'sout...  |  True   | 0.1175  | 0.0559 |    44     |     7      |       |   193.7199   |          |
+| 451 |    15    | The 29th Brigade formed the co... |        ' B ' Squadron....         |  True   | 0.2348  | 0.1663 |    44     |     15     |       |   382.0549   |          |
+| 452 |    15    | On July 4 , Lesnar made his fi... | in the main event of the WWE ...  |  True   | 0.2963  | 0.2173 |    56     |     18     |       |   286.0683   |          |
+| 453 |    15    | Changed by Ricky 's " attracti... | is " " " " " " " " " " " " " ...  |  True   | 0.2962  | 0.1864 |    55     |     32     |       |   342.8313   |          |
+| 454 |    15    | The IJN 's fleet of battleship... |               ....                |  True   | 0.2187  | 0.0859 |    41     |     32     |       |    81.068    |          |
+| 455 |    15    | The chairman was Seán Keenan ,... | Irish Republican Army ( IRA )...  |  True   | 0.3214  | 0.1558 |    43     |     45     |       |   377.3725   |          |
+| 456 |    15    | Eighth Army had in reserve thr... | The 2nd Provisional Marine Br...  |  True   | 0.2981  | 0.1261 |    61     |     40     |       |   331.139    |          |
+| 457 |    15    | He did not have a grand plan w... |        end of the year....        |  True   | 0.4279  | 0.2374 |    53     |     41     |       |   171.5869   |          |
+| 458 |    15    | While the Philippine Atmospher... | is located in the tropics, th...  |  True   | 0.3329  | 0.136  |    51     |     44     |       |   151.2954   |          |
+| 459 |    15    | The removal of the secondary a... | metres ( 9 @.@ 1 in ) and the...  |  True   | 0.2815  | 0.0758 |    50     |     51     |       |   368.6506   |          |
+| 460 |    15    | The video features scenes remi... | , and " The Beach Boys ' " " ...  |  True   | 0.4506  | 0.2215 |    50     |     68     |       |   355.9208   |          |
+| 461 |    15    | David Bowers writes that it wa... |             city....              |  True   | 0.2593  | 0.0358 |    49     |     53     |       |   187.5988   |          |
+| 462 |    15    | In early September , elements ... | and that the French would be ...  |  True   | 0.3387  | 0.096  |    51     |     66     |       |   316.1589   |          |
+| 463 |    15    | Changed by Ricky 's " attracti... | " ; he is also convinced that...  |  True   | 0.3223  | 0.0659 |    62     |     80     |       |   358.9771   |          |
+| 464 |    15    | In one shot during Lester 's e... |               ....                |  True   | 0.4119  | 0.1461 |    52     |     71     |       |   107.675    |          |
+| 465 |    15    | In June 2002 , Lesnar won the ... |        WrestleMania 36....        |  True   | 0.4486  | 0.1763 |    55     |     64     |       |   267.463    |          |
+| 466 |    15    | On June 24 , 1571 , Spanish co... |           is Manila....           |  True   | 0.4908  | 0.2075 |    47     |     77     |       |   399.3499   |          |
+| 467 |    15    | His grandfather became Consul ... | and as a close friend of Empe...  |  True   | 0.3296  | 0.0461 |    43     |     82     |       |   348.6379   |          |
+| 468 |    15    | These Melanaus used to live fu... |             to do....             |  True   | 0.3974  | 0.1061 |    49     |     78     |       |   278.5498   |          |
+| 469 |    15    | On July 4 , Lesnar made his fi... |             Woods....             |  True   | 0.4092  | 0.1161 |    55     |     79     |       |   370.6213   |          |
+| 470 |    16    | The lyrics , which speak of " ... |       a " " " " " " " " " "       |  True   | 0.1926  | 0.1454 |    61     |     11     |       |   83.1576    |          |
+| 471 |    16    | This period of inactivity ende... |               ....                |  True   | 0.3071  | 0.2354 |    56     |     13     |       |   54.1998    |          |
+| 472 |    16    | While he found that the script... | the " " " " " " " " " " " " "...  |  True   | 0.3764  | 0.2767 |    49     |     24     |       |   281.3172   |          |
+| 473 |    16    | In June 2002 , Lesnar won the ... |           the title....           |  True   |  0.188  | 0.0883 |    50     |     19     |       |   284.9526   |          |
+| 474 |    16    | " The Snowmen " was originally... | filming the first episode of ...  |  True   | 0.1508  | 0.0473 |    52     |     20     |       |   297.1997   |          |
+| 475 |    16    | The primary tasks of the briga... |      targets in the area....      |  True   | 0.2264  | 0.119  |    53     |     21     |       |   335.0044   |          |
+| 476 |    16    | The translators have had to co... | the translator's mouth, but t...  |  True   | 0.2162  | 0.1086 |    58     |     22     |       |   294.1725   |          |
+| 477 |    16    | View of the World from 9th Ave... | , 1976 issue of New Yorker mag... |  True   | 0.3606  | 0.2453 |    50     |     24     |       |   119.8618   |          |
+| 478 |    16    | OPUSA had a revenue of over $ ... |             2012....              |  True   | 0.2311  | 0.0946 |    52     |     29     |       |   115.5693   |          |
+| 479 |    16    | The fuel storage of the ships ... | ) at a depth of 1,000 feet ( ...  |  True   | 0.4582  | 0.3181 |    59     |     27     |       |   137.6401   |          |
+| 480 |    16    | A number of Tetrarchs were sen... |  other on 31 September 1943....   |  True   | 0.4267  | 0.2866 |    54     |     27     |       |   346.6871   |          |
+| 481 |    16    | With the filmmakers and cast i... | University , where the film w...  |  True   |  0.245  | 0.074  |    44     |     34     |       |   391.6197   |          |
+| 482 |    16    | During this time , palaeontolo... | that are not connected at the...  |  True   | 0.3798  | 0.2054 |    56     |     36     |       |   42.8659    |          |
+| 483 |    16    | While he found that the script... | as " " " " " " " " " " " " " ...  |  True   | 0.4661  | 0.2558 |    59     |     56     |       |   118.6367   |          |
+| 484 |    16    | It continues on a southward tr... |               ....                |  True   | 0.3847  | 0.165  |    39     |     40     |       |   189.4235   |          |
+| 485 |    16    | According to the Encyclopædia ... | of a sentence. He is a master...  |  True   | 0.3667  | 0.1252 |    50     |     58     |       |   72.0289    |          |
+| 486 |    16    | Building upon the character 's... | the character 's first appear...  |  True   | 0.5443  | 0.288  |    37     |     60     |       |   331.5029   |          |
+| 487 |    16    | In May 1942 , a small number o... |     be used in the field....      |  True   | 0.4714  | 0.2153 |    55     |     49     |       |   201.9716   |          |
+| 488 |    16    | Eighth Army had in reserve thr... | The 2nd Provisional Marine Br...  |  True   | 0.5223  | 0.2663 |    61     |     57     |       |   286.5935   |          |
+| 489 |    16    | The North Korean strategy was ... | , which would then be followe...  |  True   | 0.3226  | 0.0642 |    63     |     67     |       |   357.3036   |          |
+| 490 |    16    | Fitts reacts with disgust to m... |     they're just like us."...     |  True   | 0.5748  | 0.298  |    48     |     47     |       |   55.8641    |          |
+| 491 |    16    | Upon moving into the South Chi... |               h....               |  True   |  0.453  | 0.1752 |    37     |     54     |       |   196.2451   |          |
+| 492 |    16    | There , in the southernmost pa... |           was held....            |  True   | 0.3434  | 0.058  |    48     |     64     |       |   41.7056    |          |
+| 493 |    16    | The rugged surfaces of bones m... | have supported blood vessels ...  |  True   | 0.4894  | 0.1954 |    50     |     73     |       |   227.0389   |          |
+| 494 |    16    | Currently , the film holds an ... | . The film is a great example ... |  True   | 0.4861  | 0.1851 |    55     |     73     |       |   125.7845   |          |
+| 495 |    16    | Unusually , the storm hit Flor... |               ....                |  True   | 0.5305  | 0.2255 |    46     |     59     |       |   66.1754    |          |
+| 496 |    16    | The rugged surfaces of bones m... |            bones )....            |  True   | 0.4508  | 0.1348 |    40     |     80     |       |   303.1699   |          |
+| 497 |    16    | The primary patterns used are ... |   pattern ( T4.5 - T8.0 ) ....    |  True   | 0.4729  | 0.1553 |    55     |     56     |       |   292.7756   |          |
+| 498 |    17    | Early positive comments came f... |      on the poet's style....      |  True   | 0.4588  | 0.4014 |    55     |     7      |       |   72.8878    |          |
+| 499 |    17    | But Leonard 's biggest critici... | also the power of art to crea...  |  True   | 0.1978  | 0.1341 |    49     |     14     |       |   359.9758   |          |
+| 500 |    17    | Hall used a 1 / 8 inch Tiffen ... | he said, he would have prefer...  |  True   |  0.257  | 0.174  |    54     |     16     |       |   158.6166   |          |
+| 501 |    17    | Despite a 34 % gain in weekly ... |             list....              |  True   | 0.4323  | 0.3354 |    42     |     16     |       |   69.1701    |          |
+| 502 |    17    | To ensure future cemeteries re... | (1.5 feet) and to allow for t...  |  True   | 0.3612  | 0.2555 |    51     |     19     |       |   143.8651   |          |
+| 503 |    17    | A number of older residents ca... |           Spanish ....            |  True   |  0.41   | 0.2954 |    55     |     21     |       |   240.995    |          |
+| 504 |    17    | He was willing to officiate at... | education , participation in ...  |  True   |  0.551  | 0.4115 |    49     |     29     |       |   113.3582   |          |
+| 505 |    17    | The NK 9th Division had effect... | the morning of the 9th of Jul...  |  True   | 0.3672  | 0.2347 |    58     |     22     |       |   386.2087   |          |
+| 506 |    17    | Hed PE 's second album , Broke... | The Clash , and the Clash , a...  |  True   | 0.2087  | 0.0732 |    47     |     28     |       |   155.3799   |          |
+| 507 |    17    | One Direction delivered a perf... |             2018....              |  True   | 0.3892  | 0.2456 |    36     |     26     |       |    41.579    |          |
+| 508 |    17    | Following the demonstration of... | artillery and the constructio...  |  True   | 0.5192  | 0.337  |    47     |     29     |       |   247.7708   |          |
+| 509 |    17    | The building used " energy eff... | , and , in accord with the Je...  |  True   | 0.3617  | 0.1944 |    59     |     38     |       |   321.8233   |          |
+| 510 |    17    | While he found that the script... | as " " " " " " " " " " " " " ...  |  True   |  0.272  | 0.0934 |    60     |     41     |       |   215.3101   |          |
+| 511 |    17    | Nor do I wonder at such as hav... | , even when they had no way t...  |  True   | 0.3633  | 0.1843 |    57     |     41     |       |   174.8911   |          |
+| 512 |    17    | The ships had a length of 208 ... |                ...                |  True   | 0.3435  | 0.1644 |    45     |     28     |       |   292.6178   |          |
+| 513 |    17    | Other museums in the city are ... | of the Holy Trinity , the Chu...  |  True   | 0.4041  | 0.2248 |    51     |     41     |       |   244.5736   |          |
+| 514 |    17    | After further diagnosis , Lesn... | where he could no longer figh...  |  True   | 0.5616  | 0.3581 |    40     |     32     |       |   213.1641   |          |
+| 515 |    17    | The 12 @-@ cylinder engine of ... | Mark VIII , but the engine wa...  |  True   | 0.5981  | 0.3809 |    47     |     40     |       |   211.9622   |          |
+| 516 |    17    | Then , the first shell guns fi... |     , and the Royal Navy....      |  True   | 0.6388  | 0.4216 |    47     |     42     |       |   192.9796   |          |
+| 517 |    17    | Head VI drew a mixed reaction ... | " and " a man who has been a g... |  True   |  0.323  | 0.1128 |    48     |     50     |       |   316.0085   |          |
+| 518 |    17    | Another issue was that Japanes... |               ....                |  True   | 0.2931  | 0.0832 |    50     |     36     |       |   66.7085    |          |
+| 519 |    17    | Even though remnants of the NK... |          of the day....           |  True   | 0.3568  | 0.144  |    51     |     42     |       |   45.3972    |          |
+| 520 |    17    | In an article titled " Teens a... |           Academy )....           |  True   | 0.2786  | 0.0631 |    53     |     41     |       |   273.8927   |          |
+| 521 |    17    | Carolyn is similarly driven by... | of the " " " " " " " " " " " ...  |  True   | 0.5978  | 0.3692 |    43     |     54     |       |   50.1221    |          |
+| 522 |    17    | Peppiatt notes that the exhibi... | way that was not only more in...  |  True   | 0.4538  | 0.2041 |    56     |     64     |       |   352.8927   |          |
+| 523 |    17    | The squadron 's strength was f... |            useless....            |  True   | 0.4726  | 0.2147 |    47     |     41     |       |   154.8779   |          |
+| 524 |    17    | Throughout the course of the d... |              ) ....               |  True   |  0.566  | 0.2981 |    47     |     53     |       |   82.6046    |          |
+| 525 |    17    | Following the demonstration of... | artillery and the constructio...  |  True   | 0.5972  | 0.3257 |    47     |     60     |       |   382.8179   |          |
+| 526 |    17    | Plans have been laid out to re... | to restore the historic build...  |  True   | 0.3748  | 0.103  |    57     |     63     |       |    54.098    |          |
+| 527 |    17    | Built to meet the need for sma... |          in Belgium....           |  True   | 0.4074  | 0.1233 |    39     |     64     |       |   167.3389   |          |
+| 528 |    17    | During this time , palaeontolo... | the ribs that are not connect...  |  True   | 0.6046  | 0.3159 |    54     |     67     |       |   58.9315    |          |
+| 529 |    17    | " This is very evident in the ... |         years to come....         |  True   | 0.5664  | 0.2658 |    47     |     29     |       |   286.1427   |          |
+| 530 |    17    | One critic , while acknowledgi... | a Jew , of being a " " " " " ...  |  True   | 0.6488  | 0.3382 |    58     |     85     |       |   85.0307    |          |
+| 531 |    17    | When selecting the equipment f... |               ....                |  True   | 0.3692  | 0.0531 |    45     |     69     |       |   392.1041   |          |
+| 532 |    17    | The suicide of Nero on 9 June ... |              68....               |  True   | 0.7217  | 0.3988 |    52     |     73     |       |   178.691    |          |
+| 533 |    17    | In his book The Lives of the T... | his eyes black and dark , his...  |  True   | 0.6006  | 0.2757 |    52     |     95     |       |   226.5716   |          |
+| 534 |    17    | The NK 2nd Division , concentr... |              ni....               |  True   | 0.4815  | 0.1546 |    46     |     78     |       |   345.2236   |          |
+| 535 |    17    | Speculation about a return to ... |   than he had been offered....    |  True   | 0.6145  | 0.2856 |    52     |     89     |       |   392.4547   |          |
+| 536 |    18    | Mendes asked Hall to prepare t... |           the truck....           |  True   | 0.2819  | 0.2415 |    42     |     8      |       |   307.2392   |          |
+| 537 |    18    | On June 24 , 1571 , Spanish co... |          Philippines....          |  True   | 0.2979  | 0.2216 |    49     |     16     |       |   210.9292   |          |
+| 538 |    18    | Each of the boilers consumed a... | which was used to heat the sh...  |  True   | 0.1297  | 0.0495 |    48     |     17     |       |   87.9105    |          |
+| 539 |    18    | Another issue was that Japanes... |          -class guns....          |  True   | 0.2447  | 0.1604 |    46     |     17     |       |   194.8776   |          |
+| 540 |    18    | With other turn @-@ of @-@ the... |       bar for the genre....       |  True   | 0.2255  |  0.13  |    44     |     22     |       |   396.5498   |          |
+| 541 |    18    | Three of the squadron 's aircr... |               ....                |  True   | 0.4125  | 0.2731 |    46     |     31     |       |   149.3835   |          |
+| 542 |    18    | The lyrics , which speak of " ... | the rest of us , is " " " " "...  |  True   | 0.4088  | 0.2616 |    57     |     39     |       |   388.3261   |          |
+| 543 |    18    | Intensity estimates of maximum... | severe tropical @-@ storm for...  |  True   | 0.2201  | 0.0694 |    61     |     34     |       |   293.6645   |          |
+| 544 |    18    | The illustration — humorously ... |             River....             |  True   |  0.298  | 0.1407 |    47     |     33     |       |   105.8902   |          |
+| 545 |    18    | a myriad of additional Jewish ... | more appropriate for the Jewi...  |  True   | 0.2579  | 0.0901 |    46     |     37     |       |   187.8075   |          |
+| 546 |    18    | With the help of executives Gl... |         be a success....          |  True   |  0.373  | 0.181  |    51     |     37     |       |   251.9426   |          |
+| 547 |    18    | A number of older residents ca... | refugees have been able to sp...  |  True   |  0.476  | 0.2835 |    41     |     39     |       |   42.4915    |          |
+| 548 |    18    | On August 6 , he was promoted ... |    into the 2017 MLB Draft....    |  True   |  0.304  | 0.0798 |    47     |     55     |       |   268.0676   |          |
+| 549 |    18    | As the North Korean attack dev... | 5 km) from the North Korean ca... |  True   | 0.3305  | 0.1001 |    48     |     56     |       |   196.8996   |          |
+| 550 |    18    | Tres Zapotes Monument Q ( also... | 8 ft ( 4 @.@ 8 ft ) tall and ...  |  True   | 0.4109  | 0.1712 |    58     |     51     |       |   254.5766   |          |
+| 551 |    18    | Several agencies issue Dvorak ... | Atmospheric Research Center (...  |  True   | 0.5071  | 0.2518 |    50     |     59     |       |   210.6855   |          |
+| 552 |    18    | The fuel storage of the ships ... | of 1.5 km/h ( 1.5 km/h ) per ...  |  True   | 0.3008  | 0.0394 |    51     |     53     |       |   372.3356   |          |
+| 553 |    18    | A number of older residents ca... |           language....            |  True   | 0.4653  | 0.2013 |    46     |     64     |       |   64.2124    |          |
+| 554 |    18    | Plans to transport a tank went... | was not ready for service unt...  |  True   | 0.5843  | 0.3043 |    54     |     69     |       |   149.524    |          |
+| 555 |    18    | The Soviet Union was unable to... |  the plane was able to land....   |  True   | 0.5162  | 0.2315 |    45     |     73     |       |   383.2762   |          |
+| 556 |    18    | David Bowers writes that it wa... |        to the pandemic....        |  True   | 0.4092  | 0.1103 |    57     |     77     |       |   166.6759   |          |
+| 557 |    18    | North of the 9th Infantry sect... | the 3rd Battalion of the US 3...  |  True   | 0.5108  | 0.2117 |    47     |     79     |       |   143.0152   |          |
+| 558 |    18    | Matsuo Bashō , the greatest ha... |            themes....             |  True   | 0.4215  | 0.1205 |    52     |     67     |       |   198.0617   |          |
+| 559 |    18    | According to the Encyclopædia ... | . He is a man of great influen... |  True   |  0.461  | 0.151  |    54     |     82     |       |   126.0187   |          |
+| 560 |    18    | The heads of mission were the ... |         , and Qatar ....          |  True   |  0.374  | 0.0591 |    42     |     90     |       |   383.5995   |          |
+| 561 |    18    | Tres Zapotes Monument A ( also... |         Tres Zapotes....          |  True   | 0.6107  | 0.287  |    50     |     85     |       |   259.1107   |          |
+| 562 |    18    | IGN 's Matt Risley gave " The ... | " The Snowmen " is a must see...  |  True   | 0.5096  | 0.1911 |    54     |     93     |       |   292.3081   |          |
+| 563 |    19    | Finally , he stated that " Ret... | via the official Arjona websit... |  True   | 0.1562  | 0.1143 |    47     |     6      |       |   298.9329   |          |
+| 564 |    19    | UB @-@ 10 was eventually joine... |        the Netherlands....        |  True   | 0.3752  | 0.3169 |    55     |     12     |       |   106.7521   |          |
+| 565 |    19    | Osbert was still alive in 1184... | that time , or if he was dead...  |  True   | 0.3382  | 0.2758 |    59     |     16     |       |   269.0376   |          |
+| 566 |    19    | He is also a supporter of the ... |      other organizations....      |  True   | 0.2915  | 0.225  |    33     |     10     |       |   193.5961   |          |
+| 567 |    19    | By the end of the year , repor... |        and Best Actor....         |  True   |  0.394  | 0.3194 |    44     |     14     |       |   219.0908   |          |
+| 568 |    19    | The Unionists maintained their... | for the candidates who had th...  |  True   | 0.2328  | 0.1545 |    58     |     19     |       |   308.1129   |          |
+| 569 |    19    | The ZNG , formally established... |   of the Croatian currency ....   |  True   | 0.2162  | 0.1346 |    50     |     18     |       |   90.2241    |          |
+| 570 |    19    | Another group , the capitosaur... | as the skull of a lion, a lio...  |  True   | 0.3278  | 0.2348 |    49     |     17     |       |   296.5631   |          |
+| 571 |    19    | Although several naval battles... | which ended in the defeat of ...  |  True   | 0.3859  | 0.2858 |    44     |     22     |       |   166.5517   |          |
+| 572 |    19    | On July 4 , Lesnar made his fi... |           the match....           |  True   | 0.4134  | 0.3063 |    57     |     23     |       |   291.0134   |          |
+| 573 |    19    | A number of older residents ca... |            example....            |  True   | 0.2516  | 0.1446 |    59     |     23     |       |   174.4156   |          |
+| 574 |    19    | He was willing to officiate at... | " , and " a commitment to a J...  |  True   | 0.1746  | 0.0636 |    59     |     29     |       |   289.8856   |          |
+| 575 |    19    | The design of the reactivated ... | the town's most famous star c...  |  True   | 0.1946  | 0.0834 |    50     |     23     |       |   77.5095    |          |
+| 576 |    19    | The most dramatic attempt to c... |               ....                |  True   | 0.4295  | 0.2954 |    52     |     29     |       |   269.8553   |          |
+| 577 |    19    | On 24 May 1944 , after partici... | two locations, the squadron w...  |  True   | 0.3543  | 0.1947 |    52     |     40     |       |   333.1756   |          |
+| 578 |    19    | The clip depicts the band shoo... |               ....                |  True   | 0.2933  | 0.1245 |    48     |     41     |       |   200.0121   |          |
+| 579 |    19    | In an unusual move , DreamWork... |               ....                |  True   | 0.3495  | 0.1648 |    43     |     34     |       |   327.1603   |          |
+| 580 |    19    | The assault forces would compr... |        artillery units....        |  True   | 0.2316  | 0.0436 |    51     |     41     |       |   131.2577   |          |
+| 581 |    19    | The programme of commemorating... |      active in the area....       |  True   | 0.4534  | 0.2654 |    46     |     44     |       |   358.5781   |          |
+| 582 |    19    | As the North Korean attack dev... | km) from the North Korean cap...  |  True   | 0.3953  | 0.2045 |    49     |     50     |       |   198.5372   |          |
+| 583 |    19    | " Weevils Wobble But They Don ... | Rain" , " The Last of Us " , ...  |  True   | 0.2976  | 0.1038 |    52     |     50     |       |   57.3377    |          |
+| 584 |    19    | The primary tasks of the briga... |          in the area....          |  True   | 0.4169  | 0.2146 |    54     |     43     |       |   362.3418   |          |
+| 585 |    19    | The police action caused outra... |           -chairman....           |  True   | 0.3096  | 0.0937 |    41     |     47     |       |   304.5559   |          |
+| 586 |    19    | On the February 24 , 2014 epis... | series of punches and kicks. ...  |  True   | 0.4942  | 0.2453 |    51     |     64     |       |   207.1961   |          |
+| 587 |    19    | The following night on Raw , L... | a German suplex to Undertaker...  |  True   | 0.3227  | 0.0739 |    40     |     62     |       |   271.3906   |          |
+| 588 |    19    | The ships had a successful des... |             knots....             |  True   | 0.5152  | 0.2553 |    53     |     71     |       |   366.412    |          |
+| 589 |    19    | The removal of the secondary a... | reduction in the secondary ar...  |  True   | 0.4546  | 0.1748 |    65     |     81     |       |   172.3436   |          |
+| 590 |    19    | This failure was an important ... | left in the Danube , and the ...  |  True   | 0.4752  | 0.1847 |    45     |     73     |       |   286.5336   |          |
+| 591 |    19    | When asked why he was compelle... |      colour to a popes"....       |  True   | 0.3518  | 0.0539 |    44     |     72     |       |   178.5183   |          |
+| 592 |    20    | Hed PE 's second album , Broke... | such as the Clash , and The C...  |  True   | 0.4009  | 0.3273 |    43     |     18     |       |   322.9472   |          |
+| 593 |    20    | During the Kan 'ei era of the ... | 台山论 ) of the Ming Dynasty 's ...  |  True   | 0.3648  | 0.2951 |    54     |     9      |       |   141.0004   |          |
+| 594 |    20    | The objective of the infantry ... |              in....               |  True   | 0.5614  | 0.4726 |    54     |     14     |       |   156.747    |          |
+| 595 |    20    | A number of older residents ca... | Chinese immigrants have been ...  |  True   | 0.4066  | 0.317  |    38     |     20     |       |   232.9197   |          |
+| 596 |    20    | On July 19 at Battleground , L... |  winning by disqualification....  |  True   | 0.3868  | 0.2966 |    55     |     16     |       |   66.8088    |          |
+| 597 |    20    | On July 4 , Lesnar made his fi... | and The Rock at the WWE Summe...  |  True   | 0.4413  | 0.3473 |    53     |     18     |       |   48.5803    |          |
+| 598 |    20    | According to historian Mark St... | the gun was too small to be u...  |  True   | 0.5077  | 0.3884 |    46     |     27     |       |   299.6858   |          |
+| 599 |    20    | Plans have been laid out to re... | project to restore the histor...  |  True   | 0.3661  | 0.2468 |    56     |     28     |       |   202.5099   |          |
+| 600 |    20    | On the January 11 episode of R... | , who was in the ring with Th...  |  True   | 0.3704  | 0.2365 |    47     |     30     |       |   278.6816   |          |
+| 601 |    20    | Crowds gathered in John Mackin... |            safely....             |  True   | 0.5391  | 0.3984 |    53     |     23     |       |   129.9408   |          |
+| 602 |    20    | " The New York Times , despite... | " , and that the film " is " ...  |  True   | 0.6035  | 0.4591 |    47     |     38     |       |   398.3825   |          |
+| 603 |    20    | A supplemental chapter was add... |       Graves Commission....       |  True   | 0.4143  | 0.2665 |    49     |     35     |       |   138.1449   |          |
+| 604 |    20    | Within the North @-@ western P... |   or more tropical cyclones....   |  True   | 0.5829  | 0.4288 |    47     |     29     |       |   138.5564   |          |
+| 605 |    20    | Janet Maslin in The New York T... | things " and " is " a " " " "...  |  True   |  0.41   | 0.2266 |    42     |     50     |       |    41.199    |          |
+| 606 |    20    | A number of Tetrarchs were sen... | of the Battle of the Somme , ...  |  True   | 0.6047  | 0.418  |    63     |     47     |       |   195.6355   |          |
+| 607 |    20    | In his review of the album , J... | is a bit too much for the ear...  |  True   | 0.5762  | 0.3676 |    50     |     43     |       |   302.4769   |          |
+| 608 |    20    | Between the Ulm capitulation a... | of the Austrian and Russian a...  |  True   | 0.6811  | 0.4388 |    41     |     65     |       |   353.4208   |          |
+| 609 |    20    | " Sylvester notes that Bacon w... |               "...                |  True   | 0.5828  | 0.3374 |    48     |     60     |       |   56.0585    |          |
+| 610 |    20    | Radio Times reviewer Patrick M... |         the original ....         |  True   | 0.6593  | 0.4083 |    51     |     70     |       |   97.4932    |          |
+| 611 |    20    | During his term , Estrada has ... |     over the past decade....      |  True   | 0.7215  | 0.4492 |    62     |     57     |       |   210.7554   |          |
+| 612 |    20    | She started playing for the Sy... | 2015 World Championships in T...  |  True   | 0.6328  | 0.3579 |    50     |     81     |       |   362.7271   |          |
+| 613 |    20    | The city also contains the Man... | museum of the Philippines , a...  |  True   | 0.5338  | 0.2567 |    57     |     82     |       |   392.9192   |          |
+| 614 |    20    | On 1 August , before leaving t... |       . John Nicholson....        |  True   |  0.777  | 0.4836 |    47     |     74     |       |   253.6463   |          |
+| 615 |    20    | In one of the earliest phyloge... | , the parasphenoid , and the ...  |  True   | 0.5186  | 0.2161 |    47     |     57     |       |   213.8701   |          |
+| 616 |    20    | This period of unhappiness was... | , was a great deal of joy and...  |  True   | 0.6136  | 0.3065 |    48     |     71     |       |   257.2296   |          |
+| 617 |    20    | Shot by November 2012 , the mu... | " a lot of hard work " by Zay...  |  True   | 0.6868  | 0.3774 |    43     |     95     |       |   382.0527   |          |
+| 618 |    20    | A report issued by the Directo... |               ....                |  True   | 0.7846  | 0.4694 |    42     |     78     |       |   282.3596   |          |
+| 619 |    20    | According to Suetonius ; Nero ... | , and that he was the youngest... |  True   | 0.5943  | 0.2767 |    51     |     82     |       |   286.4498   |          |
+| 620 |    21    | Only Colegio de San Juan de Le... |          " ) in 1928....          |  True   | 0.1853  | 0.1367 |    46     |     9      |       |   152.5383   |          |
+| 621 |    21    | A number of Tetrarchs were sen... | destroyed in the Battle of th...  |  True   |  0.339  | 0.2785 |    44     |     12     |       |   238.2084   |          |
+| 622 |    21    | With the help of executives Gl... |      would be a success....       |  True   | 0.2887  | 0.2278 |    50     |     11     |       |   328.8483   |          |
+| 623 |    21    | He said he had started the 1st... |               ....                |  True   | 0.1894  | 0.1062 |    54     |     18     |       |   315.6651   |          |
+| 624 |    21    | Lesnar , representing Canada f... | process , and a submission vi...  |  True   | 0.3466  | 0.2481 |    50     |     23     |       |   45.0219    |          |
+| 625 |    21    | These include the National Hur... |        Harbor, Hawaii....         |  True   | 0.1683  | 0.0661 |    46     |     16     |       |   294.7532   |          |
+| 626 |    21    | Then , the first shell guns fi... |  Navy , and the British Navy....  |  True   | 0.2257  | 0.116  |    46     |     25     |       |   366.7378   |          |
+| 627 |    21    | The North Korean strategy was ... | take advantage of the situati...  |  True   |  0.25   | 0.1263 |    46     |     29     |       |   341.537    |          |
+| 628 |    21    | Currently , the film holds an ... | , funny and moving film that i... |  True   | 0.3268  | 0.1672 |    49     |     33     |       |   203.8503   |          |
+| 629 |    21    | The events of The Web of Fear ... |                ...                |  True   |  0.408  | 0.238  |    48     |     40     |       |   230.5273   |          |
+| 630 |    21    | The obvious unit for conversio... |             unit....              |  True   | 0.3717  | 0.198  |    49     |     37     |       |   171.9151   |          |
+| 631 |    21    | He trialled several versions o... |          of the film....          |  True   | 0.4423  | 0.2615 |    56     |     41     |       |   218.7805   |          |
+| 632 |    21    | In an article titled " Teens a... |              7 )....              |  True   | 0.3367  | 0.1467 |    55     |     39     |       |   307.5128   |          |
+| 633 |    21    | One consideration which became... | ' was considered to be a ' ' '... |  True   | 0.3837  | 0.1878 |    46     |     54     |       |   306.9576   |          |
+| 634 |    21    | During his first run in WWE , ... |            for him....            |  True   | 0.3688  | 0.1568 |    58     |     46     |       |   195.8486   |          |
+| 635 |    21    | Faced with this opposition , i... | for the Holy Cross " , which ...  |  True   | 0.3004  | 0.0555 |    41     |     65     |       |   302.0001   |          |
+| 636 |    21    | During his term , Estrada has ... |          same period....          |  True   | 0.5435  | 0.2983 |    54     |     55     |       |   82.3325    |          |
+| 637 |    21    | In assessing the battle and it... | the sake of his own interests...  |  True   | 0.4274  | 0.1776 |    54     |     65     |       |   84.0155    |          |
+| 638 |    21    | OPUSA had a revenue of over $ ... | the Dominican Republic, and t...  |  True   | 0.4703  | 0.2076 |    42     |     61     |       |   153.5032   |          |
+| 639 |    21    | Intensity estimates of maximum... | @.@ 0 km / h ) is not yet kno...  |  True   | 0.5839  | 0.3024 |    55     |     68     |       |   262.6218   |          |
+| 640 |    21    | The illustration — humorously ... | . New York City , and the subs... |  True   | 0.5727  | 0.2883 |    58     |     75     |       |   268.3229   |          |
+| 641 |    21    | The events of The Web of Fear ... | , but I am sure that they are ... |  True   | 0.3742  | 0.0758 |    47     |     72     |       |   353.9098   |          |
+| 642 |    21    | In an article in La France , 1... | a descendant of the French Sy...  |  True   | 0.5589  | 0.2584 |    54     |     67     |       |   260.2795   |          |
+| 643 |    21    | Only seven men of C Company co... |             left....              |  True   | 0.3479  | 0.0452 |    37     |     79     |       |   119.1728   |          |
+| 644 |    21    | He did not have a grand plan w... |        end of the year....        |  True   | 0.3955  | 0.0857 |    53     |     94     |       |   80.0823    |          |
+| 645 |    21    | In the Royal Navy , the switch... |            loaders....            |  True   | 0.5275  | 0.2181 |    57     |     84     |       |   284.7449   |          |
+| 646 |    21    | Mendes avoided using close @-@... |            screen....             |  True   | 0.4092  | 0.0958 |    48     |     82     |       |   337.9343   |          |
+| 647 |    22    | Gerrothorax is thought to have... |               ....                |  True   | 0.3484  | 0.2953 |    37     |     5      |       |   222.8306   |          |
+| 648 |    22    | The video features scenes remi... | , and the iconic music videos...  |  True   | 0.3839  | 0.3253 |    50     |     10     |       |   220.7703   |          |
+| 649 |    22    | These included allowing women ... | , and the Torah , and the Tor...  |  True   | 0.2206  | 0.1617 |    48     |     11     |       |   271.0591   |          |
+| 650 |    22    | Arjona commented that his inde... |   is not a problem for me "....   |  True   | 0.1951  | 0.1319 |    53     |     8      |       |   47.9537    |          |
+| 651 |    22    | Since the establishment of the... | 's" language in his speeches ...  |  True   | 0.2043  | 0.1209 |    45     |     11     |       |   362.8161   |          |
+| 652 |    22    | David Young describes this as ... |              war....              |  True   | 0.2489  | 0.1553 |    43     |     12     |       |   106.8641   |          |
+| 653 |    22    | These included allowing women ... |          matriarchs....           |  True   | 0.3041  | 0.1925 |    55     |     14     |       |   156.2366   |          |
+| 654 |    22    | López de Legazpi had the local... | and the Japanese would be for...  |  True   | 0.5889  |  0.44  |    54     |     25     |       |   331.5026   |          |
+| 655 |    22    | At any rate , after Claudius '... | of his name ; and that he had...  |  True   | 0.4039  | 0.2648 |    59     |     25     |       |   318.3308   |          |
+| 656 |    22    | However , in response to indic... | CH @-@ 53Es is operated by th...  |  True   | 0.5096  | 0.3361 |    64     |     21     |       |   85.8662    |          |
+| 657 |    22    | Although losses were fairly eq... |              men....              |  True   | 0.2344  | 0.0639 |    38     |     29     |       |   64.7415    |          |
+| 658 |    22    | Lesnar , representing Canada f... | balls , including a 12-inch p...  |  True   | 0.4404  | 0.2543 |    45     |     31     |       |   284.2717   |          |
+| 659 |    22    | In 2010 , Arjona wanted to cha... |             music....             |  True   | 0.6148  | 0.4198 |    51     |     29     |       |   109.7504   |          |
+| 660 |    22    | Lim was sued by councilor Denn... |    history of the country....     |  True   | 0.5089  | 0.3056 |    47     |     33     |       |   161.008    |          |
+| 661 |    22    | The assault forces would compr... | -powered artillery, and a numb... |  True   | 0.4269  | 0.2231 |    60     |     32     |       |   269.7568   |          |
+| 662 |    22    | Several agencies issue Dvorak ... | National Hurricane Center ( N...  |  True   | 0.6206  | 0.4087 |    47     |     35     |       |   368.7519   |          |
+| 663 |    22    | While the Philippine Atmospher... | and 20 ° F, the Philippine At...  |  True   | 0.6897  | 0.4602 |    43     |     38     |       |   334.074    |          |
+| 664 |    22    | The ZNG , formally established... |         of the state....          |  True   | 0.8692  | 0.3155 |    55     |     39     |       |   208.7666   |          |
+| 665 |    22    | The main reason for the French... | the ironclad fleet built in t...  |  True   | 0.6457  | 0.0806 |    49     |     39     |       |    81.67     |          |
+| 666 |    22    | Other museums in the city are ... | the Angels , the Museum of th...  |  True   | 0.9509  | 0.3561 |    56     |     59     |       |   253.9524   |          |
+| 667 |    22    | In contrast , a Time magazine ... | 's use of language as a weapon... |  True   | 0.7095  | 0.111  |    55     |     49     |       |   121.409    |          |
+| 668 |    22    | The members are : the High Com... | Singh , the High Commissioner...  |  True   | 0.8561  | 0.2434 |    56     |     64     |       |   377.567    |          |
+| 669 |    22    | It was not until the final rou... | the Sydney Sixers’ win over t...  |  True   | 1.0463  |  0.43  |    46     |     52     |       |   229.7942   |          |
+| 670 |    22    | Since the establishment of the... |      socialist" language....      |  True   | 1.0635  |  0.43  |    44     |     57     |       |   254.5435   |          |
+| 671 |    22    | The fuel storage of the ships ... | .5 knots ( 9.5 km ) per hour....  |  True   | 0.8057  | 0.1723 |    53     |     53     |       |   74.4277    |          |
+| 672 |    22    | The objective of the infantry ... | the landing craft was destroy...  |  True   | 0.8159  | 0.1826 |    51     |     63     |       |   92.1005    |          |
+| 673 |    22    | The Olmecs are regarded as the... | the Olmec culture of the Amer...  |  True   | 1.0102  | 0.3672 |    45     |     57     |       |   79.6262    |          |
+| 674 |    22    | His ERA was the lowest by a Do... | 1 ⁄ 3 innings pitched in the ...  |  True   | 0.9245  | 0.2752 |    50     |     66     |       |   324.3953   |          |
+| 675 |    22    | As the North Korean attack dev... |           the city....            |  True   | 1.0487  | 0.3993 |    43     |     60     |       |   204.742    |          |
+| 676 |    22    | Before filming , Mendes and Sp... |         a normal man....          |  True   | 1.0376  | 0.3786 |    53     |     54     |       |   176.5372   |          |
+| 677 |    22    | Osbert was still alive in 1184... | latter was a member of the Ho...  |  True   | 1.1249  |  0.45  |    44     |     80     |       |    74.757    |          |
+| 678 |    22    | The North Korean strategy was ... |               ....                |  True   | 0.7554  | 0.0942 |    39     |     71     |       |   281.3135   |          |
+| 679 |    22    | Amos ' team 's goalkeeper was ... | the way to the penalty spot ,...  |  True   | 1.0619  | 0.3885 |    51     |     79     |       |   393.1547   |          |
+| 680 |    22    | On Jeju Island , Maemi produce... |               ....                |  True   | 0.8889  | 0.213  |    59     |     55     |       |   206.0305   |          |
+| 681 |    22    | The route begins at an interse... |          Youngstown....           |  True   |  0.961  | 0.2852 |    50     |     71     |       |   157.9116   |          |
+| 682 |    22    | Taylor wrote : " Broke may hav... |      the last few years....       |  True   | 0.9143  | 0.2333 |    54     |     69     |       |   182.5634   |          |
+| 683 |    22    | He masturbates in the confines... |               ....                |  True   |  0.828  | 0.1414 |    48     |     80     |       |   42.2084    |          |
+| 684 |    22    | Tondo district was maintained ... | " son of earth " ) ; or lakan...  |  True   | 0.8004  | 0.1011 |    54     |     72     |       |   46.4605    |          |
+| 685 |    22    | UFC President Dana White said ... |       later this month....        |  True   | 0.7809  | 0.0703 |    41     |     83     |       |   193.4998   |          |
+| 686 |    22    | The shooting script features a... |             body....              |  True   | 1.0583  | 0.3457 |    52     |     79     |       |   130.5016   |          |
+| 687 |    22    | The batteries have a claim to ... |           distances....           |  True   | 0.9175  | 0.2029 |    51     |     83     |       |   288.0034   |          |
+| 688 |    23    | She started playing for the Sy... | World Championship in Osaka, ...  |  True   | 0.2178  | 0.175  |    54     |     9      |       |   50.7365    |          |
+| 689 |    23    | These included allowing women ... | , the Torah , and the Torah ,...  |  True   | 0.1575  | 0.1141 |    48     |     10     |       |   99.5758    |          |
+| 690 |    23    | In the 20th century , he was t... | , as a poet , as a writer , a...  |  True   | 0.4905  | 0.4106 |    55     |     16     |       |   260.8992   |          |
+| 691 |    23    | Throughout the course of the d... | it the highest peak in the co...  |  True   | 0.3217  | 0.2462 |    50     |     14     |       |   344.8788   |          |
+| 692 |    23    | The main reason for the French... |        from the French....        |  True   | 0.4239  | 0.3172 |    56     |     20     |       |   88.4346    |          |
+| 693 |    23    | The tanks attempted to breach ... |              day....              |  True   | 0.2959  | 0.1846 |    54     |     21     |       |   171.3002   |          |
+| 694 |    23    | Tondo district was maintained ... | , and the Emperor of the Phil...  |  True   | 0.2642  | 0.1441 |    66     |     27     |       |   265.1717   |          |
+| 695 |    23    | He was struck by the book 's i... | the latter with its " " " " "...  |  True   | 0.3894  | 0.2354 |    41     |     35     |       |   94.0547    |          |
+| 696 |    23    | On the April 15 episode of Raw... |              won....              |  True   | 0.4691  | 0.3072 |    42     |     28     |       |   167.4701   |          |
+| 697 |    23    | Another cluster of colleges li... | , @-@ private institution of D... |  True   | 0.3673  | 0.2049 |    53     |     25     |       |   254.7134   |          |
+| 698 |    23    | According to historian Mark St... | and muzzle flash ; the gun wa...  |  True   | 0.2366  | 0.0739 |    52     |     37     |       |   318.6241   |          |
+| 699 |    23    | The lyrics , which speak of " ... | is " " " " " " " " " " " " " ...  |  True   | 0.5594  | 0.3891 |    60     |     39     |       |   206.6712   |          |
+| 700 |    23    | The following night on Raw , W... |         his contract....          |  True   | 0.4405  | 0.2666 |    52     |     34     |       |   364.4741   |          |
+| 701 |    23    | Peppiatt notes that the exhibi... | sic] a wall, and then in a mor... |  True   | 0.5266  | 0.338  |    63     |     31     |       |   369.5415   |          |
+| 702 |    23    | The Light Tank Mk VII ( A17 ) ... |            War II....             |  True   | 0.2914  | 0.094  |    34     |     40     |       |   281.0561   |          |
+| 703 |    23    | In her acceptance speech , Jan... |               ."...               |  True   |  0.365  | 0.1641 |    40     |     30     |       |   200.2657   |          |
+| 704 |    23    | The building used " energy eff... | ) and west ( towards the city...  |  True   | 0.4293  | 0.2251 |    58     |     48     |       |   374.7279   |          |
+| 705 |    23    | Lesnar appears in the video ga... | WWE 2K16 , WWE 2K17 , WWE 2K1...  |  True   | 0.3457  | 0.1343 |    47     |     30     |       |   59.1108    |          |
+| 706 |    23    | The film is described by acade... |               ....                |  True   | 0.4989  | 0.2765 |    48     |     45     |       |   383.217    |          |
+| 707 |    23    | He has been called the " Poet ... |       , and many others....       |  True   | 0.5814  | 0.3481 |    51     |     46     |       |   112.3307   |          |
+| 708 |    23    | Spacey and Bening worked to cr... |     decision to marry her....     |  True   | 0.5633  | 0.3274 |    39     |     48     |       |   338.9835   |          |
+| 709 |    23    | Amos ' team 's goalkeeper was ... | to the top of the box , and s...  |  True   | 0.3432  | 0.1043 |    54     |     55     |       |   373.057    |          |
+| 710 |    23    | Atmospheric divergence was als... |          2003 period....          |  True   | 0.4094  | 0.1541 |    40     |     56     |       |   167.4638   |          |
+| 711 |    23    | " The New York Times , despite... | is not only " a " but " " " "...  |  True   | 0.3857  | 0.1246 |    48     |     65     |       |   362.2293   |          |
+| 712 |    23    | Manila 's population density d... | km2 ) , Jakarta ( 16 @,@ 447 ...  |  True   | 0.3521  | 0.0847 |    54     |     48     |       |   200.9434   |          |
+| 713 |    23    | George Steiner , literary crit... |               ....                |  True   | 0.4828  | 0.2148 |    48     |     56     |       |   306.0486   |          |
+| 714 |    23    | On 6 April 1944 the first grou... |       were repatriated....        |  True   |  0.657  | 0.3686 |    45     |     57     |       |   218.4246   |          |
+| 715 |    23    | The Kōtetsu ( Japanese : 甲鉄 , ... | of the Japanese occupation of...  |  True   | 0.5972  | 0.2975 |    40     |     66     |       |   173.2616   |          |
+| 716 |    23    | But I omit any further discour... | of his reign, have been in th...  |  True   |  0.667  | 0.3581 |    60     |     74     |       |   57.8215    |          |
+| 717 |    23    | " Weevils Wobble But They Don ... |  " " The Man Who Loved Me " ....  |  True   | 0.5089  | 0.1949 |    58     |     67     |       |   80.7893    |          |
+| 718 |    23    | Had the Egyptians actually uti... |               ....                |  True   | 0.7163  | 0.3904 |    50     |     66     |       |   51.3963    |          |
+| 719 |    23    | The rugged surfaces of bones m... | to the problem of acid build ...  |  True   | 0.3839  | 0.0644 |    55     |     85     |       |   133.327    |          |
+| 720 |    23    | The soundtrack features songs ... | by the band's own drummer, Jo...  |  True   | 0.3763  | 0.0543 |    54     |     84     |       |    59.353    |          |
+| 721 |    23    | While he found that the script... | " have a " " " " " " " " " " ...  |  True   | 0.5919  | 0.2566 |    57     |     91     |       |   221.113    |          |
+| 722 |    23    | On July 19 at Battleground , L... | was the first time Lesnar had...  |  True   | 0.7449  | 0.4005 |    44     |     66     |       |   251.6564   |          |
+| 723 |    23    | Some modern biblical scholars ... |               ....                |  True   | 0.7168  | 0.379  |    59     |     85     |       |   321.4358   |          |
+| 724 |    23    | During this time , palaeontolo... | , and the ribs that are not c...  |  True   | 0.6427  | 0.2869 |    49     |    100     |       |   81.4581    |          |
+| 725 |    24    | Eighth Army had in reserve thr... | ) , was placed in line with th... |  True   | 0.1236  | 0.0824 |    45     |     9      |       |   306.7627   |          |
+| 726 |    24    | The first notable Japanese app... | number of contributions to th...  |  True   | 0.4167  | 0.3663 |    46     |     10     |       |   67.8744    |          |
+| 727 |    24    | On 13 December 1943 , the War ... | , the squadron was renamed the... |  True   | 0.3029  | 0.2347 |    37     |     13     |       |   348.4048   |          |
+| 728 |    24    | Shot by November 2012 , the mu... | "m " a " lot of " " " " " " "...  |  True   | 0.2501  | 0.1645 |    55     |     19     |       |   43.0441    |          |
+| 729 |    24    | The Commonwealth War Graves Co... |               ....                |  True   | 0.4078  | 0.3051 |    40     |     18     |       |   65.8657    |          |
+| 730 |    24    | The primary tasks of the briga... |         out the enemy....         |  True   | 0.4059  | 0.2648 |    51     |     24     |       |   395.0829   |          |
+| 731 |    24    | But these encounters were ofte... | in the French-controlled Medi...  |  True   | 0.3277  | 0.1738 |    43     |     25     |       |   55.3926    |          |
+| 732 |    24    | There , in the southernmost pa... |               ....                |  True   | 0.2154  | 0.0616 |    51     |     26     |       |   79.3156    |          |
+| 733 |    24    | The interest in Japanese verse... |             like....              |  True   | 0.4464  | 0.2851 |    52     |     29     |       |   289.9259   |          |
+| 734 |    24    | She finished the race in 12 @.... |     ( 11 @.@ 68 seconds )...      |  True   |  0.319  | 0.1535 |    54     |     31     |       |   382.0237   |          |
+| 735 |    24    | The Confederacy built ships de... | where the Confederacy had bee...  |  True   |  0.566  | 0.3965 |    42     |     33     |       |   169.0438   |          |
+| 736 |    24    | These Melanaus used to live fu... |         of the Rajah....          |  True   | 0.3753  | 0.1947 |    59     |     31     |       |   390.1483   |          |
+| 737 |    24    | San Lorenzo Colossal Head 8 ( ... |    ft ( 1 @.@ 6 ft ) tall....     |  True   | 0.2912  | 0.1027 |    44     |     35     |       |   295.6121   |          |
+| 738 |    24    | The primary tasks of the briga... | squadron , and the 7th Airbor...  |  True   | 0.3964  | 0.2048 |    48     |     38     |       |   367.4561   |          |
+| 739 |    24    | Shot by November 2012 , the mu... | that] " is the best music vide... |  True   | 0.2919  | 0.0927 |    59     |     47     |       |   362.0736   |          |
+| 740 |    24    | " This is very evident in the ... |             years....             |  True   | 0.4542  | 0.2445 |    49     |     17     |       |   379.9678   |          |
+| 741 |    24    | The most dramatic attempt to c... | only in the Atlantic but also...  |  True   | 0.4405  | 0.2246 |    48     |     44     |       |   227.0566   |          |
+| 742 |    24    | The episode is set in the Vict... | The Doctor's Wife" , and the r... |  True   | 0.4403  | 0.2143 |    61     |     44     |       |   130.0673   |          |
+| 743 |    24    | UB @-@ 8 was transferred to th... |        First World War....        |  True   | 0.5272  | 0.2946 |    57     |     45     |       |   125.4573   |          |
+| 744 |    24    | Melinda Newman , writing for H... | " " " " " " " " " " " " " " "...  |  True   | 0.5131  | 0.2751 |    46     |     60     |       |   102.2081   |          |
+| 745 |    24    | The building used " energy eff... | the building was not used for...  |  True   | 0.5767  | 0.3356 |    44     |     55     |       |   207.5954   |          |
+| 746 |    24    | In contrast , a Time magazine ... | a time when the word 'Hitler'...  |  True   | 0.5976  | 0.356  |    60     |     49     |       |   140.887    |          |
+| 747 |    24    | He trialled several versions o... |      the scene too long....       |  True   |  0.496  | 0.2548 |    41     |     52     |       |   188.1175   |          |
+| 748 |    24    | With his Career Hits Allowed P... | . 64 ) Which is the second low... |  True   | 0.3162  | 0.0722 |    57     |     56     |       |   126.7634   |          |
+| 749 |    24    | The Olmecs are regarded as the... | culture of India , the Indus ...  |  True   | 0.6395  | 0.3765 |    47     |     61     |       |   298.968    |          |
+| 750 |    24    | But when the search party lose... |     's most powerful man ?...     |  True   | 0.5833  | 0.3149 |    49     |     56     |       |   191.3147   |          |
+| 751 |    24    | She started playing for the Sy... | World Championships in Tokyo ...  |  True   | 0.4556  | 0.1847 |    51     |     72     |       |   304.5776   |          |
+| 752 |    24    | While he found that the script... | ] " " " " " " " " " " " " " "...  |  True   | 0.4222  | 0.1328 |    63     |     79     |       |   346.4531   |          |
+| 753 |    24    | There , in the southernmost pa... |     the Naktong was held....      |  True   | 0.3536  | 0.0517 |    46     |     60     |       |   238.8719   |          |
+| 754 |    24    | Hentzi concluded that American... | and emotional content was " n...  |  True   | 0.4248  | 0.1229 |    50     |     84     |       |   84.0421    |          |
+| 755 |    24    | After receiving instructions f... | david_mccain was in charge of ... |  True   | 0.6904  | 0.3777 |    35     |     55     |       |   280.3845   |          |
+| 756 |    24    | UB @-@ 10 was eventually joine... |               ....                |  True   | 0.6568  | 0.346  |    61     |     51     |       |   366.4843   |          |
+| 757 |    24    | As of February 18 , the most s... |         6 million ) ....          |  True   | 0.4288  | 0.1132 |    50     |     76     |       |   287.5287   |          |
+| 758 |    24    | The ships had a successful des... |               )...                |  True   | 0.6413  | 0.3253 |    63     |     79     |       |   356.919    |          |
+| 759 |    24    | At any rate , after Claudius '... | the people ; and that he had ...  |  True   | 0.4734  | 0.1431 |    53     |     97     |       |   397.4163   |          |
+| 760 |    25    | Amos ' team 's goalkeeper was ... | to the top of the box , and s...  |  True   | 0.2181  | 0.1723 |    54     |     12     |       |   312.2508   |          |
+| 761 |    25    | The following night on Raw , U... | Lesnar and then attacked Lesn...  |  True   | 0.2284  | 0.182  |    69     |     11     |       |   229.7855   |          |
+| 762 |    25    | The objective of the infantry ... | airborne. The Tetrarch was ab...  |  True   | 0.1308  | 0.0812 |    61     |     11     |       |   218.7049   |          |
+| 763 |    25    | In storm information below , w... | mean to designate maximum sus...  |  True   | 0.1243  | 0.0712 |    49     |     14     |       |   72.7939    |          |
+| 764 |    25    | Mediterranean Area headed by a... | Arabia , Kuwait , Oman , Qata...  |  True   | 0.1152  | 0.0511 |    62     |     17     |       |   387.2143   |          |
+| 765 |    25    | Commenting on the controversy ... |               "...                |  True   | 0.1286  | 0.0613 |    50     |     16     |       |   118.4478   |          |
+| 766 |    25    | Mediterranean Area headed by a... | Malta , Mauritius , Mauritius...  |  True   | 0.2667  | 0.1923 |    56     |     15     |       |   306.9258   |          |
+| 767 |    25    | Alternatively , Kirby 's Block... | 0" (a "0" is a "0" is a "0" is... |  True   | 0.3115  | 0.2337 |    51     |     12     |       |    57.037    |          |
+| 768 |    25    | The helicopters arrived in Mog... |       of high altitude....        |  True   | 0.3531  | 0.2591 |    42     |     20     |       |   61.7804    |          |
+| 769 |    25    | His are free translations , wh... | which are not in his collecti...  |  True   | 0.2284  | 0.121  |    50     |     28     |       |   67.1455    |          |
+| 770 |    25    | " Megan Frye of Allmusic opens... |          listener. "...           |  True   | 0.2015  | 0.0912 |    43     |     13     |       |   361.7219   |          |
+| 771 |    25    | However , when the UN forces ,... |         the peninsula....         |  True   | 0.3685  | 0.2489 |    59     |     29     |       |   141.7534   |          |
+| 772 |    25    | Shot by November 2012 , the mu... | " a lot of fun " by Zayn Mali...  |  True   | 0.1695  | 0.0407 |    53     |     37     |       |   336.6116   |          |
+| 773 |    25    | Despite Nerva 's measures to r... |           his death....           |  True   | 0.3631  | 0.2134 |    32     |     36     |       |   137.573    |          |
+| 774 |    25    | QuackShot , known in Japan as ... |         Sega Genesis....          |  True   |  0.334  | 0.152  |    46     |     46     |       |   283.6507   |          |
+| 775 |    25    | The design of the Fusō @-@ cla... | attempt to maintain the balan...  |  True   | 0.3854  | 0.203  |    42     |     39     |       |   273.0973   |          |
+| 776 |    25    | Building upon the character 's... | , " The Doctor "s first appea...  |  True   |  0.313  | 0.1109 |    54     |     55     |       |   217.7167   |          |
+| 777 |    25    | The primary patterns used are ... | ) , and central dense overcas...  |  True   | 0.3911  | 0.1616 |    42     |     37     |       |   358.4368   |          |
+| 778 |    25    | The 29th Brigade formed the co... | , and ' B ' Special Service S...  |  True   | 0.3656  | 0.1313 |    40     |     67     |       |   260.9661   |          |
+| 779 |    25    | The events of August 1969 in D... |       Provisional IRA ....        |  True   | 0.3398  | 0.1012 |    66     |     72     |       |   398.6297   |          |
+| 780 |    25    | In May 1942 , a small number o... |             field....             |  True   | 0.5163  | 0.2755 |    50     |     49     |       |   355.2487   |          |
+| 781 |    25    | The rest of the United States ... |       the three cities....        |  True   | 0.4859  | 0.2238 |    47     |     83     |       |   306.2905   |          |
+| 782 |    25    | During 1944 , the ships ' AA d... | gun mounts , for a total of 1...  |  True   | 0.5089  | 0.2448 |    37     |     84     |       |    113.29    |          |
+| 783 |    25    | Grant had previously played th... |       Doctor Who spoof....        |  True   | 0.4248  | 0.1419 |    55     |     74     |       |   256.3935   |          |
+| 784 |    26    | Speculation about a return to ... |               ....                |  True   |  0.178  | 0.1309 |    58     |     10     |       |   300.6685   |          |
+| 785 |    26    | The Chicago Film Critics Assoc... | also named the film the best ...  |  True   | 0.3086  | 0.2542 |    46     |     12     |       |   57.8132    |          |
+| 786 |    26    | Eighth Army now ordered the US... |    and the Nangarhar River....    |  True   | 0.1385  | 0.0803 |    49     |     9      |       |   223.9458   |          |
+| 787 |    26    | He was willing to officiate at... | " , and " a commitment to a J...  |  True   | 0.2715  | 0.2023 |    57     |     19     |       |   306.8884   |          |
+| 788 |    26    | René Taupin remarked that ' It... | , and who were not in agreemen... |  True   | 0.1632  | 0.0904 |    47     |     18     |       |   193.8335   |          |
+| 789 |    26    | Furthermore , the city is comp... | Maria , San Miguel , San Migu...  |  True   | 0.1873  | 0.1108 |    47     |     21     |       |   100.1568   |          |
+| 790 |    26    | Lieber believes that the forme... |              man....              |  True   | 0.3135  | 0.2334 |    47     |     15     |       |   269.5355   |          |
+| 791 |    26    | The perimeter position taken b... | point, the hill that was the ...  |  True   | 0.3347  | 0.2229 |    53     |     25     |       |   276.0125   |          |
+| 792 |    26    | The North Korean strategy was ... | which was the most effective ...  |  True   | 0.2562  | 0.1408 |    54     |     32     |       |   254.3362   |          |
+| 793 |    26    | They fired a 6 kg ( 13 lb ) pr... | ( 2 @,@ 500 metres ( 2 @,@ 50...  |  True   | 0.3788  | 0.2442 |    36     |     28     |       |   387.5936   |          |
+| 794 |    26    | During the match at WrestleMan... |      neck into the ring....       |  True   | 0.2356  | 0.1004 |    29     |     30     |       |   326.1466   |          |
+| 795 |    26    | The head was largely buried wh... | . The head was found to be a l... |  True   | 0.2891  | 0.1509 |    49     |     31     |       |   162.5553   |          |
+| 796 |    26    | The video features scenes remi... |            others....             |  True   | 0.3423  | 0.1922 |    59     |     37     |       |   147.8088   |          |
+| 797 |    26    | Another cluster of colleges li... | as the Pangasinan and the Pan...  |  True   | 0.3109  | 0.1208 |    41     |     40     |       |   383.347    |          |
+| 798 |    26    | What did concern the reviewer ... | those of Hitler 's , and that...  |  True   | 0.4828  | 0.2747 |    46     |     54     |       |   92.2125    |          |
+| 799 |    26    | The obvious unit for conversio... |             unit....              |  True   | 0.4779  | 0.2577 |    48     |     52     |       |   196.2611   |          |
+| 800 |    26    | While he found that the script... | as " " " " " " " " " " " " " ...  |  True   | 0.4214  | 0.1819 |    59     |     73     |       |   125.3254   |          |
+| 801 |    26    | The following night on Raw , L... |          1 car crash....          |  True   | 0.3125  |  0.07  |    42     |     58     |       |   254.5638   |          |
+| 802 |    26    | The removal of the secondary a... | metres ( 9 @.@ 1 in ) and the...  |  True   | 0.4165  | 0.1717 |    50     |     64     |       |   209.2969   |          |
+| 803 |    26    | Head I ( actually begun in the... | is not clear if they are huma...  |  True   | 0.4065  | 0.1618 |    37     |     60     |       |   106.4029   |          |
+| 804 |    26    | The central pressures assigned... |       ) in the Pacific....        |  True   | 0.3034  | 0.0498 |    45     |     65     |       |   345.237    |          |
+| 805 |    26    | for even if he was not the ins... | the gods " , and as " the foo...  |  True   | 0.3424  | 0.0601 |    51     |     91     |       |   197.6272   |          |
+| 806 |    26    | Mediterranean Area headed by a... | , Spain , Malta , Monaco , Mo...  |  True   | 0.3241  | 0.0395 |    57     |     92     |       |   84.6493    |          |
+| 807 |    26    | Eighth Army now ordered the US... |  and the River of the North....   |  True   | 0.5719  | 0.2857 |    49     |     77     |       |   297.0807   |          |
+| 808 |    26    | Arjona commented that his inde... | is not to be taken for grante...  |  True   | 0.5047  | 0.2123 |    51     |     91     |       |   99.4614    |          |
+| 809 |    27    | With his Career Hits Allowed P... | pitched ( 2.5 @. . . ) which ...  |  True   | 0.1809  | 0.1158 |    53     |     14     |       |   345.441    |          |
+| 810 |    27    | Winds were not as strong farth... |           the east....            |  True   |  0.13   | 0.045  |    39     |     17     |       |   92.1642    |          |
+| 811 |    27    | Razon Sports Center and the Un... |             teams....             |  True   | 0.2449  | 0.1563 |    44     |     17     |       |   219.2059   |          |
+| 812 |    27    | According to Suetonius , Nero ... | but the army officers refused...  |  True   | 0.4062  | 0.3096 |    59     |     22     |       |   84.8771    |          |
+| 813 |    27    | Mayors Lacson , Villegas , and... | the lives of the people of th...  |  True   | 0.2764  | 0.1763 |    64     |     16     |       |   390.8507   |          |
+| 814 |    27    | He has been called the " Poet ... |        and many others....        |  True   | 0.1896  | 0.0856 |    46     |     19     |       |   345.3354   |          |
+| 815 |    27    | In the meantime , Task Force M... |               ....                |  True   |  0.304  | 0.1966 |    34     |     24     |       |   243.0251   |          |
+| 816 |    27    | At any rate , after Claudius '... | word " fool " ; and that he h...  |  True   | 0.3349  | 0.2166 |    61     |     29     |       |   214.0109   |          |
+| 817 |    27    | Crowds gathered in John Mackin... |         him to resign....         |  True   | 0.2425  | 0.0953 |    46     |     25     |       |   305.0348   |          |
+| 818 |    27    | These included allowing women ... | matriarchs of the Torah , and...  |  True   | 0.3166  | 0.1659 |    54     |     32     |       |   106.7851   |          |
+| 819 |    27    | Intensity estimates of maximum... | -force ( 100 miles per hour ( ... |  True   | 0.3102  | 0.1457 |    65     |     38     |       |   334.4864   |          |
+| 820 |    27    | The removal of the secondary a... | 9 @.@ 1 in ) and the addition...  |  True   |  0.239  | 0.0551 |    52     |     45     |       |   182.1007   |          |
+| 821 |    27    | In another review in The New Y... | not characters " , and that "...  |  True   | 0.4693  | 0.279  |    53     |     52     |       |   169.5104   |          |
+| 822 |    27    | In 2010 , Arjona wanted to cha... |               ....                |  True   | 0.2589  | 0.0655 |    49     |     43     |       |   96.2062    |          |
+| 823 |    27    | Despite this finding , the pol... |      to assassinate him....       |  True   | 0.2814  | 0.0751 |    51     |     47     |       |   261.3046   |          |
+| 824 |    27    | The members are : the High Com... | the Acting High Commissioner ...  |  True   | 0.3567  | 0.1262 |    46     |     62     |       |   44.8996    |          |
+| 825 |    27    | UB @-@ 8 was transferred to th... |               ....                |  True   | 0.3729  | 0.1357 |    41     |     47     |       |   396.5049   |          |
+| 826 |    27    | The episode is set in the Vict... |            episode....            |  True   | 0.4491  | 0.2065 |    58     |     54     |       |   153.0846   |          |
+| 827 |    27    | Only Colegio de San Juan de Le... |            in 1935....            |  True   | 0.3537  | 0.1056 |    48     |     57     |       |   317.2609   |          |
+| 828 |    27    | Buchanan also criticized the c... |               ....                |  True   | 0.4877  | 0.2368 |    47     |     55     |       |   302.5448   |          |
+| 829 |    27    | The first notable Japanese app... |  the Zen Buddhist tradition....   |  True   | 0.5666  | 0.2819 |    57     |     63     |       |   87.7005    |          |
+| 830 |    27    | On 4 January , several inciden... | arrive in Guam on the same da...  |  True   | 0.5157  | 0.2267 |    47     |     75     |       |   291.4849   |          |
+| 831 |    27    | In 1909 , Hulme left the Poets... | the old poetry from the publi...  |  True   | 0.5569  | 0.2675 |    63     |     53     |       |   370.0665   |          |
+| 832 |    27    | The track became the group 's ... | Zealand , and the United King...  |  True   | 0.5931  | 0.2997 |    47     |     75     |       |   316.867    |          |
+| 833 |    27    | On the February 24 , 2014 epis... | leaving him with a broken arm...  |  True   | 0.5541  | 0.2471 |    53     |     80     |       |   183.3256   |          |
+| 834 |    27    | American Beauty was edited by ... | had to leave ) and was replac...  |  True   | 0.5664  | 0.257  |    46     |     81     |       |   363.497    |          |
+| 835 |    27    | By 1942 , there existed specif... | to the 1st Airborne Division....  |  True   | 0.4992  | 0.1861 |    38     |     89     |       |   113.2655   |          |
+| 836 |    28    | In 1909 , Hulme left the Poets... |        the Poets' Club....        |  True   | 0.1153  | 0.0669 |    48     |     6      |       |   182.9985   |          |
+| 837 |    28    | " Weevils Wobble But They Don ... |          Go Down " ....           |  True   | 0.3758  | 0.3189 |    60     |     12     |       |   337.8753   |          |
+| 838 |    28    | Lesnar appears in the video ga... |             2K17....              |  True   | 0.3454  | 0.2883 |    52     |     8      |       |   313.3417   |          |
+| 839 |    28    | A number of older residents ca... |           language....            |  True   | 0.2438  | 0.1866 |    46     |     9      |       |   303.9687   |          |
+| 840 |    28    | Major General Richard Gale had... | landing of the 6th Airborne A...  |  True   | 0.2772  | 0.1666 |    49     |     19     |       |   212.2055   |          |
+| 841 |    28    | He was also the first pitcher ... |               )....               |  True   | 0.3662  | 0.2481 |    37     |     25     |       |   343.0342   |          |
+| 842 |    28    | Manila has six legislative dis... | of the Philippines ) and the ...  |  True   | 0.2296  | 0.0866 |    41     |     31     |       |   354.5585   |          |
+| 843 |    28    | The system was fitted during J... | and the system was fitted on ...  |  True   | 0.1936  | 0.047  |    47     |     30     |       |   117.6415   |          |
+| 844 |    28    | The Talmud adds that the sage ... |               ....                |  True   | 0.3073  | 0.1569 |    45     |     30     |       |   167.3917   |          |
+| 845 |    28    | The Dominions and India also e... | the Memorial for the Indian A...  |  True   | 0.2424  | 0.0772 |    47     |     33     |       |   328.9807   |          |
+| 846 |    28    | Hall used a 1 / 8 inch Tiffen ... | the filter to the film was no...  |  True   | 0.2726  | 0.1073 |    57     |     33     |       |   336.7656   |          |
+| 847 |    28    | The following week on Raw , He... |    Show in the main event....     |  True   | 0.3837  | 0.2071 |    54     |     36     |       |    308.65    |          |
+| 848 |    28    | In the century 's first decade... |        , and many more....        |  True   | 0.4583  | 0.2785 |    50     |     36     |       |   187.7886   |          |
+| 849 |    28    | His reputation and the value o... |            artist....             |  True   | 0.3466  | 0.147  |    44     |     42     |       |   351.7664   |          |
+| 850 |    28    | At this time , Gale decided to... |              ner....              |  True   | 0.4682  | 0.2686 |    44     |     48     |       |   55.7152    |          |
+| 851 |    28    | While he found that the script... | " , but " " [ " [ " [ " [ " [...  |  True   | 0.4407  | 0.2378 |    70     |     52     |       |   62.8602    |          |
+| 852 |    28    | Fueled in large part by Gordon... |               ....                |  True   | 0.4766  | 0.2578 |    46     |     50     |       |   42.2344    |          |
+| 853 |    28    | Between Dürenstein and Rossatz... |               ....                |  True   | 0.5666  | 0.3394 |    47     |     20     |       |   310.7182   |          |
+| 854 |    28    | for even if he was not the ins... | gods " , and as " the food of...  |  True   | 0.5565  | 0.3293 |    52     |     60     |       |   209.3125   |          |
+| 855 |    28    | Mayors Lacson , Villegas , and... | the city's development and de...  |  True   |  0.327  | 0.0966 |    51     |     39     |       |   359.9846   |          |
+| 856 |    28    | OPUSA had a revenue of over $ ... |               ....                |  True   | 0.5955  | 0.3519 |    51     |     55     |       |   77.6678    |          |
+| 857 |    28    | Amos ' team 's goalkeeper was ... | and he was also the team 's g...  |  True   | 0.4686  | 0.227  |    40     |     57     |       |   263.1598   |          |
+| 858 |    28    | The Dvorak technique ( develop... | data. The Dvorak technique is...  |  True   | 0.3743  | 0.1168 |    48     |     56     |       |   368.8436   |          |
+| 859 |    28    | According to Suetonius , Nero ... | to the sea, where he would be...  |  True   | 0.5716  | 0.3091 |    60     |     55     |       |   196.763    |          |
+| 860 |    28    | He has been called the " Poet ... | and the " Poet @-@ " by Chine...  |  True   | 0.4651  | 0.1975 |    46     |     65     |       |   166.0174   |          |
+| 861 |    28    | One person , an African Americ... | , according to the U.S. Attorn... |  True   |  0.62   | 0.3498 |    35     |     57     |       |   87.0365    |          |
+| 862 |    28    | David Bowers writes that it wa... |               ....                |  True   | 0.3299  | 0.057  |    61     |     66     |       |   352.6518   |          |
+| 863 |    28    | The primary patterns used are ... | central cold cover ( CCC ) pa...  |  True   | 0.5738  | 0.2987 |    43     |     69     |       |   286.5703   |          |
+| 864 |    28    | " However , in contrast , revi... | " " " Stone Sour is not a goo...  |  True   | 0.4216  | 0.1368 |    38     |     54     |       |   180.5422   |          |
+| 865 |    28    | " This is very evident in the ... |             years....             |  True   |  0.414  | 0.1271 |    50     |     28     |       |   205.5953   |          |
+| 866 |    28    | After two of the class , UB @-... | the German Navy , and the Ger...  |  True   | 0.5068  | 0.2173 |    54     |     69     |       |   150.6037   |          |
+| 867 |    28    | In June 2002 , Lesnar won the ... | WrestleMania 36 , where he de...  |  True   | 0.4966  | 0.1765 |    55     |     91     |       |   98.8384    |          |
+| 868 |    29    | Clearly linking Objectivism 's... | , of making them sound like th... |  True   | 0.4651  | 0.4112 |    56     |     10     |       |   157.5251   |          |
+| 869 |    29    | During the year , the Japan Me... |               ....                |  True   | 0.1779  | 0.1233 |    58     |     8      |       |   290.6339   |          |
+| 870 |    29    | The members are : the High Com... | of the Republic of South Afri...  |  True   | 0.1425  | 0.0832 |    49     |     12     |       |    87.986    |          |
+| 871 |    29    | The image impedance of the hal... |            element....            |  True   |  0.285  | 0.2208 |    50     |     7      |       |   55.6999    |          |
+| 872 |    29    | In one of the earliest phyloge... | , and a small hole in the sku...  |  True   | 0.4949  | 0.4013 |    56     |     15     |       |   153.2704   |          |
+| 873 |    29    | The prototype of the Light Tan... |       or to the French....        |  True   | 0.5564  | 0.4527 |    42     |     16     |       |   153.1556   |          |
+| 874 |    29    | In one shot during Lester 's e... |               ....                |  True   | 0.4341  | 0.3307 |    48     |     16     |       |   330.7648   |          |
+| 875 |    29    | Nonetheless , there were real ... |   idea of the ' popovkas' )....   |  True   | 0.4193  | 0.311  |    49     |     15     |       |   150.5211   |          |
+| 876 |    29    | He finished the race in 11 @.@... | that was dominated by the lik...  |  True   | 0.3993  | 0.291  |    42     |     14     |       |   249.0113   |          |
+| 877 |    29    | The objective of the infantry ... | was too small for the infantr...  |  True   | 0.4899  | 0.3808 |    38     |     18     |       |   44.6549    |          |
+| 878 |    29    | Plans have been laid out to re... |       its former glory....        |  True   | 0.5804  | 0.4633 |    61     |     17     |       |   282.3304   |          |
+| 879 |    29    | Besides , Peru was able to dep... | pdr guns , and a British @-@ ...  |  True   | 0.5791  | 0.4321 |    53     |     21     |       |   326.4182   |          |
+| 880 |    29    | David Bowers writes that it wa... |               ....                |  True   | 0.4927  | 0.3459 |    50     |     26     |       |   203.2922   |          |
+| 881 |    29    | Each of the boilers consumed a... |  ( 9 @,@ 681 t ) of fuel oil....  |  True   | 0.4363  | 0.2805 |    59     |     24     |       |   288.5268   |          |
+| 882 |    29    | He was willing to officiate at... | a commitment to a Jewish fami...  |  True   | 0.4166  | 0.2406 |    46     |     37     |       |   320.4388   |          |
+| 883 |    29    | Tondo district was maintained ... | " lords " ) to be the most im...  |  True   | 0.3908  | 0.215  |    70     |     38     |       |   87.8159    |          |
+| 884 |    29    | The first notable Japanese app... |          his poetry....           |  True   | 0.5591  | 0.3713 |    48     |     31     |       |   188.712    |          |
+| 885 |    29    | As of February 18 , the most s... | the United States ( $ 6 milli...  |  True   | 0.3081  | 0.1133 |    47     |     37     |       |   302.2501   |          |
+| 886 |    29    | The March 21 , 2009 The Econom... |               ....                |  True   | 0.2868  | 0.0729 |    42     |     36     |       |   332.9256   |          |
+| 887 |    29    | Nero 's final words were " Too... |         city of Rome....          |  True   | 0.7168  | 0.4708 |    45     |     41     |       |   229.5736   |          |
+| 888 |    29    | A number of older residents ca... |             home....              |  True   |  0.467  | 0.2305 |    49     |     38     |       |   354.7114   |          |
+| 889 |    29    | Speculation about a return to ... | over " , and that he would be...  |  True   | 0.6315  | 0.3909 |    50     |     54     |       |   71.6981    |          |
+| 890 |    29    | One critic , while acknowledgi... | a Jew, of being a " " " " " "...  |  True   | 0.4336  | 0.1847 |    58     |     57     |       |   340.2266   |          |
+| 891 |    29    | The perimeter position taken b... | km/h) , and the men of D and ...  |  True   | 0.7027  | 0.4421 |    45     |     49     |       |   267.9439   |          |
+| 892 |    29    | Gradual intensification follow... |              ) ....               |  True   | 0.4057  | 0.1338 |    44     |     51     |       |   366.7064   |          |
+| 893 |    29    | However , when the UN forces ,... |           peninsula....           |  True   | 0.4365  | 0.1644 |    60     |     54     |       |   183.6541   |          |
+| 894 |    29    | This was a remarkable honour ,... | hold the office of Consul Gen...  |  True   | 0.3776  | 0.0932 |    47     |     56     |       |   213.6548   |          |
+| 895 |    29    | The boats were equipped with c... |    the bottom of the water....    |  True   |  0.55   | 0.2608 |    68     |     58     |       |   232.774    |          |
+| 896 |    29    | Soon after returning to Washin... |            airport....            |  True   | 0.3879  | 0.103  |    42     |     55     |       |   104.404    |          |
+| 897 |    29    | IGN 's Matt Risley gave " The ... | and a " very real sense of hu...  |  True   | 0.5455  | 0.2505 |    46     |     65     |       |   161.3822   |          |
+| 898 |    29    | However , when the UN forces ,... |               ....                |  True   | 0.4428  | 0.1437 |    62     |     56     |       |   260.4061   |          |
+| 899 |    29    | On July 15 , Lesnar was notifi... |            , 2020....             |  True   | 0.5772  | 0.2708 |    44     |     54     |       |   117.8339   |          |
+| 900 |    29    | On November 1 , 2005 , the Nia... |              ) ....               |  True   | 0.6757  | 0.361  |    56     |     62     |       |   286.9556   |          |
+| 901 |    29    | According to Suetonius , Nero ... | of the Romans , but the Roman...  |  True   | 0.4663  | 0.1537 |    56     |     68     |       |   269.9071   |          |
+| 902 |    29    | However , in response to indic... |  to Mogadishu were cancelled....  |  True   | 0.5177  | 0.1999 |    57     |     62     |       |   63.4529    |          |
+| 903 |    29    | Nonetheless , there were real ... | was the first to be commissio...  |  True   | 0.5096  | 0.1896 |    47     |     64     |       |   175.6963   |          |
+| 904 |    29    | " Writing in 2003 , Roger Scru... |     and controlled mind. "...     |  True   |  0.751  | 0.4262 |    51     |     58     |       |   132.5958   |          |
+| 905 |    29    | Arjona commented that his inde... | possible, is to be able to do...  |  True   | 0.6832  | 0.3559 |    49     |     79     |       |   349.6614   |          |
+| 906 |    29    | It appears Vespasian befriende... |      the imperial court....       |  True   | 0.6331  | 0.3005 |    30     |     52     |       |   148.6253   |          |
+| 907 |    29    | The helicopters were flying to... | had been using to get to the ...  |  True   | 0.6576  | 0.3209 |    55     |     72     |       |   356.4575   |          |
+| 908 |    29    | The Chicago Film Critics Assoc... |      verdict on the film....      |  True   | 0.5208  | 0.1694 |    48     |     87     |       |   323.0989   |          |
+| 909 |    29    | The ZNG , formally established... |               ....                |  True   | 0.4228  | 0.0628 |    56     |     77     |       |   295.6917   |          |
+| 910 |    29    | In the Royal Navy , the switch... | if the gun was in the right p...  |  True   | 0.8404  | 0.4736 |    53     |     87     |       |   106.373    |          |
++-----+----------+-----------------------------------+-----------------------------------+---------+---------+--------+-----------+------------+-------+--------------+----------+
++---+----------------+----------------+-------------+---------------+----------------+
+|   | Total Requests | Avg Latency(s) | Avg TTFT(s) | Avg Input Len | Avg Output Len |
++---+----------------+----------------+-------------+---------------+----------------+
+| 0 |     911.0      |     0.4252     |   0.2111    |    49.9012    |    44.9396     |
++---+----------------+----------------+-------------+---------------+----------------+
