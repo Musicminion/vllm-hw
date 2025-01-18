@@ -57,6 +57,8 @@ export HTTPS_PROXY=http://用户名:密码@ip:port
 
 例如要使用EDF调度策略，启动的时候需要加上：
 ```bash
+# debug打开
+export VLLM_LOGGING_LEVEL=DEBUG
 # edf 调度策略
 /home/zzq/.conda/envs/vllm_zzq/bin/vllm serve "facebook/opt-125m" --port 15432 --gpu_memory_utilization 0.95 --scheduling_policy edf
 ```
@@ -72,7 +74,8 @@ curl -X POST "http://localhost:15432/v1/completions" -H "Content-Type: applicati
         "prompt": "Once upon a time,",
         "max_tokens": 512,
         "temperature": 0.5,
-        "rel_deadline": 100
+        "rel_deadline": 100,
+        "priority": 100
     }'
 ```
 
@@ -84,11 +87,10 @@ curl -X POST "http://localhost:15432/v1/completions" -H "Content-Type: applicati
 
 
 
-
 ### 备注
 启动失败可以查看机器显存占用（模型启动失败可能是因为显存不够）
 ```bash
-vidia-smi
+nvidia-smi
 ```
 
 启动如果遇到网络问题可能是没有配置代理
@@ -106,3 +108,11 @@ tests/*,examples,benchmarks
 ```
 export VLLM_LOGGING_LEVEL=DEBUG
 ```
+
+评测需要的库：
+```bash
+# 进入conda环境后安装
+pip install pandas pyarrow fastparquet aiohttp modelscope tabulate openpyxl
+```
+
+

@@ -564,21 +564,21 @@ class Scheduler:
         running_queue = self.running
         assert len(self._async_stopped) == 0
         
-        # 如果调度策略是edf的话，我们把running_queue 里面的按照ddl排个序
-        if self.scheduler_config.policy == "edf":
-            running_queue = deque(sorted(self.running, key=lambda x: x.abs_deadline))
-            # 然后用logger打印一下所有的任务和他们的ddl
-            logger.debug("running_queue, after sorted by ddl:")
-            for seq_group in running_queue:
-                logger.debug(f"request_id: {seq_group.request_id}, ddl: {seq_group.abs_deadline}")
+        # # 如果调度策略是edf的话，我们把running_queue 里面的按照ddl排个序
+        # if self.scheduler_config.policy == "edf":
+        #     running_queue = deque(sorted(self.running, key=lambda x: x.abs_deadline))
+        #     # 然后用logger打印一下所有的任务和他们的ddl
+        #     logger.debug("running_queue, after sorted by ddl:")
+        #     for seq_group in running_queue:
+        #         logger.debug(f"request_id: {seq_group.request_id}, ddl: {seq_group.abs_deadline}")
         
-        # 如果调度策略是sjf的话，我们把running_queue 里面的按照 sampling_params.max_tokens 排个序
-        if self.scheduler_config.policy == "sjf":
-            running_queue = deque(sorted(self.running, key=lambda x: x.sampling_params.max_tokens))
-            # 然后用logger打印一下所有的任务和他们的ddl
-            logger.debug("running_queue, after sorted by max_tokens:")
-            for seq_group in running_queue:
-                logger.debug(f"request_id: {seq_group.request_id}, max_tokens: {seq_group.sampling_params.max_tokens}")
+        # # 如果调度策略是sjf的话，我们把running_queue 里面的按照 sampling_params.max_tokens 排个序
+        # if self.scheduler_config.policy == "sjf":
+        #     running_queue = deque(sorted(self.running, key=lambda x: x.sampling_params.max_tokens))
+        #     # 然后用logger打印一下所有的任务和他们的ddl
+        #     logger.debug("running_queue, after sorted by max_tokens:")
+        #     for seq_group in running_queue:
+        #         logger.debug(f"request_id: {seq_group.request_id}, max_tokens: {seq_group.sampling_params.max_tokens}")
         
         while running_queue:
             seq_group = running_queue[0]
@@ -837,6 +837,14 @@ class Scheduler:
         Returns:
             The priority of the sequence group.
         """
+        
+        if self.scheduler_config.policy == "priority":
+            return seq_group.priority, seq_group.arrival_time
+        if self.scheduler_config.policy == "sjf":
+            return seq_group.sampling_params.max_tokens, seq_group.arrival_time
+        if self.scheduler_config.policy == "edf":
+            return seq_group.abs_deadline, seq_group.arrival_time
+        
         return seq_group.priority, seq_group.arrival_time
 
     def _schedule_priority_preemption(
@@ -1094,6 +1102,13 @@ class Scheduler:
 
         if len(prefills.seq_groups
                ) == 0 and self.scheduler_config.policy == "priority":
+            self._schedule_priority_preemption(budget)
+        # edf
+        elif len(prefills.seq_groups
+               ) == 0 and self.scheduler_config.policy == "edf":
+            self._schedule_priority_preemption(budget)
+        elif len(prefills.seq_groups
+               ) == 0 and self.scheduler_config.policy == "sjf":
             self._schedule_priority_preemption(budget)
 
         # Don't schedule decodes if prefills are scheduled.
