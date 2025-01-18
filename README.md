@@ -101,3 +101,8 @@ export HTTPS_PROXY=http://用户名:密码@ip:port
 ```
 tests/*,examples,benchmarks
 ```
+
+因为我把不同调度算法排序输出的信息全都设置成debug了，所以设置vllm的日志级别：
+```
+export VLLM_LOGGING_LEVEL=DEBUG
+```

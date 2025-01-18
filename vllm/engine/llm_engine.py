@@ -787,7 +787,7 @@ class LLMEngine:
         if rel_deadline is not None:
             abs_deadline = arrival_time + rel_deadline
         
-        logger.info("【LLMEngine.add_request】abs deadline: %s", abs_deadline)
+        #logger.info("【LLMEngine.add_request】abs deadline: %s", abs_deadline)
 
         if self.tokenizer is not None:
             self._validate_token_prompt(

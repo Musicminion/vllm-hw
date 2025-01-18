@@ -244,7 +244,7 @@ class MQLLMEngine:
             raise e
 
     def _handle_process_request(self, request: RPCProcessRequest):
-        logger.info("好了这里是收到RPC的请求")
+        logger.debug("好了这里是收到RPC的请求")
         """Handle RPCProcessRequest by adding it to the LLMEngine."""
         request_id = request.request_id
 

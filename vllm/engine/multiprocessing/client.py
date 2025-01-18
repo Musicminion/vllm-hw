@@ -480,9 +480,9 @@ class MQLLMEngineClient(EngineClient):
                 Any priority other than 0 will lead to an error if the
                 scheduling policy is not "priority".
         """
-        logger.info("我嘞个骚刚我现在在client.py/generate里面")
+        # logger.debug("我嘞个骚刚我现在在client.py/generate里面")
         # 输出一下rel_deadline
-        logger.info("client.py/generate里面的 rel_deadline: %s", rel_deadline)
+        # logger.info("client.py/generate里面的 rel_deadline: %s", rel_deadline)
         if inputs is not None:
             prompt = inputs
         assert (prompt is not None and sampling_params is not None
@@ -633,9 +633,9 @@ class MQLLMEngineClient(EngineClient):
                     rel_deadline=rel_deadline,
                 ))
 
-            logger.info("好了现在RPC的请求已经准备好了，马上要发RPC请求")
+            #logger.info("好了现在RPC的请求已经准备好了，马上要发RPC请求")
             # 
-            logger.info("发RPC请求之前，client.py/_process_request里面的 rel_deadline: %s", rel_deadline)
+            #logger.info("发RPC请求之前，client.py/_process_request里面的 rel_deadline: %s", rel_deadline)
             # 3) Send the RPCGenerateRequest to the MQLLMEngine.
             parts = (request_bytes,
                      lp_bytes) if lp_bytes else (request_bytes, )

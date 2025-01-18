@@ -188,7 +188,7 @@ class EngineArgs:
     otlp_traces_endpoint: Optional[str] = None
     collect_detailed_traces: Optional[str] = None
     disable_async_output_proc: bool = False
-    scheduling_policy: Literal["fcfs", "priority", "edf"] = "fcfs"
+    scheduling_policy: Literal["fcfs", "priority", "edf", "sjf"] = "fcfs"
 
     override_neuron_config: Optional[Dict[str, Any]] = None
     override_pooler_config: Optional[PoolerConfig] = None
@@ -896,14 +896,15 @@ class EngineArgs:
 
         parser.add_argument(
             '--scheduling-policy',
-            choices=['fcfs', 'priority', 'edf'],
+            choices=['fcfs', 'priority', 'edf', 'sjf'],
             default="fcfs",
             help='The scheduling policy to use. "fcfs" (first come first served'
             ', i.e. requests are handled in order of arrival; default) '
             'or "priority" (requests are handled based on given '
             'priority (lower value means earlier handling) and time of '
-            'arrival deciding any ties); edf means handled in order of ddl.')
-
+            'arrival deciding any ties); edf means handled in order of ddl.'
+            'sjf means handled in order of shortest job first, that is sorted '
+            'by the max tokens in the prompt.')
         parser.add_argument(
             '--override-neuron-config',
             type=json.loads,
