@@ -23,12 +23,12 @@ import random
 ##########################################################
 vllm_server_url = "http://localhost:15432/v1/completions"  # 本地 vLLM 推理服务地址
 lambda_sentence_length = 50     # 输入promp句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
-lambda_requests = 30            # 每次并发请求的数量，服从泊松分布，数量平均值
+lambda_requests = 20            # 每次并发请求的数量，服从泊松分布，数量平均值
 max_sentence_length = 100       # 句子长度的最大值，默认100
 lambda_request_interval = 3     # 请求间隔时间，单位：秒，同样服从泊松分布
 accuracy_num = 4                # 小数点保留的位数
 add_para_priority = False       # 是否给参数加上优先级
-add_para_relddl = False          # 是否给参数加上相对ddl的参数
+add_para_relddl = True          # 是否给参数加上相对ddl的参数
 ##########################################################
 
 
@@ -365,4 +365,4 @@ async def simulate_real_requests(duration = 120):
     
 # 运行主函数
 if __name__ == "__main__":
-    asyncio.run(simulate_real_requests(120))
+    asyncio.run(simulate_real_requests(30))
