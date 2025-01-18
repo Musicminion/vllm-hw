@@ -5,6 +5,11 @@
 - `benchmarks/schedule_benchmarks`：主要包括了用于评测各种调度算法用的脚本和数据集文件
 - `vllm`：具体包括引擎文件、sequence Group的定义文件、core/schedule的文件等等
 
+benchmark视频：
+
+https://github.com/user-attachments/assets/d9409e8d-62e8-4011-a0eb-7fe27260b76f
+
+
 
 ### 环境配置
 创建一个conda环境：
