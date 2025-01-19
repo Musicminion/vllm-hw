@@ -100,34 +100,49 @@ curl -X POST "http://localhost:15432/v1/completions" -H "Content-Type: applicati
 
 ### Benchmark
 
-要进行性能评测，请运行`benchmarks/schedule_benchmarks`目录下的`benchmark.py`脚本。
+要进行性能评测，请运行`benchmarks/schedule_benchmarks`目录下的`benchmark.py`脚本。benchmark视频、benchmark-vip和非vip的视频请参考简介里面的展示。
 
-benchmark视频：
-
-https://github.com/user-attachments/assets/d9409e8d-62e8-4011-a0eb-7fe27260b76f
-
-
-VIP-非VIP的Benchmark视频：
-
-
-
-
-Benchmark中可以配置的参数：
+Benchmark中可以配置的参数以及说明文字：
 ```python
 # 参数区域
 ##########################################################
 vllm_server_url = "http://localhost:15432/v1/completions"  # 本地 vLLM 推理服务地址
 lambda_sentence_length = 50     # 输入promp句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
-lambda_requests = 20            # 每次并发请求的数量，服从泊松分布，数量平均值
+lambda_requests = 200           # 每次并发请求的数量，服从泊松分布，数量平均值
 max_sentence_length = 100       # 句子长度的最大值，默认100
 lambda_request_interval = 3     # 请求间隔时间，单位：秒，同样服从泊松分布
 accuracy_num = 4                # 小数点保留的位数
-add_para_priority = False       # 是否给参数加上优先级
-add_para_relddl = True          # 是否给参数加上相对ddl的参数
+add_para_priority = True        # 是否给参数加上优先级
+para_priority_range_min = 100    # 优先级的最小值
+para_priority_range_max = 300  # 优先级的最大值
+add_para_relddl = False         # 是否给参数加上相对ddl的参数
+para_relddl_range_min = 1       # ddl的最小值
+para_relddl_range_max = 10000   # ddl的最大值
+text_display_char_num = 15      # 展示出来的输入输出字符数量
+export_excel_file = False       # 是否导出Excel的表格
 ##########################################################
 ```
 
 benchmark的数据结果在`benchmarks/schedule_benchmarks/result`的下面，具体分为日志文件和excel的表格输出。
+
+最终我们得到的VIP和非VIP的情况如下：
+
+实验配置：
+- 首先我们考虑让vllm配置为priority调度策略，因为根据前面的实验效果priority性能相对较为优秀
+- 非VIP的每次发送泊松分布的均值为200个请求，VIP的请求数量为40个，构成五倍的关系
+- 非VIP的优先级范围控制到$[100, 300]$，而VIP的优先级范围控制到$[1, 150]$，在vllm里面优先级越小，代表的调度的越靠前
+- 其余的参数保持完全一样
+
+实验结果如下所示：
+
+| 情况      | Total Requests | Avg Latency(s) | Avg TTFT(s) | Avg Input Len | Avg Output Len |
+| --------- | :------------: | :------------: | :---------: | :-----------: | :------------: |
+| VIP用户   |     640.0      |     0.6528     |   0.2852    |    50.0172    |    43.5953     |
+| 非VIP用户 |     1817.0     |     2.2413     |   1.2872    |    50.2262    |    44.8277     |
+
+
+
+
 
 
 
