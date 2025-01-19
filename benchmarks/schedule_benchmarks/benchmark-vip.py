@@ -13,22 +13,24 @@ import traceback
 import aiohttp
 import asyncio
 import random
-
-
-
-
+#  __      _______ _____  
+#  \ \    / /_   _|  __ \ 
+#   \ \  / /  | | | |__) |
+#    \ \/ /   | | |  ___/ 
+#     \  /   _| |_| |     
+#      \/   |_____|_|     
 
 # 参数区域
 ##########################################################
 vllm_server_url = "http://localhost:15432/v1/completions"  # 本地 vLLM 推理服务地址
 lambda_sentence_length = 50     # 输入promp句子长度，服从泊松分布，长度平均值（假设每个句子的单词数量）
-lambda_requests = 200           # 每次并发请求的数量，服从泊松分布，数量平均值
+lambda_requests = 40            # 每次并发请求的数量，服从泊松分布，数量平均值
 max_sentence_length = 100       # 句子长度的最大值，默认100
 lambda_request_interval = 3     # 请求间隔时间，单位：秒，同样服从泊松分布
 accuracy_num = 4                # 小数点保留的位数
 add_para_priority = True        # 是否给参数加上优先级
-para_priority_range_min = 100    # 优先级的最小值
-para_priority_range_max = 300  # 优先级的最大值
+para_priority_range_min = 1     # 优先级的最小值
+para_priority_range_max = 150   # 优先级的最大值
 add_para_relddl = False         # 是否给参数加上相对ddl的参数
 para_relddl_range_min = 1       # ddl的最小值
 para_relddl_range_max = 10000   # ddl的最大值
@@ -366,7 +368,7 @@ async def simulate_real_requests(duration = 120):
     table = tabulate(df, headers='keys', tablefmt='pretty')
     print(table)
     
-    print("模拟结束，打印本次普通测试的日志结果，相关文件已经保存到Excel目录下")
+    print("模拟结束，打印本次VIP测试的日志结果，相关文件已经保存到Excel目录下")
     print_result()
     
 # 运行主函数
