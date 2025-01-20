@@ -103,6 +103,9 @@ curl -X POST "http://localhost:15432/v1/completions" -H "Content-Type: applicati
 
 
 ### Benchmark
+Benchmark的模型如下所示，间隔泊松分布的时间，每次并发的请求数量模拟为泊松分布，具体文件见 `benchmarks/schedule_benchmarks_benchmark.py` 的内容：
+
+<img src="https://github.com/user-attachments/assets/716ae42a-5379-4ed1-a4fa-4d11e6512a32" width="400" />
 
 要进行性能评测，请运行`benchmarks/schedule_benchmarks`目录下的`benchmark.py`脚本。benchmark视频、benchmark-vip和非vip的视频请参考简介里面的展示。
 
