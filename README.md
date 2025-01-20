@@ -1,5 +1,7 @@
 ## 实时系统调度 vllm 大作业
 
+作业文档链接：https://www.yuque.com/musicminion/vllm-hw
+
 ### 简介
 本作业修改了vllm的部分代码，用来支持四种调度策略(edf、fifo、priority、sjf)，用做了相关的性能评测。修改的代码包括：
 - `benchmarks/schedule_benchmarks`：主要包括了用于评测各种调度算法用的脚本和数据集文件
