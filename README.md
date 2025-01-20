@@ -13,6 +13,10 @@ https://github.com/user-attachments/assets/da223d7d-754f-44f5-8ccf-d7e2d87ddb14
 
 https://github.com/user-attachments/assets/955c7f26-4746-43f1-be49-654d4c1ac6cc
 
+#### vip-非vip的Benchmark视频(压力场景)：
+
+
+https://github.com/user-attachments/assets/f496d58d-2ced-42fe-a7d5-4e831443668c
 
 
 
