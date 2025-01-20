@@ -28,9 +28,9 @@ lambda_requests = 200           # 每次并发请求的数量，服从泊松分�
 max_sentence_length = 100       # 句子长度的最大值，默认100
 lambda_request_interval = 5     # 请求间隔时间，单位：秒，同样服从泊松分布
 accuracy_num = 4                # 小数点保留的位数
-add_para_priority = False        # 是否给参数加上优先级
+add_para_priority = True        # 是否给参数加上优先级
 para_priority_range_min = 1     # 优先级的最小值
-para_priority_range_max = 10    # 优先级的最大值
+para_priority_range_max = 120   # 优先级的最大值
 add_para_relddl = False         # 是否给参数加上相对ddl的参数
 para_relddl_range_min = 1       # ddl的最小值
 para_relddl_range_max = 10000   # ddl的最大值
@@ -282,7 +282,7 @@ def print_result():
         "Output Len": [cal_token(result.generated_text) for result in results],
         "Error": [result.error for result in results],
         # "Rel Deadline": [round(result.rel_deadline, accuracy_num) for result in results],  # 添加 rel_deadline
-        "Rel Deadline": [round(result.rel_deadline, accuracy_num) if result.rel_deadline is not None else None for result in results],  # 添加判断
+        "Rel DDL": [round(result.rel_deadline, accuracy_num) if result.rel_deadline is not None else None for result in results],  # 添加判断
         "Priority": [result.priority for result in results]
     }
     
@@ -374,4 +374,4 @@ async def simulate_real_requests(duration = 120):
     
 # 运行主函数
 if __name__ == "__main__":
-    asyncio.run(simulate_real_requests(30))
+    asyncio.run(simulate_real_requests(120))
